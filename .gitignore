@@ -1,0 +1,15 @@
+# Flutter
+crm_planete_verte/build/
+crm_planete_verte/.dart_tool/
+crm_planete_verte/.idea/
+
+# Python
+crm_backend/__pycache__/
+crm_backend/db.sqlite3
+
+# VS Code
+.vscode/
+
+# System
+.DS_Store
+*.log
