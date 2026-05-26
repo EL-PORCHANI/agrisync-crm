@@ -6,6 +6,7 @@ class Product {
   final double currentPrice;
   final String? updatedAt;
   final int isSynced;
+  final int stockQuantity;
 
   Product({
     this.id,
@@ -15,6 +16,7 @@ class Product {
     required this.currentPrice,
     this.updatedAt,
     this.isSynced = 0,
+    required this.stockQuantity,
   });
 
   Map<String, dynamic> toMap() {
@@ -26,6 +28,7 @@ class Product {
       'current_price': currentPrice,
       'updated_at': updatedAt,
       'is_synced': isSynced,
+      'stock_quantity': stockQuantity,
     };
   }
 
@@ -38,6 +41,7 @@ class Product {
       currentPrice: (map['current_price'] as num).toDouble(),
       updatedAt: map['updated_at'],
       isSynced: map['is_synced'] ?? 0,
+      stockQuantity: map['stock_quantity'] ?? 0,
     );
   }
 }

@@ -1,6 +1,5 @@
 import 'package:path/path.dart';
 import '../models/client.dart';
-import '../models/zone.dart';
 import 'package:sqflite/sqflite.dart';
 import '../models/product.dart';
 import '../models/stock.dart';
@@ -67,6 +66,7 @@ class DatabaseService {
     await db.execute('''
       CREATE TABLE clients (
         id INTEGER PRIMARY KEY AUTOINCREMENT,
+        server_id INTEGER,
         name TEXT NOT NULL,
         phone TEXT,
         address TEXT,
@@ -78,24 +78,27 @@ class DatabaseService {
         updated_at TEXT,
         is_synced INTEGER NOT NULL DEFAULT 0,
         FOREIGN KEY (zone_id) REFERENCES zones(id)
-      )
+    )
     ''');
 
     await db.execute('''
       CREATE TABLE products (
         id INTEGER PRIMARY KEY AUTOINCREMENT,
+        server_id INTEGER,
         name TEXT NOT NULL,
         category TEXT,
         reference TEXT UNIQUE,
         current_price REAL NOT NULL DEFAULT 0,
         updated_at TEXT,
-        is_synced INTEGER NOT NULL DEFAULT 0
+        is_synced INTEGER NOT NULL DEFAULT 0,
+        stock_quantity INTEGER DEFAULT 0
       )
     ''');
 
     await db.execute('''
       CREATE TABLE stocks (
         id INTEGER PRIMARY KEY AUTOINCREMENT,
+        server_id INTEGER,
         available_quantity INTEGER NOT NULL DEFAULT 0,
         alert_threshold INTEGER NOT NULL DEFAULT 0,
         product_id INTEGER NOT NULL,
@@ -111,6 +114,7 @@ class DatabaseService {
     await db.execute('''
       CREATE TABLE orders (
         id INTEGER PRIMARY KEY AUTOINCREMENT,
+        server_id INTEGER,
         order_date TEXT NOT NULL,
         status TEXT NOT NULL DEFAULT 'draft',
         total_amount REAL NOT NULL DEFAULT 0,
@@ -139,6 +143,7 @@ class DatabaseService {
     await db.execute('''
       CREATE TABLE invoices (
         id INTEGER PRIMARY KEY AUTOINCREMENT,
+        server_id INTEGER,
         amount_due REAL NOT NULL DEFAULT 0,
         due_date TEXT NOT NULL,
         status TEXT NOT NULL DEFAULT 'up_to_date',
@@ -155,6 +160,7 @@ class DatabaseService {
     await db.execute('''
       CREATE TABLE visits (
         id INTEGER PRIMARY KEY AUTOINCREMENT,
+        server_id INTEGER,
         visit_date TEXT NOT NULL,
         visit_time TEXT NOT NULL,
         gps_location TEXT,
@@ -331,6 +337,7 @@ Future<void> seedProductsIfEmpty() async {
       'category': 'Fertilizer',
       'reference': 'FERT-001',
       'current_price': 120.0,
+      'stock_quantity': 50,
       'updated_at': now,
       'is_synced': 0,
     },
@@ -339,6 +346,7 @@ Future<void> seedProductsIfEmpty() async {
       'category': 'Seeds',
       'reference': 'SEED-001',
       'current_price': 75.5,
+      'stock_quantity': 50,
       'updated_at': now,
       'is_synced': 0,
     },
@@ -347,6 +355,7 @@ Future<void> seedProductsIfEmpty() async {
       'category': 'Soil',
       'reference': 'SOIL-001',
       'current_price': 45.0,
+      'stock_quantity': 50,
       'updated_at': now,
       'is_synced': 0,
     },
@@ -355,6 +364,7 @@ Future<void> seedProductsIfEmpty() async {
       'category': 'Pesticide',
       'reference': 'PEST-001',
       'current_price': 89.9,
+      'stock_quantity': 50,
       'updated_at': now,
       'is_synced': 0,
     },

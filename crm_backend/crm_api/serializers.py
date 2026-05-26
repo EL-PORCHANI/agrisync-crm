@@ -1,5 +1,7 @@
 from rest_framework import serializers
 from .models import Client
+from .models import Product
+
 
 
 class ClientSerializer(serializers.ModelSerializer):
@@ -46,3 +48,10 @@ class VisitSerializer(serializers.ModelSerializer):
         model = Visit
         fields = '__all__'
         
+
+from .models import Product
+
+class ProductSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Product
+        fields = '__all__'

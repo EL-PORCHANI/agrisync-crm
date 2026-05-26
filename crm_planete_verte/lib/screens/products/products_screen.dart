@@ -41,7 +41,8 @@ class _ProductsScreenState extends State<ProductsScreen> {
                 return ListTile(
                   title: Text(product.name),
                   subtitle: Text(
-                    '${product.category ?? 'No category'} - ${product.currentPrice.toStringAsFixed(2)} TND',
+                    '${product.category ?? 'No category'} - ${product.currentPrice.toStringAsFixed(2)} TND\n'
+                    'Stock: ${product.stockQuantity} units',
                   ),
                 );
               },

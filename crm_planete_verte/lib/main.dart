@@ -4,6 +4,7 @@ import 'screens/main_navigation_screen.dart';
 import 'dart:io';
 import 'package:sqflite_common_ffi/sqflite_ffi.dart';
 import 'theme/app_theme.dart';
+import 'screens/login_screen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -33,7 +34,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'AgriSync CRM',
       theme: AppTheme.lightTheme,
-      home: const MainNavigationScreen(),
+      home: const LoginScreen(),
     );
   }
 }

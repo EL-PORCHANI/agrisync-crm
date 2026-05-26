@@ -16,6 +16,17 @@ class Client(models.Model):
     def __str__(self):
         return self.name
     
+class Product(models.Model):
+    name = models.CharField(max_length=150)
+    price = models.FloatField()
+    stock_quantity = models.IntegerField(default=0)
+    category = models.CharField(max_length=100, blank=True, null=True)
+
+    updated_at = models.DateTimeField(auto_now=True)
+
+    def __str__(self):
+        return self.name
+    
 class Order(models.Model):
     client = models.ForeignKey(Client, on_delete=models.CASCADE, related_name='orders')
     total_amount = models.FloatField()

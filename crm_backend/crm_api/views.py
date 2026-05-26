@@ -35,3 +35,38 @@ from .serializers import VisitSerializer
 class VisitViewSet(viewsets.ModelViewSet):
     queryset = Visit.objects.all()
     serializer_class = VisitSerializer  
+
+from .models import Product
+from .serializers import ProductSerializer
+
+class ProductViewSet(viewsets.ModelViewSet):
+    queryset = Product.objects.all().order_by('-updated_at')
+    serializer_class = ProductSerializer
+
+
+from django.contrib.auth import authenticate
+from rest_framework.decorators import api_view
+from rest_framework.response import Response
+from rest_framework import status
+
+@api_view(['POST'])
+def login_view(request):
+    username = request.data.get('username')
+    password = request.data.get('password')
+
+    user = authenticate(username=username, password=password)
+
+    if user is not None:
+        role = 'admin' if user.is_staff else 'commercial'
+
+        return Response({
+            'success': True,
+            'user_id': user.id,
+            'username': user.username,
+            'role': role,
+        })
+
+    return Response(
+        {'success': False, 'message': 'Invalid credentials'},
+        status=status.HTTP_401_UNAUTHORIZED
+    )

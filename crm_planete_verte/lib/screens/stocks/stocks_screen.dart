@@ -16,7 +16,7 @@ class _StocksScreenState extends State<StocksScreen> {
 
   @override
   void initState() {
-    super.initState();
+    super.initState();  
     loadData();
   }
 
@@ -39,6 +39,7 @@ class _StocksScreenState extends State<StocksScreen> {
         id: 0,
         name: 'Unknown',
         currentPrice: 0,
+        stockQuantity: 0,
       ),
     );
 
