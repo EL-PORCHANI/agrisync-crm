@@ -22,12 +22,12 @@ class _LoginScreenState extends State<LoginScreen> {
 
     final apiService = ApiService();
 
-    final result = await apiService.login(
+    final success = await apiService.login(
       username,
       password,
     );
 
-    if (result != null && result['success'] == true) {
+    if (success) {
       Navigator.pushReplacement(
         context,
         MaterialPageRoute(

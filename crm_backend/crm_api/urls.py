@@ -8,6 +8,7 @@ from .views import (
     ProductViewSet,
     login_view,
 )
+from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView
 
 router = DefaultRouter()
 router.register(r'clients', ClientViewSet, basename='client')
@@ -18,6 +19,9 @@ router.register(r'products', ProductViewSet, basename='product')
 
 urlpatterns = [
     path('login/', login_view, name='login'),
+    path('token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
+    path('token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
 ]
 
 urlpatterns += router.urls
+

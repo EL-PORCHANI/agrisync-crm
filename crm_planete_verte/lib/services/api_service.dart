@@ -1,6 +1,9 @@
 import 'dart:convert';
 import 'package:http/http.dart' as http;
 import '../models/client.dart';
+import 'dart:convert';
+import 'package:http/http.dart' as http;
+import 'package:shared_preferences/shared_preferences.dart';
 
 
 class ApiService {
@@ -106,15 +109,12 @@ Future<http.Response> createVisit(Map<String, dynamic> visitData) async {
   return response;
 }
 
-Future<Map<String, dynamic>?> login(
-  String username,
-  String password,
-) async {
+
+
+Future<bool> login(String username, String password) async {
   final response = await http.post(
-    Uri.parse('$baseUrl/login/'),
-    headers: {
-      'Content-Type': 'application/json',
-    },
+    Uri.parse('$baseUrl/token/'),
+    headers: {'Content-Type': 'application/json'},
     body: jsonEncode({
       'username': username,
       'password': password,
@@ -122,10 +122,21 @@ Future<Map<String, dynamic>?> login(
   );
 
   if (response.statusCode == 200) {
-    return jsonDecode(response.body);
+    final data = jsonDecode(response.body);
+
+    SharedPreferences prefs = await SharedPreferences.getInstance();
+
+    await prefs.setString('access_token', data['access']);
+    await prefs.setString('refresh_token', data['refresh']);
+
+    print('JWT ACCESS TOKEN: ${data['access']}');
+    print('JWT REFRESH TOKEN: ${data['refresh']}');
+
+    return true;
+    
   }
 
-  return null;
+  return false;
 }
 }
 

@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'services/database_service.dart';
-import 'screens/main_navigation_screen.dart';
 import 'dart:io';
 import 'package:sqflite_common_ffi/sqflite_ffi.dart';
 import 'theme/app_theme.dart';

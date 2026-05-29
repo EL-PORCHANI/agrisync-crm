@@ -118,7 +118,7 @@ class _AddVisitScreenState extends State<AddVisitScreen> {
         child: Column(
           children: [
             DropdownButtonFormField<Client>(
-              value: selectedClient,
+              initialValue: selectedClient,
               decoration: const InputDecoration(
                 labelText: 'Client',
                 border: OutlineInputBorder(),

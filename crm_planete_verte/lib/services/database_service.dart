@@ -836,7 +836,7 @@ Future<int> getLowStockCount() async {
   final result = await dbClient.rawQuery('''
     SELECT COUNT(*) as count
     FROM stocks
-    WHERE quantity <= alert_threshold
+    WHERE available_quantity <= alert_threshold
   ''');
 
   return Sqflite.firstIntValue(result) ?? 0;
