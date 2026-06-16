@@ -1,0 +1,1031 @@
+year,month,product_id,product_name,category,zone_id,zone_name,monthly_quantity_sold,monthly_revenue,stock_quantity
+2025,10,1,NPK Fertilizer 20-20-20,Fertilizers,1,Nabeul,7,3149.72,16
+2025,10,1,NPK Fertilizer 20-20-20,Fertilizers,2,Sfax,7,3149.72,16
+2025,10,1,NPK Fertilizer 20-20-20,Fertilizers,5,Gabes,7,3149.72,16
+2025,10,10,Soil PH Corrector,Fertilizers,1,Nabeul,12,2511.0,198
+2025,10,10,Soil PH Corrector,Fertilizers,3,Beja,10,2092.5,198
+2025,10,10,Soil PH Corrector,Fertilizers,5,Gabes,2,418.5,198
+2025,10,11,Drought Shield Bio,Fungicides,1,Nabeul,9,898.74,218
+2025,10,12,Humidity Control Spray,Fungicides,1,Nabeul,11,2311.32,143
+2025,10,12,Humidity Control Spray,Fungicides,3,Beja,4,840.48,143
+2025,10,13,Potassium Booster,Fertilizers,2,Sfax,22,3157.88,36
+2025,10,13,Potassium Booster,Fertilizers,3,Beja,7,1004.78,36
+2025,10,13,Potassium Booster,Fertilizers,5,Gabes,7,1004.78,36
+2025,10,14,Nitrogen Booster,Soil treatment,1,Nabeul,9,1674.63,5
+2025,10,14,Nitrogen Booster,Soil treatment,3,Beja,12,2232.84,5
+2025,10,14,Nitrogen Booster,Soil treatment,4,Kairouan,3,558.21,5
+2025,10,15,Citrus Growth Formula,Seeds,1,Nabeul,8,1406.4,152
+2025,10,15,Citrus Growth Formula,Seeds,2,Sfax,10,1758.0,152
+2025,10,15,Citrus Growth Formula,Seeds,4,Kairouan,3,527.4,152
+2025,10,15,Citrus Growth Formula,Seeds,5,Gabes,5,879.0,152
+2025,10,16,Vegetable Root Stimulator,Soil treatment,5,Gabes,10,3990.5,5
+2025,10,17,Cereal Yield Enhancer,Soil treatment,1,Nabeul,14,2768.22,65
+2025,10,17,Cereal Yield Enhancer,Soil treatment,2,Sfax,1,197.73,65
+2025,10,17,Cereal Yield Enhancer,Soil treatment,3,Beja,7,1384.11,65
+2025,10,17,Cereal Yield Enhancer,Soil treatment,5,Gabes,23,4547.79,65
+2025,10,18,Palm Tree Fertilizer,Fungicides,1,Nabeul,12,2585.64,26
+2025,10,18,Palm Tree Fertilizer,Fungicides,2,Sfax,8,1723.76,26
+2025,10,18,Palm Tree Fertilizer,Fungicides,3,Beja,11,2370.17,26
+2025,10,18,Palm Tree Fertilizer,Fungicides,4,Kairouan,6,1292.82,26
+2025,10,18,Palm Tree Fertilizer,Fungicides,5,Gabes,22,4740.34,26
+2025,10,19,Salinity Control Product,Soil treatment,1,Nabeul,31,3980.4,51
+2025,10,19,Salinity Control Product,Soil treatment,2,Sfax,18,2311.2,51
+2025,10,19,Salinity Control Product,Soil treatment,3,Beja,12,1540.8,51
+2025,10,19,Salinity Control Product,Soil treatment,4,Kairouan,12,1540.8,51
+2025,10,19,Salinity Control Product,Soil treatment,5,Gabes,12,1540.8,51
+2025,10,2,Organic Compost Mix,Soil treatment,2,Sfax,4,168.44,132
+2025,10,2,Organic Compost Mix,Soil treatment,3,Beja,9,378.99,132
+2025,10,2,Organic Compost Mix,Soil treatment,4,Kairouan,18,757.98,132
+2025,10,2,Organic Compost Mix,Soil treatment,5,Gabes,3,126.33,132
+2025,10,20,Greenhouse Pest Control,Fungicides,1,Nabeul,6,2691.42,43
+2025,10,20,Greenhouse Pest Control,Fungicides,3,Beja,17,7625.69,43
+2025,10,21,Aphid Control Solution,Pesticides,1,Nabeul,3,368.94,111
+2025,10,21,Aphid Control Solution,Pesticides,2,Sfax,3,368.94,111
+2025,10,21,Aphid Control Solution,Pesticides,4,Kairouan,5,614.9,111
+2025,10,21,Aphid Control Solution,Pesticides,5,Gabes,6,737.88,111
+2025,10,22,Mildew Protection Spray,Climate-adapted products,1,Nabeul,9,2864.88,34
+2025,10,22,Mildew Protection Spray,Climate-adapted products,3,Beja,10,3183.2,34
+2025,10,23,Seed Germination Booster,Irrigation products,2,Sfax,3,1320.18,27
+2025,10,23,Seed Germination Booster,Irrigation products,3,Beja,8,3520.48,27
+2025,10,23,Seed Germination Booster,Irrigation products,5,Gabes,5,2200.3,27
+2025,10,24,Foliar Nutrition Mix,Pesticides,2,Sfax,29,2936.54,5
+2025,10,24,Foliar Nutrition Mix,Pesticides,5,Gabes,18,1822.68,5
+2025,10,25,Micro Elements Pack,Fertilizers,1,Nabeul,14,6147.12,65
+2025,10,25,Micro Elements Pack,Fertilizers,2,Sfax,14,6147.12,65
+2025,10,25,Micro Elements Pack,Fertilizers,4,Kairouan,13,5708.04,65
+2025,10,25,Micro Elements Pack,Fertilizers,5,Gabes,13,5708.04,65
+2025,10,26,Crop Stress Reducer,Climate-adapted products,1,Nabeul,21,4906.02,57
+2025,10,26,Crop Stress Reducer,Climate-adapted products,3,Beja,4,934.48,57
+2025,10,26,Crop Stress Reducer,Climate-adapted products,4,Kairouan,10,2336.2,57
+2025,10,26,Crop Stress Reducer,Climate-adapted products,5,Gabes,1,233.62,57
+2025,10,27,Irrigation Filter Pack,Fungicides,1,Nabeul,31,5263.8,6
+2025,10,27,Irrigation Filter Pack,Fungicides,3,Beja,36,6112.8,6
+2025,10,27,Irrigation Filter Pack,Fungicides,4,Kairouan,3,509.4,6
+2025,10,28,Soil Moisture Sensor,Fertilizers,1,Nabeul,11,2148.3,57
+2025,10,28,Soil Moisture Sensor,Fertilizers,2,Sfax,4,781.2,57
+2025,10,28,Soil Moisture Sensor,Fertilizers,4,Kairouan,23,4491.9,57
+2025,10,28,Soil Moisture Sensor,Fertilizers,5,Gabes,5,976.5,57
+2025,10,29,Climate Smart Pack,Seeds,2,Sfax,5,442.05,14
+2025,10,29,Climate Smart Pack,Seeds,3,Beja,8,707.28,14
+2025,10,29,Climate Smart Pack,Seeds,4,Kairouan,11,972.51,14
+2025,10,29,Climate Smart Pack,Seeds,5,Gabes,4,353.64,14
+2025,10,3,Tomato Seeds Premium,Irrigation products,1,Nabeul,9,807.84,51
+2025,10,3,Tomato Seeds Premium,Irrigation products,3,Beja,12,1077.12,51
+2025,10,30,Bio Stimulant Plus,Climate-adapted products,1,Nabeul,8,1614.96,70
+2025,10,30,Bio Stimulant Plus,Climate-adapted products,2,Sfax,10,2018.7,70
+2025,10,30,Bio Stimulant Plus,Climate-adapted products,3,Beja,7,1413.09,70
+2025,10,4,Wheat Seeds Resistant,Seeds,1,Nabeul,4,890.56,13
+2025,10,4,Wheat Seeds Resistant,Seeds,4,Kairouan,13,2894.32,13
+2025,10,4,Wheat Seeds Resistant,Seeds,5,Gabes,4,890.56,13
+2025,10,5,Olive Tree Nutrient Pack,Irrigation products,1,Nabeul,6,2607.54,122
+2025,10,5,Olive Tree Nutrient Pack,Irrigation products,4,Kairouan,5,2172.95,122
+2025,10,5,Olive Tree Nutrient Pack,Irrigation products,5,Gabes,7,3042.13,122
+2025,10,6,Anti-Fungal Treatment,Fertilizers,4,Kairouan,12,3251.28,57
+2025,10,7,Copper Fungicide,Soil treatment,4,Kairouan,24,2622.96,158
+2025,10,8,Drip Irrigation Kit,Irrigation products,1,Nabeul,7,2571.45,43
+2025,10,8,Drip Irrigation Kit,Irrigation products,4,Kairouan,11,4040.85,43
+2025,10,9,Water Retention Granules,Pesticides,1,Nabeul,8,434.48,188
+2025,10,9,Water Retention Granules,Pesticides,2,Sfax,9,488.79,188
+2025,10,9,Water Retention Granules,Pesticides,3,Beja,4,217.24,188
+2025,10,9,Water Retention Granules,Pesticides,4,Kairouan,9,488.79,188
+2025,11,1,NPK Fertilizer 20-20-20,Fertilizers,1,Nabeul,10,4499.6,16
+2025,11,1,NPK Fertilizer 20-20-20,Fertilizers,4,Kairouan,12,5399.52,16
+2025,11,10,Soil PH Corrector,Fertilizers,2,Sfax,5,1046.25,198
+2025,11,10,Soil PH Corrector,Fertilizers,4,Kairouan,11,2301.75,198
+2025,11,10,Soil PH Corrector,Fertilizers,5,Gabes,11,2301.75,198
+2025,11,11,Drought Shield Bio,Fungicides,1,Nabeul,11,1098.46,218
+2025,11,11,Drought Shield Bio,Fungicides,3,Beja,17,1697.62,218
+2025,11,11,Drought Shield Bio,Fungicides,4,Kairouan,10,998.6,218
+2025,11,12,Humidity Control Spray,Fungicides,1,Nabeul,6,1260.72,143
+2025,11,12,Humidity Control Spray,Fungicides,2,Sfax,4,840.48,143
+2025,11,12,Humidity Control Spray,Fungicides,3,Beja,19,3992.28,143
+2025,11,12,Humidity Control Spray,Fungicides,4,Kairouan,1,210.12,143
+2025,11,12,Humidity Control Spray,Fungicides,5,Gabes,4,840.48,143
+2025,11,14,Nitrogen Booster,Soil treatment,3,Beja,2,372.14,5
+2025,11,14,Nitrogen Booster,Soil treatment,4,Kairouan,6,1116.42,5
+2025,11,14,Nitrogen Booster,Soil treatment,5,Gabes,12,2232.84,5
+2025,11,15,Citrus Growth Formula,Seeds,1,Nabeul,1,175.8,152
+2025,11,15,Citrus Growth Formula,Seeds,2,Sfax,12,2109.6,152
+2025,11,15,Citrus Growth Formula,Seeds,3,Beja,4,703.2,152
+2025,11,15,Citrus Growth Formula,Seeds,4,Kairouan,13,2285.4,152
+2025,11,15,Citrus Growth Formula,Seeds,5,Gabes,7,1230.6,152
+2025,11,16,Vegetable Root Stimulator,Soil treatment,2,Sfax,11,4389.55,5
+2025,11,16,Vegetable Root Stimulator,Soil treatment,3,Beja,14,5586.7,5
+2025,11,16,Vegetable Root Stimulator,Soil treatment,5,Gabes,14,5586.7,5
+2025,11,17,Cereal Yield Enhancer,Soil treatment,1,Nabeul,2,395.46,65
+2025,11,17,Cereal Yield Enhancer,Soil treatment,3,Beja,10,1977.3,65
+2025,11,17,Cereal Yield Enhancer,Soil treatment,5,Gabes,2,395.46,65
+2025,11,18,Palm Tree Fertilizer,Fungicides,1,Nabeul,20,4309.4,26
+2025,11,18,Palm Tree Fertilizer,Fungicides,3,Beja,2,430.94,26
+2025,11,18,Palm Tree Fertilizer,Fungicides,5,Gabes,8,1723.76,26
+2025,11,19,Salinity Control Product,Soil treatment,1,Nabeul,15,1926.0,51
+2025,11,19,Salinity Control Product,Soil treatment,2,Sfax,1,128.4,51
+2025,11,19,Salinity Control Product,Soil treatment,4,Kairouan,7,898.8,51
+2025,11,2,Organic Compost Mix,Soil treatment,2,Sfax,14,589.54,132
+2025,11,2,Organic Compost Mix,Soil treatment,4,Kairouan,6,252.66,132
+2025,11,20,Greenhouse Pest Control,Fungicides,3,Beja,11,4934.27,43
+2025,11,20,Greenhouse Pest Control,Fungicides,5,Gabes,13,5831.41,43
+2025,11,21,Aphid Control Solution,Pesticides,1,Nabeul,11,1352.78,111
+2025,11,21,Aphid Control Solution,Pesticides,4,Kairouan,11,1352.78,111
+2025,11,22,Mildew Protection Spray,Climate-adapted products,1,Nabeul,3,954.96,34
+2025,11,22,Mildew Protection Spray,Climate-adapted products,2,Sfax,3,954.96,34
+2025,11,22,Mildew Protection Spray,Climate-adapted products,3,Beja,3,954.96,34
+2025,11,23,Seed Germination Booster,Irrigation products,1,Nabeul,5,2200.3,27
+2025,11,23,Seed Germination Booster,Irrigation products,3,Beja,2,880.12,27
+2025,11,23,Seed Germination Booster,Irrigation products,4,Kairouan,20,8801.2,27
+2025,11,23,Seed Germination Booster,Irrigation products,5,Gabes,21,9241.26,27
+2025,11,24,Foliar Nutrition Mix,Pesticides,4,Kairouan,5,506.3,5
+2025,11,24,Foliar Nutrition Mix,Pesticides,5,Gabes,4,405.04,5
+2025,11,25,Micro Elements Pack,Fertilizers,3,Beja,13,5708.04,65
+2025,11,25,Micro Elements Pack,Fertilizers,4,Kairouan,5,2195.4,65
+2025,11,26,Crop Stress Reducer,Climate-adapted products,1,Nabeul,23,5373.26,57
+2025,11,26,Crop Stress Reducer,Climate-adapted products,2,Sfax,9,2102.58,57
+2025,11,26,Crop Stress Reducer,Climate-adapted products,4,Kairouan,3,700.86,57
+2025,11,26,Crop Stress Reducer,Climate-adapted products,5,Gabes,19,4438.78,57
+2025,11,27,Irrigation Filter Pack,Fungicides,1,Nabeul,21,3565.8,6
+2025,11,27,Irrigation Filter Pack,Fungicides,3,Beja,11,1867.8,6
+2025,11,27,Irrigation Filter Pack,Fungicides,4,Kairouan,8,1358.4,6
+2025,11,27,Irrigation Filter Pack,Fungicides,5,Gabes,2,339.6,6
+2025,11,28,Soil Moisture Sensor,Fertilizers,1,Nabeul,9,1757.7,57
+2025,11,28,Soil Moisture Sensor,Fertilizers,3,Beja,4,781.2,57
+2025,11,28,Soil Moisture Sensor,Fertilizers,4,Kairouan,15,2929.5,57
+2025,11,28,Soil Moisture Sensor,Fertilizers,5,Gabes,4,781.2,57
+2025,11,29,Climate Smart Pack,Seeds,1,Nabeul,4,353.64,14
+2025,11,29,Climate Smart Pack,Seeds,5,Gabes,8,707.28,14
+2025,11,3,Tomato Seeds Premium,Irrigation products,1,Nabeul,18,1615.68,51
+2025,11,3,Tomato Seeds Premium,Irrigation products,4,Kairouan,9,807.84,51
+2025,11,3,Tomato Seeds Premium,Irrigation products,5,Gabes,7,628.32,51
+2025,11,30,Bio Stimulant Plus,Climate-adapted products,1,Nabeul,3,605.61,70
+2025,11,30,Bio Stimulant Plus,Climate-adapted products,5,Gabes,5,1009.35,70
+2025,11,4,Wheat Seeds Resistant,Seeds,4,Kairouan,18,4007.52,13
+2025,11,4,Wheat Seeds Resistant,Seeds,5,Gabes,2,445.28,13
+2025,11,5,Olive Tree Nutrient Pack,Irrigation products,3,Beja,10,4345.9,122
+2025,11,5,Olive Tree Nutrient Pack,Irrigation products,5,Gabes,5,2172.95,122
+2025,11,6,Anti-Fungal Treatment,Fertilizers,2,Sfax,9,2438.46,57
+2025,11,6,Anti-Fungal Treatment,Fertilizers,3,Beja,10,2709.4,57
+2025,11,7,Copper Fungicide,Soil treatment,2,Sfax,7,765.03,158
+2025,11,7,Copper Fungicide,Soil treatment,3,Beja,6,655.74,158
+2025,11,7,Copper Fungicide,Soil treatment,4,Kairouan,6,655.74,158
+2025,11,7,Copper Fungicide,Soil treatment,5,Gabes,14,1530.06,158
+2025,11,8,Drip Irrigation Kit,Irrigation products,1,Nabeul,10,3673.5,43
+2025,11,8,Drip Irrigation Kit,Irrigation products,4,Kairouan,9,3306.15,43
+2025,11,8,Drip Irrigation Kit,Irrigation products,5,Gabes,9,3306.15,43
+2025,11,9,Water Retention Granules,Pesticides,1,Nabeul,20,1086.2,188
+2025,11,9,Water Retention Granules,Pesticides,2,Sfax,3,162.93,188
+2025,11,9,Water Retention Granules,Pesticides,3,Beja,13,706.03,188
+2025,11,9,Water Retention Granules,Pesticides,4,Kairouan,13,706.03,188
+2025,12,1,NPK Fertilizer 20-20-20,Fertilizers,3,Beja,22,9899.12,16
+2025,12,1,NPK Fertilizer 20-20-20,Fertilizers,4,Kairouan,20,8999.2,16
+2025,12,10,Soil PH Corrector,Fertilizers,1,Nabeul,12,2511.0,198
+2025,12,10,Soil PH Corrector,Fertilizers,3,Beja,12,2511.0,198
+2025,12,10,Soil PH Corrector,Fertilizers,4,Kairouan,10,2092.5,198
+2025,12,11,Drought Shield Bio,Fungicides,1,Nabeul,14,1398.04,218
+2025,12,11,Drought Shield Bio,Fungicides,3,Beja,11,1098.46,218
+2025,12,11,Drought Shield Bio,Fungicides,4,Kairouan,14,1398.04,218
+2025,12,12,Humidity Control Spray,Fungicides,2,Sfax,10,2101.2,143
+2025,12,12,Humidity Control Spray,Fungicides,4,Kairouan,4,840.48,143
+2025,12,13,Potassium Booster,Fertilizers,1,Nabeul,14,2009.56,36
+2025,12,13,Potassium Booster,Fertilizers,2,Sfax,11,1578.94,36
+2025,12,13,Potassium Booster,Fertilizers,4,Kairouan,5,717.7,36
+2025,12,13,Potassium Booster,Fertilizers,5,Gabes,6,861.24,36
+2025,12,14,Nitrogen Booster,Soil treatment,3,Beja,25,4651.75,5
+2025,12,15,Citrus Growth Formula,Seeds,1,Nabeul,17,2988.6,152
+2025,12,15,Citrus Growth Formula,Seeds,2,Sfax,7,1230.6,152
+2025,12,15,Citrus Growth Formula,Seeds,3,Beja,7,1230.6,152
+2025,12,15,Citrus Growth Formula,Seeds,5,Gabes,9,1582.2,152
+2025,12,16,Vegetable Root Stimulator,Soil treatment,3,Beja,9,3591.45,5
+2025,12,16,Vegetable Root Stimulator,Soil treatment,4,Kairouan,6,2394.3,5
+2025,12,16,Vegetable Root Stimulator,Soil treatment,5,Gabes,8,3192.4,5
+2025,12,17,Cereal Yield Enhancer,Soil treatment,3,Beja,18,3559.14,65
+2025,12,18,Palm Tree Fertilizer,Fungicides,1,Nabeul,5,1077.35,26
+2025,12,18,Palm Tree Fertilizer,Fungicides,3,Beja,18,3878.46,26
+2025,12,18,Palm Tree Fertilizer,Fungicides,4,Kairouan,9,1939.23,26
+2025,12,18,Palm Tree Fertilizer,Fungicides,5,Gabes,12,2585.64,26
+2025,12,19,Salinity Control Product,Soil treatment,1,Nabeul,6,770.4,51
+2025,12,19,Salinity Control Product,Soil treatment,3,Beja,16,2054.4,51
+2025,12,19,Salinity Control Product,Soil treatment,4,Kairouan,4,513.6,51
+2025,12,2,Organic Compost Mix,Soil treatment,1,Nabeul,12,505.32,132
+2025,12,2,Organic Compost Mix,Soil treatment,3,Beja,34,1431.74,132
+2025,12,2,Organic Compost Mix,Soil treatment,4,Kairouan,9,378.99,132
+2025,12,2,Organic Compost Mix,Soil treatment,5,Gabes,13,547.43,132
+2025,12,20,Greenhouse Pest Control,Fungicides,1,Nabeul,8,3588.56,43
+2025,12,20,Greenhouse Pest Control,Fungicides,3,Beja,11,4934.27,43
+2025,12,20,Greenhouse Pest Control,Fungicides,5,Gabes,11,4934.27,43
+2025,12,21,Aphid Control Solution,Pesticides,2,Sfax,11,1352.78,111
+2025,12,21,Aphid Control Solution,Pesticides,3,Beja,9,1106.82,111
+2025,12,21,Aphid Control Solution,Pesticides,4,Kairouan,7,860.86,111
+2025,12,21,Aphid Control Solution,Pesticides,5,Gabes,1,122.98,111
+2025,12,22,Mildew Protection Spray,Climate-adapted products,1,Nabeul,19,6048.08,34
+2025,12,23,Seed Germination Booster,Irrigation products,1,Nabeul,9,3960.54,27
+2025,12,23,Seed Germination Booster,Irrigation products,2,Sfax,9,3960.54,27
+2025,12,23,Seed Germination Booster,Irrigation products,3,Beja,3,1320.18,27
+2025,12,23,Seed Germination Booster,Irrigation products,4,Kairouan,6,2640.36,27
+2025,12,23,Seed Germination Booster,Irrigation products,5,Gabes,9,3960.54,27
+2025,12,24,Foliar Nutrition Mix,Pesticides,1,Nabeul,9,911.34,5
+2025,12,24,Foliar Nutrition Mix,Pesticides,4,Kairouan,15,1518.9,5
+2025,12,24,Foliar Nutrition Mix,Pesticides,5,Gabes,6,607.56,5
+2025,12,25,Micro Elements Pack,Fertilizers,1,Nabeul,4,1756.32,65
+2025,12,25,Micro Elements Pack,Fertilizers,2,Sfax,12,5268.96,65
+2025,12,25,Micro Elements Pack,Fertilizers,3,Beja,3,1317.24,65
+2025,12,25,Micro Elements Pack,Fertilizers,4,Kairouan,19,8342.52,65
+2025,12,25,Micro Elements Pack,Fertilizers,5,Gabes,11,4829.88,65
+2025,12,26,Crop Stress Reducer,Climate-adapted products,1,Nabeul,6,1401.72,57
+2025,12,26,Crop Stress Reducer,Climate-adapted products,2,Sfax,5,1168.1,57
+2025,12,26,Crop Stress Reducer,Climate-adapted products,5,Gabes,10,2336.2,57
+2025,12,27,Irrigation Filter Pack,Fungicides,2,Sfax,1,169.8,6
+2025,12,27,Irrigation Filter Pack,Fungicides,3,Beja,6,1018.8,6
+2025,12,28,Soil Moisture Sensor,Fertilizers,1,Nabeul,7,1367.1,57
+2025,12,28,Soil Moisture Sensor,Fertilizers,2,Sfax,2,390.6,57
+2025,12,28,Soil Moisture Sensor,Fertilizers,3,Beja,4,781.2,57
+2025,12,28,Soil Moisture Sensor,Fertilizers,4,Kairouan,6,1171.8,57
+2025,12,29,Climate Smart Pack,Seeds,3,Beja,14,1237.74,14
+2025,12,29,Climate Smart Pack,Seeds,4,Kairouan,10,884.1,14
+2025,12,3,Tomato Seeds Premium,Irrigation products,1,Nabeul,10,897.6,51
+2025,12,30,Bio Stimulant Plus,Climate-adapted products,1,Nabeul,9,1816.83,70
+2025,12,30,Bio Stimulant Plus,Climate-adapted products,2,Sfax,11,2220.57,70
+2025,12,30,Bio Stimulant Plus,Climate-adapted products,4,Kairouan,8,1614.96,70
+2025,12,30,Bio Stimulant Plus,Climate-adapted products,5,Gabes,6,1211.22,70
+2025,12,4,Wheat Seeds Resistant,Seeds,1,Nabeul,3,667.92,13
+2025,12,4,Wheat Seeds Resistant,Seeds,3,Beja,8,1781.12,13
+2025,12,5,Olive Tree Nutrient Pack,Irrigation products,4,Kairouan,11,4780.49,122
+2025,12,5,Olive Tree Nutrient Pack,Irrigation products,5,Gabes,7,3042.13,122
+2025,12,6,Anti-Fungal Treatment,Fertilizers,1,Nabeul,4,1083.76,57
+2025,12,6,Anti-Fungal Treatment,Fertilizers,3,Beja,14,3793.16,57
+2025,12,6,Anti-Fungal Treatment,Fertilizers,4,Kairouan,19,5147.86,57
+2025,12,6,Anti-Fungal Treatment,Fertilizers,5,Gabes,10,2709.4,57
+2025,12,7,Copper Fungicide,Soil treatment,1,Nabeul,5,546.45,158
+2025,12,7,Copper Fungicide,Soil treatment,3,Beja,2,218.58,158
+2025,12,7,Copper Fungicide,Soil treatment,4,Kairouan,4,437.16,158
+2025,12,7,Copper Fungicide,Soil treatment,5,Gabes,8,874.32,158
+2025,12,8,Drip Irrigation Kit,Irrigation products,1,Nabeul,4,1469.4,43
+2025,12,8,Drip Irrigation Kit,Irrigation products,4,Kairouan,5,1836.75,43
+2025,12,8,Drip Irrigation Kit,Irrigation products,5,Gabes,6,2204.1,43
+2025,12,9,Water Retention Granules,Pesticides,1,Nabeul,8,434.48,188
+2025,12,9,Water Retention Granules,Pesticides,3,Beja,8,434.48,188
+2025,12,9,Water Retention Granules,Pesticides,5,Gabes,4,217.24,188
+2025,6,1,NPK Fertilizer 20-20-20,Fertilizers,2,Sfax,1,449.96,16
+2025,6,1,NPK Fertilizer 20-20-20,Fertilizers,3,Beja,4,1799.84,16
+2025,6,1,NPK Fertilizer 20-20-20,Fertilizers,4,Kairouan,5,2249.8,16
+2025,6,10,Soil PH Corrector,Fertilizers,1,Nabeul,12,2511.0,198
+2025,6,10,Soil PH Corrector,Fertilizers,2,Sfax,5,1046.25,198
+2025,6,10,Soil PH Corrector,Fertilizers,3,Beja,9,1883.25,198
+2025,6,10,Soil PH Corrector,Fertilizers,5,Gabes,11,2301.75,198
+2025,6,11,Drought Shield Bio,Fungicides,1,Nabeul,13,1298.18,218
+2025,6,11,Drought Shield Bio,Fungicides,3,Beja,3,299.58,218
+2025,6,12,Humidity Control Spray,Fungicides,1,Nabeul,12,2521.44,143
+2025,6,12,Humidity Control Spray,Fungicides,4,Kairouan,5,1050.6,143
+2025,6,13,Potassium Booster,Fertilizers,1,Nabeul,2,287.08,36
+2025,6,13,Potassium Booster,Fertilizers,2,Sfax,4,574.16,36
+2025,6,13,Potassium Booster,Fertilizers,5,Gabes,16,2296.64,36
+2025,6,14,Nitrogen Booster,Soil treatment,2,Sfax,9,1674.63,5
+2025,6,15,Citrus Growth Formula,Seeds,1,Nabeul,9,1582.2,152
+2025,6,15,Citrus Growth Formula,Seeds,3,Beja,7,1230.6,152
+2025,6,15,Citrus Growth Formula,Seeds,5,Gabes,5,879.0,152
+2025,6,16,Vegetable Root Stimulator,Soil treatment,1,Nabeul,7,2793.35,5
+2025,6,16,Vegetable Root Stimulator,Soil treatment,2,Sfax,4,1596.2,5
+2025,6,16,Vegetable Root Stimulator,Soil treatment,4,Kairouan,17,6783.85,5
+2025,6,17,Cereal Yield Enhancer,Soil treatment,1,Nabeul,8,1581.84,65
+2025,6,17,Cereal Yield Enhancer,Soil treatment,3,Beja,7,1384.11,65
+2025,6,17,Cereal Yield Enhancer,Soil treatment,4,Kairouan,11,2175.03,65
+2025,6,18,Palm Tree Fertilizer,Fungicides,1,Nabeul,23,4955.81,26
+2025,6,18,Palm Tree Fertilizer,Fungicides,2,Sfax,8,1723.76,26
+2025,6,18,Palm Tree Fertilizer,Fungicides,5,Gabes,13,2801.11,26
+2025,6,19,Salinity Control Product,Soil treatment,1,Nabeul,3,385.2,51
+2025,6,19,Salinity Control Product,Soil treatment,2,Sfax,8,1027.2,51
+2025,6,19,Salinity Control Product,Soil treatment,3,Beja,12,1540.8,51
+2025,6,19,Salinity Control Product,Soil treatment,4,Kairouan,2,256.8,51
+2025,6,2,Organic Compost Mix,Soil treatment,1,Nabeul,4,168.44,132
+2025,6,2,Organic Compost Mix,Soil treatment,2,Sfax,15,631.65,132
+2025,6,2,Organic Compost Mix,Soil treatment,3,Beja,21,884.31,132
+2025,6,20,Greenhouse Pest Control,Fungicides,5,Gabes,5,2242.85,43
+2025,6,21,Aphid Control Solution,Pesticides,1,Nabeul,2,245.96,111
+2025,6,21,Aphid Control Solution,Pesticides,3,Beja,6,737.88,111
+2025,6,21,Aphid Control Solution,Pesticides,5,Gabes,16,1967.68,111
+2025,6,22,Mildew Protection Spray,Climate-adapted products,1,Nabeul,15,4774.8,34
+2025,6,22,Mildew Protection Spray,Climate-adapted products,2,Sfax,11,3501.52,34
+2025,6,22,Mildew Protection Spray,Climate-adapted products,5,Gabes,6,1909.92,34
+2025,6,23,Seed Germination Booster,Irrigation products,1,Nabeul,16,7040.96,27
+2025,6,23,Seed Germination Booster,Irrigation products,2,Sfax,10,4400.6,27
+2025,6,23,Seed Germination Booster,Irrigation products,3,Beja,15,6600.9,27
+2025,6,23,Seed Germination Booster,Irrigation products,4,Kairouan,8,3520.48,27
+2025,6,23,Seed Germination Booster,Irrigation products,5,Gabes,1,440.06,27
+2025,6,24,Foliar Nutrition Mix,Pesticides,1,Nabeul,13,1316.38,5
+2025,6,24,Foliar Nutrition Mix,Pesticides,2,Sfax,2,202.52,5
+2025,6,25,Micro Elements Pack,Fertilizers,1,Nabeul,14,6147.12,65
+2025,6,25,Micro Elements Pack,Fertilizers,3,Beja,6,2634.48,65
+2025,6,25,Micro Elements Pack,Fertilizers,4,Kairouan,11,4829.88,65
+2025,6,26,Crop Stress Reducer,Climate-adapted products,1,Nabeul,5,1168.1,57
+2025,6,26,Crop Stress Reducer,Climate-adapted products,3,Beja,26,6074.12,57
+2025,6,26,Crop Stress Reducer,Climate-adapted products,4,Kairouan,6,1401.72,57
+2025,6,27,Irrigation Filter Pack,Fungicides,1,Nabeul,14,2377.2,6
+2025,6,27,Irrigation Filter Pack,Fungicides,5,Gabes,8,1358.4,6
+2025,6,28,Soil Moisture Sensor,Fertilizers,1,Nabeul,12,2343.6,57
+2025,6,29,Climate Smart Pack,Seeds,4,Kairouan,6,530.46,14
+2025,6,3,Tomato Seeds Premium,Irrigation products,1,Nabeul,12,1077.12,51
+2025,6,3,Tomato Seeds Premium,Irrigation products,2,Sfax,1,89.76,51
+2025,6,3,Tomato Seeds Premium,Irrigation products,4,Kairouan,2,179.52,51
+2025,6,3,Tomato Seeds Premium,Irrigation products,5,Gabes,11,987.36,51
+2025,6,30,Bio Stimulant Plus,Climate-adapted products,1,Nabeul,14,2826.18,70
+2025,6,30,Bio Stimulant Plus,Climate-adapted products,3,Beja,7,1413.09,70
+2025,6,30,Bio Stimulant Plus,Climate-adapted products,4,Kairouan,4,807.48,70
+2025,6,4,Wheat Seeds Resistant,Seeds,2,Sfax,9,2003.76,13
+2025,6,4,Wheat Seeds Resistant,Seeds,5,Gabes,12,2671.68,13
+2025,6,5,Olive Tree Nutrient Pack,Irrigation products,1,Nabeul,30,13037.7,122
+2025,6,5,Olive Tree Nutrient Pack,Irrigation products,2,Sfax,7,3042.13,122
+2025,6,6,Anti-Fungal Treatment,Fertilizers,1,Nabeul,12,3251.28,57
+2025,6,6,Anti-Fungal Treatment,Fertilizers,3,Beja,5,1354.7,57
+2025,6,7,Copper Fungicide,Soil treatment,1,Nabeul,6,655.74,158
+2025,6,7,Copper Fungicide,Soil treatment,2,Sfax,19,2076.51,158
+2025,6,7,Copper Fungicide,Soil treatment,3,Beja,10,1092.9,158
+2025,6,8,Drip Irrigation Kit,Irrigation products,1,Nabeul,7,2571.45,43
+2025,6,8,Drip Irrigation Kit,Irrigation products,2,Sfax,9,3306.15,43
+2025,6,8,Drip Irrigation Kit,Irrigation products,3,Beja,10,3673.5,43
+2025,6,8,Drip Irrigation Kit,Irrigation products,5,Gabes,10,3673.5,43
+2025,6,9,Water Retention Granules,Pesticides,4,Kairouan,10,543.1,188
+2025,7,1,NPK Fertilizer 20-20-20,Fertilizers,3,Beja,11,4949.56,16
+2025,7,1,NPK Fertilizer 20-20-20,Fertilizers,5,Gabes,6,2699.76,16
+2025,7,10,Soil PH Corrector,Fertilizers,1,Nabeul,18,3766.5,198
+2025,7,10,Soil PH Corrector,Fertilizers,2,Sfax,7,1464.75,198
+2025,7,10,Soil PH Corrector,Fertilizers,3,Beja,22,4603.5,198
+2025,7,10,Soil PH Corrector,Fertilizers,4,Kairouan,9,1883.25,198
+2025,7,10,Soil PH Corrector,Fertilizers,5,Gabes,14,2929.5,198
+2025,7,11,Drought Shield Bio,Fungicides,3,Beja,12,1198.32,218
+2025,7,11,Drought Shield Bio,Fungicides,4,Kairouan,5,499.3,218
+2025,7,12,Humidity Control Spray,Fungicides,1,Nabeul,11,2311.32,143
+2025,7,12,Humidity Control Spray,Fungicides,2,Sfax,8,1680.96,143
+2025,7,12,Humidity Control Spray,Fungicides,3,Beja,9,1891.08,143
+2025,7,12,Humidity Control Spray,Fungicides,5,Gabes,6,1260.72,143
+2025,7,13,Potassium Booster,Fertilizers,1,Nabeul,5,717.7,36
+2025,7,13,Potassium Booster,Fertilizers,3,Beja,22,3157.88,36
+2025,7,13,Potassium Booster,Fertilizers,4,Kairouan,8,1148.32,36
+2025,7,13,Potassium Booster,Fertilizers,5,Gabes,22,3157.88,36
+2025,7,14,Nitrogen Booster,Soil treatment,1,Nabeul,7,1302.49,5
+2025,7,14,Nitrogen Booster,Soil treatment,2,Sfax,11,2046.77,5
+2025,7,14,Nitrogen Booster,Soil treatment,3,Beja,13,2418.91,5
+2025,7,14,Nitrogen Booster,Soil treatment,5,Gabes,2,372.14,5
+2025,7,15,Citrus Growth Formula,Seeds,1,Nabeul,5,879.0,152
+2025,7,15,Citrus Growth Formula,Seeds,2,Sfax,5,879.0,152
+2025,7,15,Citrus Growth Formula,Seeds,3,Beja,1,175.8,152
+2025,7,15,Citrus Growth Formula,Seeds,4,Kairouan,11,1933.8,152
+2025,7,15,Citrus Growth Formula,Seeds,5,Gabes,5,879.0,152
+2025,7,16,Vegetable Root Stimulator,Soil treatment,1,Nabeul,6,2394.3,5
+2025,7,16,Vegetable Root Stimulator,Soil treatment,3,Beja,12,4788.6,5
+2025,7,16,Vegetable Root Stimulator,Soil treatment,4,Kairouan,26,10375.3,5
+2025,7,16,Vegetable Root Stimulator,Soil treatment,5,Gabes,5,1995.25,5
+2025,7,17,Cereal Yield Enhancer,Soil treatment,1,Nabeul,11,2175.03,65
+2025,7,17,Cereal Yield Enhancer,Soil treatment,3,Beja,11,2175.03,65
+2025,7,17,Cereal Yield Enhancer,Soil treatment,4,Kairouan,11,2175.03,65
+2025,7,17,Cereal Yield Enhancer,Soil treatment,5,Gabes,8,1581.84,65
+2025,7,18,Palm Tree Fertilizer,Fungicides,1,Nabeul,11,2370.17,26
+2025,7,18,Palm Tree Fertilizer,Fungicides,3,Beja,16,3447.52,26
+2025,7,18,Palm Tree Fertilizer,Fungicides,5,Gabes,9,1939.23,26
+2025,7,19,Salinity Control Product,Soil treatment,3,Beja,7,898.8,51
+2025,7,2,Organic Compost Mix,Soil treatment,1,Nabeul,17,715.87,132
+2025,7,2,Organic Compost Mix,Soil treatment,3,Beja,4,168.44,132
+2025,7,2,Organic Compost Mix,Soil treatment,5,Gabes,5,210.55,132
+2025,7,20,Greenhouse Pest Control,Fungicides,3,Beja,1,448.57,43
+2025,7,20,Greenhouse Pest Control,Fungicides,5,Gabes,11,4934.27,43
+2025,7,21,Aphid Control Solution,Pesticides,2,Sfax,8,983.84,111
+2025,7,21,Aphid Control Solution,Pesticides,3,Beja,22,2705.56,111
+2025,7,21,Aphid Control Solution,Pesticides,5,Gabes,5,614.9,111
+2025,7,22,Mildew Protection Spray,Climate-adapted products,2,Sfax,3,954.96,34
+2025,7,22,Mildew Protection Spray,Climate-adapted products,3,Beja,13,4138.16,34
+2025,7,22,Mildew Protection Spray,Climate-adapted products,4,Kairouan,7,2228.24,34
+2025,7,22,Mildew Protection Spray,Climate-adapted products,5,Gabes,11,3501.52,34
+2025,7,23,Seed Germination Booster,Irrigation products,3,Beja,23,10121.38,27
+2025,7,23,Seed Germination Booster,Irrigation products,4,Kairouan,8,3520.48,27
+2025,7,24,Foliar Nutrition Mix,Pesticides,3,Beja,18,1822.68,5
+2025,7,25,Micro Elements Pack,Fertilizers,3,Beja,4,1756.32,65
+2025,7,25,Micro Elements Pack,Fertilizers,4,Kairouan,6,2634.48,65
+2025,7,25,Micro Elements Pack,Fertilizers,5,Gabes,14,6147.12,65
+2025,7,26,Crop Stress Reducer,Climate-adapted products,1,Nabeul,5,1168.1,57
+2025,7,27,Irrigation Filter Pack,Fungicides,1,Nabeul,17,2886.6,6
+2025,7,27,Irrigation Filter Pack,Fungicides,3,Beja,9,1528.2,6
+2025,7,28,Soil Moisture Sensor,Fertilizers,2,Sfax,9,1757.7,57
+2025,7,28,Soil Moisture Sensor,Fertilizers,3,Beja,18,3515.4,57
+2025,7,28,Soil Moisture Sensor,Fertilizers,4,Kairouan,2,390.6,57
+2025,7,28,Soil Moisture Sensor,Fertilizers,5,Gabes,12,2343.6,57
+2025,7,29,Climate Smart Pack,Seeds,1,Nabeul,4,353.64,14
+2025,7,29,Climate Smart Pack,Seeds,2,Sfax,7,618.87,14
+2025,7,29,Climate Smart Pack,Seeds,3,Beja,10,884.1,14
+2025,7,29,Climate Smart Pack,Seeds,5,Gabes,9,795.69,14
+2025,7,3,Tomato Seeds Premium,Irrigation products,3,Beja,1,89.76,51
+2025,7,3,Tomato Seeds Premium,Irrigation products,5,Gabes,7,628.32,51
+2025,7,30,Bio Stimulant Plus,Climate-adapted products,1,Nabeul,7,1413.09,70
+2025,7,30,Bio Stimulant Plus,Climate-adapted products,4,Kairouan,5,1009.35,70
+2025,7,4,Wheat Seeds Resistant,Seeds,1,Nabeul,8,1781.12,13
+2025,7,4,Wheat Seeds Resistant,Seeds,2,Sfax,10,2226.4,13
+2025,7,4,Wheat Seeds Resistant,Seeds,3,Beja,4,890.56,13
+2025,7,5,Olive Tree Nutrient Pack,Irrigation products,1,Nabeul,8,3476.72,122
+2025,7,5,Olive Tree Nutrient Pack,Irrigation products,2,Sfax,4,1738.36,122
+2025,7,5,Olive Tree Nutrient Pack,Irrigation products,3,Beja,2,869.18,122
+2025,7,5,Olive Tree Nutrient Pack,Irrigation products,5,Gabes,10,4345.9,122
+2025,7,6,Anti-Fungal Treatment,Fertilizers,1,Nabeul,13,3522.22,57
+2025,7,6,Anti-Fungal Treatment,Fertilizers,3,Beja,9,2438.46,57
+2025,7,7,Copper Fungicide,Soil treatment,1,Nabeul,14,1530.06,158
+2025,7,7,Copper Fungicide,Soil treatment,4,Kairouan,10,1092.9,158
+2025,7,7,Copper Fungicide,Soil treatment,5,Gabes,6,655.74,158
+2025,7,8,Drip Irrigation Kit,Irrigation products,4,Kairouan,9,3306.15,43
+2025,7,9,Water Retention Granules,Pesticides,1,Nabeul,7,380.17,188
+2025,7,9,Water Retention Granules,Pesticides,2,Sfax,19,1031.89,188
+2025,7,9,Water Retention Granules,Pesticides,3,Beja,29,1574.99,188
+2025,8,1,NPK Fertilizer 20-20-20,Fertilizers,2,Sfax,8,3599.68,16
+2025,8,1,NPK Fertilizer 20-20-20,Fertilizers,3,Beja,18,8099.28,16
+2025,8,10,Soil PH Corrector,Fertilizers,1,Nabeul,5,1046.25,198
+2025,8,10,Soil PH Corrector,Fertilizers,3,Beja,5,1046.25,198
+2025,8,10,Soil PH Corrector,Fertilizers,5,Gabes,1,209.25,198
+2025,8,11,Drought Shield Bio,Fungicides,1,Nabeul,13,1298.18,218
+2025,8,11,Drought Shield Bio,Fungicides,3,Beja,14,1398.04,218
+2025,8,11,Drought Shield Bio,Fungicides,5,Gabes,8,798.88,218
+2025,8,12,Humidity Control Spray,Fungicides,1,Nabeul,18,3782.16,143
+2025,8,12,Humidity Control Spray,Fungicides,2,Sfax,8,1680.96,143
+2025,8,12,Humidity Control Spray,Fungicides,5,Gabes,10,2101.2,143
+2025,8,13,Potassium Booster,Fertilizers,1,Nabeul,27,3875.58,36
+2025,8,13,Potassium Booster,Fertilizers,2,Sfax,8,1148.32,36
+2025,8,13,Potassium Booster,Fertilizers,4,Kairouan,11,1578.94,36
+2025,8,14,Nitrogen Booster,Soil treatment,1,Nabeul,15,2791.05,5
+2025,8,14,Nitrogen Booster,Soil treatment,2,Sfax,7,1302.49,5
+2025,8,14,Nitrogen Booster,Soil treatment,4,Kairouan,2,372.14,5
+2025,8,14,Nitrogen Booster,Soil treatment,5,Gabes,5,930.35,5
+2025,8,15,Citrus Growth Formula,Seeds,1,Nabeul,5,879.0,152
+2025,8,15,Citrus Growth Formula,Seeds,2,Sfax,6,1054.8,152
+2025,8,15,Citrus Growth Formula,Seeds,5,Gabes,7,1230.6,152
+2025,8,16,Vegetable Root Stimulator,Soil treatment,2,Sfax,2,798.1,5
+2025,8,16,Vegetable Root Stimulator,Soil treatment,3,Beja,1,399.05,5
+2025,8,16,Vegetable Root Stimulator,Soil treatment,4,Kairouan,2,798.1,5
+2025,8,17,Cereal Yield Enhancer,Soil treatment,1,Nabeul,3,593.19,65
+2025,8,17,Cereal Yield Enhancer,Soil treatment,3,Beja,3,593.19,65
+2025,8,17,Cereal Yield Enhancer,Soil treatment,4,Kairouan,3,593.19,65
+2025,8,17,Cereal Yield Enhancer,Soil treatment,5,Gabes,10,1977.3,65
+2025,8,18,Palm Tree Fertilizer,Fungicides,1,Nabeul,9,1939.23,26
+2025,8,18,Palm Tree Fertilizer,Fungicides,2,Sfax,10,2154.7,26
+2025,8,18,Palm Tree Fertilizer,Fungicides,5,Gabes,8,1723.76,26
+2025,8,19,Salinity Control Product,Soil treatment,1,Nabeul,25,3210.0,51
+2025,8,19,Salinity Control Product,Soil treatment,2,Sfax,10,1284.0,51
+2025,8,19,Salinity Control Product,Soil treatment,3,Beja,7,898.8,51
+2025,8,19,Salinity Control Product,Soil treatment,5,Gabes,11,1412.4,51
+2025,8,2,Organic Compost Mix,Soil treatment,1,Nabeul,10,421.1,132
+2025,8,20,Greenhouse Pest Control,Fungicides,4,Kairouan,6,2691.42,43
+2025,8,20,Greenhouse Pest Control,Fungicides,5,Gabes,11,4934.27,43
+2025,8,21,Aphid Control Solution,Pesticides,1,Nabeul,19,2336.62,111
+2025,8,21,Aphid Control Solution,Pesticides,3,Beja,10,1229.8,111
+2025,8,21,Aphid Control Solution,Pesticides,4,Kairouan,8,983.84,111
+2025,8,21,Aphid Control Solution,Pesticides,5,Gabes,7,860.86,111
+2025,8,22,Mildew Protection Spray,Climate-adapted products,2,Sfax,17,5411.44,34
+2025,8,22,Mildew Protection Spray,Climate-adapted products,3,Beja,2,636.64,34
+2025,8,23,Seed Germination Booster,Irrigation products,2,Sfax,17,7481.02,27
+2025,8,23,Seed Germination Booster,Irrigation products,3,Beja,24,10561.44,27
+2025,8,23,Seed Germination Booster,Irrigation products,4,Kairouan,4,1760.24,27
+2025,8,24,Foliar Nutrition Mix,Pesticides,1,Nabeul,9,911.34,5
+2025,8,24,Foliar Nutrition Mix,Pesticides,3,Beja,6,607.56,5
+2025,8,24,Foliar Nutrition Mix,Pesticides,5,Gabes,10,1012.6,5
+2025,8,25,Micro Elements Pack,Fertilizers,1,Nabeul,11,4829.88,65
+2025,8,25,Micro Elements Pack,Fertilizers,5,Gabes,16,7025.28,65
+2025,8,26,Crop Stress Reducer,Climate-adapted products,1,Nabeul,10,2336.2,57
+2025,8,26,Crop Stress Reducer,Climate-adapted products,2,Sfax,3,700.86,57
+2025,8,26,Crop Stress Reducer,Climate-adapted products,4,Kairouan,3,700.86,57
+2025,8,26,Crop Stress Reducer,Climate-adapted products,5,Gabes,8,1868.96,57
+2025,8,27,Irrigation Filter Pack,Fungicides,1,Nabeul,12,2037.6,6
+2025,8,27,Irrigation Filter Pack,Fungicides,2,Sfax,9,1528.2,6
+2025,8,27,Irrigation Filter Pack,Fungicides,4,Kairouan,1,169.8,6
+2025,8,28,Soil Moisture Sensor,Fertilizers,5,Gabes,9,1757.7,57
+2025,8,29,Climate Smart Pack,Seeds,1,Nabeul,4,353.64,14
+2025,8,29,Climate Smart Pack,Seeds,2,Sfax,7,618.87,14
+2025,8,29,Climate Smart Pack,Seeds,5,Gabes,11,972.51,14
+2025,8,3,Tomato Seeds Premium,Irrigation products,1,Nabeul,11,987.36,51
+2025,8,3,Tomato Seeds Premium,Irrigation products,2,Sfax,12,1077.12,51
+2025,8,30,Bio Stimulant Plus,Climate-adapted products,1,Nabeul,10,2018.7,70
+2025,8,30,Bio Stimulant Plus,Climate-adapted products,5,Gabes,7,1413.09,70
+2025,8,4,Wheat Seeds Resistant,Seeds,2,Sfax,11,2449.04,13
+2025,8,4,Wheat Seeds Resistant,Seeds,3,Beja,6,1335.84,13
+2025,8,4,Wheat Seeds Resistant,Seeds,5,Gabes,13,2894.32,13
+2025,8,5,Olive Tree Nutrient Pack,Irrigation products,1,Nabeul,4,1738.36,122
+2025,8,5,Olive Tree Nutrient Pack,Irrigation products,2,Sfax,7,3042.13,122
+2025,8,5,Olive Tree Nutrient Pack,Irrigation products,5,Gabes,3,1303.77,122
+2025,8,6,Anti-Fungal Treatment,Fertilizers,1,Nabeul,15,4064.1,57
+2025,8,6,Anti-Fungal Treatment,Fertilizers,3,Beja,6,1625.64,57
+2025,8,6,Anti-Fungal Treatment,Fertilizers,5,Gabes,25,6773.5,57
+2025,8,7,Copper Fungicide,Soil treatment,1,Nabeul,1,109.29,158
+2025,8,7,Copper Fungicide,Soil treatment,3,Beja,12,1311.48,158
+2025,8,9,Water Retention Granules,Pesticides,5,Gabes,10,543.1,188
+2025,9,1,NPK Fertilizer 20-20-20,Fertilizers,1,Nabeul,9,4049.64,16
+2025,9,1,NPK Fertilizer 20-20-20,Fertilizers,2,Sfax,4,1799.84,16
+2025,9,1,NPK Fertilizer 20-20-20,Fertilizers,3,Beja,10,4499.6,16
+2025,9,1,NPK Fertilizer 20-20-20,Fertilizers,4,Kairouan,2,899.92,16
+2025,9,10,Soil PH Corrector,Fertilizers,1,Nabeul,7,1464.75,198
+2025,9,10,Soil PH Corrector,Fertilizers,2,Sfax,9,1883.25,198
+2025,9,10,Soil PH Corrector,Fertilizers,3,Beja,1,209.25,198
+2025,9,10,Soil PH Corrector,Fertilizers,5,Gabes,23,4812.75,198
+2025,9,11,Drought Shield Bio,Fungicides,1,Nabeul,8,798.88,218
+2025,9,11,Drought Shield Bio,Fungicides,2,Sfax,6,599.16,218
+2025,9,11,Drought Shield Bio,Fungicides,3,Beja,14,1398.04,218
+2025,9,11,Drought Shield Bio,Fungicides,4,Kairouan,3,299.58,218
+2025,9,11,Drought Shield Bio,Fungicides,5,Gabes,12,1198.32,218
+2025,9,12,Humidity Control Spray,Fungicides,1,Nabeul,6,1260.72,143
+2025,9,12,Humidity Control Spray,Fungicides,2,Sfax,5,1050.6,143
+2025,9,12,Humidity Control Spray,Fungicides,3,Beja,24,5042.88,143
+2025,9,12,Humidity Control Spray,Fungicides,4,Kairouan,12,2521.44,143
+2025,9,12,Humidity Control Spray,Fungicides,5,Gabes,27,5673.24,143
+2025,9,13,Potassium Booster,Fertilizers,2,Sfax,12,1722.48,36
+2025,9,13,Potassium Booster,Fertilizers,3,Beja,12,1722.48,36
+2025,9,13,Potassium Booster,Fertilizers,4,Kairouan,6,861.24,36
+2025,9,14,Nitrogen Booster,Soil treatment,1,Nabeul,11,2046.77,5
+2025,9,14,Nitrogen Booster,Soil treatment,3,Beja,8,1488.56,5
+2025,9,15,Citrus Growth Formula,Seeds,1,Nabeul,15,2637.0,152
+2025,9,15,Citrus Growth Formula,Seeds,4,Kairouan,11,1933.8,152
+2025,9,15,Citrus Growth Formula,Seeds,5,Gabes,21,3691.8,152
+2025,9,16,Vegetable Root Stimulator,Soil treatment,1,Nabeul,1,399.05,5
+2025,9,16,Vegetable Root Stimulator,Soil treatment,3,Beja,11,4389.55,5
+2025,9,16,Vegetable Root Stimulator,Soil treatment,4,Kairouan,7,2793.35,5
+2025,9,16,Vegetable Root Stimulator,Soil treatment,5,Gabes,7,2793.35,5
+2025,9,17,Cereal Yield Enhancer,Soil treatment,1,Nabeul,5,988.65,65
+2025,9,17,Cereal Yield Enhancer,Soil treatment,2,Sfax,9,1779.57,65
+2025,9,17,Cereal Yield Enhancer,Soil treatment,4,Kairouan,3,593.19,65
+2025,9,18,Palm Tree Fertilizer,Fungicides,1,Nabeul,18,3878.46,26
+2025,9,18,Palm Tree Fertilizer,Fungicides,3,Beja,9,1939.23,26
+2025,9,18,Palm Tree Fertilizer,Fungicides,4,Kairouan,11,2370.17,26
+2025,9,18,Palm Tree Fertilizer,Fungicides,5,Gabes,5,1077.35,26
+2025,9,19,Salinity Control Product,Soil treatment,5,Gabes,5,642.0,51
+2025,9,2,Organic Compost Mix,Soil treatment,1,Nabeul,3,126.33,132
+2025,9,2,Organic Compost Mix,Soil treatment,2,Sfax,5,210.55,132
+2025,9,2,Organic Compost Mix,Soil treatment,3,Beja,30,1263.3,132
+2025,9,2,Organic Compost Mix,Soil treatment,5,Gabes,10,421.1,132
+2025,9,20,Greenhouse Pest Control,Fungicides,1,Nabeul,9,4037.13,43
+2025,9,20,Greenhouse Pest Control,Fungicides,2,Sfax,5,2242.85,43
+2025,9,20,Greenhouse Pest Control,Fungicides,3,Beja,7,3139.99,43
+2025,9,20,Greenhouse Pest Control,Fungicides,4,Kairouan,12,5382.84,43
+2025,9,20,Greenhouse Pest Control,Fungicides,5,Gabes,10,4485.7,43
+2025,9,21,Aphid Control Solution,Pesticides,2,Sfax,3,368.94,111
+2025,9,21,Aphid Control Solution,Pesticides,5,Gabes,13,1598.74,111
+2025,9,22,Mildew Protection Spray,Climate-adapted products,1,Nabeul,22,7003.04,34
+2025,9,22,Mildew Protection Spray,Climate-adapted products,5,Gabes,10,3183.2,34
+2025,9,23,Seed Germination Booster,Irrigation products,2,Sfax,23,10121.38,27
+2025,9,23,Seed Germination Booster,Irrigation products,3,Beja,21,9241.26,27
+2025,9,23,Seed Germination Booster,Irrigation products,5,Gabes,28,12321.68,27
+2025,9,24,Foliar Nutrition Mix,Pesticides,1,Nabeul,21,2126.46,5
+2025,9,24,Foliar Nutrition Mix,Pesticides,2,Sfax,10,1012.6,5
+2025,9,24,Foliar Nutrition Mix,Pesticides,3,Beja,12,1215.12,5
+2025,9,24,Foliar Nutrition Mix,Pesticides,4,Kairouan,6,607.56,5
+2025,9,24,Foliar Nutrition Mix,Pesticides,5,Gabes,19,1923.94,5
+2025,9,25,Micro Elements Pack,Fertilizers,1,Nabeul,5,2195.4,65
+2025,9,25,Micro Elements Pack,Fertilizers,2,Sfax,8,3512.64,65
+2025,9,25,Micro Elements Pack,Fertilizers,3,Beja,19,8342.52,65
+2025,9,25,Micro Elements Pack,Fertilizers,4,Kairouan,19,8342.52,65
+2025,9,25,Micro Elements Pack,Fertilizers,5,Gabes,13,5708.04,65
+2025,9,26,Crop Stress Reducer,Climate-adapted products,1,Nabeul,2,467.24,57
+2025,9,26,Crop Stress Reducer,Climate-adapted products,2,Sfax,12,2803.44,57
+2025,9,26,Crop Stress Reducer,Climate-adapted products,3,Beja,10,2336.2,57
+2025,9,26,Crop Stress Reducer,Climate-adapted products,4,Kairouan,13,3037.06,57
+2025,9,27,Irrigation Filter Pack,Fungicides,1,Nabeul,30,5094.0,6
+2025,9,27,Irrigation Filter Pack,Fungicides,2,Sfax,2,339.6,6
+2025,9,27,Irrigation Filter Pack,Fungicides,3,Beja,13,2207.4,6
+2025,9,27,Irrigation Filter Pack,Fungicides,4,Kairouan,7,1188.6,6
+2025,9,27,Irrigation Filter Pack,Fungicides,5,Gabes,9,1528.2,6
+2025,9,28,Soil Moisture Sensor,Fertilizers,3,Beja,19,3710.7,57
+2025,9,28,Soil Moisture Sensor,Fertilizers,5,Gabes,2,390.6,57
+2025,9,29,Climate Smart Pack,Seeds,1,Nabeul,2,176.82,14
+2025,9,29,Climate Smart Pack,Seeds,2,Sfax,6,530.46,14
+2025,9,29,Climate Smart Pack,Seeds,3,Beja,5,442.05,14
+2025,9,29,Climate Smart Pack,Seeds,5,Gabes,10,884.1,14
+2025,9,3,Tomato Seeds Premium,Irrigation products,2,Sfax,13,1166.88,51
+2025,9,3,Tomato Seeds Premium,Irrigation products,4,Kairouan,10,897.6,51
+2025,9,3,Tomato Seeds Premium,Irrigation products,5,Gabes,17,1525.92,51
+2025,9,30,Bio Stimulant Plus,Climate-adapted products,1,Nabeul,5,1009.35,70
+2025,9,30,Bio Stimulant Plus,Climate-adapted products,2,Sfax,4,807.48,70
+2025,9,30,Bio Stimulant Plus,Climate-adapted products,3,Beja,11,2220.57,70
+2025,9,30,Bio Stimulant Plus,Climate-adapted products,4,Kairouan,2,403.74,70
+2025,9,30,Bio Stimulant Plus,Climate-adapted products,5,Gabes,3,605.61,70
+2025,9,4,Wheat Seeds Resistant,Seeds,1,Nabeul,23,5120.72,13
+2025,9,4,Wheat Seeds Resistant,Seeds,2,Sfax,2,445.28,13
+2025,9,4,Wheat Seeds Resistant,Seeds,4,Kairouan,9,2003.76,13
+2025,9,4,Wheat Seeds Resistant,Seeds,5,Gabes,21,4675.44,13
+2025,9,5,Olive Tree Nutrient Pack,Irrigation products,1,Nabeul,40,17383.6,122
+2025,9,5,Olive Tree Nutrient Pack,Irrigation products,3,Beja,12,5215.08,122
+2025,9,5,Olive Tree Nutrient Pack,Irrigation products,5,Gabes,8,3476.72,122
+2025,9,6,Anti-Fungal Treatment,Fertilizers,1,Nabeul,31,8399.14,57
+2025,9,6,Anti-Fungal Treatment,Fertilizers,5,Gabes,6,1625.64,57
+2025,9,7,Copper Fungicide,Soil treatment,1,Nabeul,4,437.16,158
+2025,9,7,Copper Fungicide,Soil treatment,3,Beja,1,109.29,158
+2025,9,7,Copper Fungicide,Soil treatment,5,Gabes,1,109.29,158
+2025,9,8,Drip Irrigation Kit,Irrigation products,1,Nabeul,22,8081.7,43
+2025,9,8,Drip Irrigation Kit,Irrigation products,3,Beja,3,1102.05,43
+2025,9,9,Water Retention Granules,Pesticides,1,Nabeul,15,814.65,188
+2025,9,9,Water Retention Granules,Pesticides,2,Sfax,18,977.58,188
+2025,9,9,Water Retention Granules,Pesticides,3,Beja,2,108.62,188
+2025,9,9,Water Retention Granules,Pesticides,4,Kairouan,6,325.86,188
+2026,1,1,NPK Fertilizer 20-20-20,Fertilizers,1,Nabeul,9,4049.64,16
+2026,1,1,NPK Fertilizer 20-20-20,Fertilizers,2,Sfax,12,5399.52,16
+2026,1,1,NPK Fertilizer 20-20-20,Fertilizers,4,Kairouan,12,5399.52,16
+2026,1,10,Soil PH Corrector,Fertilizers,1,Nabeul,11,2301.75,198
+2026,1,10,Soil PH Corrector,Fertilizers,2,Sfax,5,1046.25,198
+2026,1,10,Soil PH Corrector,Fertilizers,4,Kairouan,3,627.75,198
+2026,1,10,Soil PH Corrector,Fertilizers,5,Gabes,2,418.5,198
+2026,1,11,Drought Shield Bio,Fungicides,1,Nabeul,11,1098.46,218
+2026,1,11,Drought Shield Bio,Fungicides,4,Kairouan,24,2396.64,218
+2026,1,12,Humidity Control Spray,Fungicides,1,Nabeul,5,1050.6,143
+2026,1,12,Humidity Control Spray,Fungicides,3,Beja,15,3151.8,143
+2026,1,12,Humidity Control Spray,Fungicides,4,Kairouan,6,1260.72,143
+2026,1,12,Humidity Control Spray,Fungicides,5,Gabes,12,2521.44,143
+2026,1,13,Potassium Booster,Fertilizers,1,Nabeul,11,1578.94,36
+2026,1,13,Potassium Booster,Fertilizers,4,Kairouan,4,574.16,36
+2026,1,14,Nitrogen Booster,Soil treatment,1,Nabeul,2,372.14,5
+2026,1,14,Nitrogen Booster,Soil treatment,4,Kairouan,1,186.07,5
+2026,1,14,Nitrogen Booster,Soil treatment,5,Gabes,2,372.14,5
+2026,1,15,Citrus Growth Formula,Seeds,1,Nabeul,9,1582.2,152
+2026,1,16,Vegetable Root Stimulator,Soil treatment,1,Nabeul,7,2793.35,5
+2026,1,16,Vegetable Root Stimulator,Soil treatment,2,Sfax,2,798.1,5
+2026,1,16,Vegetable Root Stimulator,Soil treatment,4,Kairouan,12,4788.6,5
+2026,1,17,Cereal Yield Enhancer,Soil treatment,1,Nabeul,8,1581.84,65
+2026,1,18,Palm Tree Fertilizer,Fungicides,1,Nabeul,8,1723.76,26
+2026,1,18,Palm Tree Fertilizer,Fungicides,4,Kairouan,17,3662.99,26
+2026,1,18,Palm Tree Fertilizer,Fungicides,5,Gabes,6,1292.82,26
+2026,1,19,Salinity Control Product,Soil treatment,2,Sfax,5,642.0,51
+2026,1,19,Salinity Control Product,Soil treatment,3,Beja,9,1155.6,51
+2026,1,2,Organic Compost Mix,Soil treatment,4,Kairouan,6,252.66,132
+2026,1,20,Greenhouse Pest Control,Fungicides,1,Nabeul,15,6728.55,43
+2026,1,20,Greenhouse Pest Control,Fungicides,2,Sfax,5,2242.85,43
+2026,1,20,Greenhouse Pest Control,Fungicides,3,Beja,9,4037.13,43
+2026,1,20,Greenhouse Pest Control,Fungicides,5,Gabes,1,448.57,43
+2026,1,21,Aphid Control Solution,Pesticides,1,Nabeul,15,1844.7,111
+2026,1,21,Aphid Control Solution,Pesticides,2,Sfax,3,368.94,111
+2026,1,22,Mildew Protection Spray,Climate-adapted products,2,Sfax,4,1273.28,34
+2026,1,22,Mildew Protection Spray,Climate-adapted products,3,Beja,8,2546.56,34
+2026,1,22,Mildew Protection Spray,Climate-adapted products,4,Kairouan,11,3501.52,34
+2026,1,23,Seed Germination Booster,Irrigation products,3,Beja,6,2640.36,27
+2026,1,24,Foliar Nutrition Mix,Pesticides,1,Nabeul,23,2328.98,5
+2026,1,24,Foliar Nutrition Mix,Pesticides,2,Sfax,1,101.26,5
+2026,1,24,Foliar Nutrition Mix,Pesticides,4,Kairouan,3,303.78,5
+2026,1,25,Micro Elements Pack,Fertilizers,1,Nabeul,8,3512.64,65
+2026,1,25,Micro Elements Pack,Fertilizers,3,Beja,7,3073.56,65
+2026,1,25,Micro Elements Pack,Fertilizers,4,Kairouan,3,1317.24,65
+2026,1,26,Crop Stress Reducer,Climate-adapted products,2,Sfax,9,2102.58,57
+2026,1,26,Crop Stress Reducer,Climate-adapted products,5,Gabes,4,934.48,57
+2026,1,27,Irrigation Filter Pack,Fungicides,1,Nabeul,11,1867.8,6
+2026,1,27,Irrigation Filter Pack,Fungicides,4,Kairouan,10,1698.0,6
+2026,1,27,Irrigation Filter Pack,Fungicides,5,Gabes,10,1698.0,6
+2026,1,28,Soil Moisture Sensor,Fertilizers,3,Beja,1,195.3,57
+2026,1,28,Soil Moisture Sensor,Fertilizers,4,Kairouan,12,2343.6,57
+2026,1,28,Soil Moisture Sensor,Fertilizers,5,Gabes,11,2148.3,57
+2026,1,29,Climate Smart Pack,Seeds,1,Nabeul,11,972.51,14
+2026,1,29,Climate Smart Pack,Seeds,3,Beja,3,265.23,14
+2026,1,29,Climate Smart Pack,Seeds,5,Gabes,11,972.51,14
+2026,1,3,Tomato Seeds Premium,Irrigation products,1,Nabeul,3,269.28,51
+2026,1,3,Tomato Seeds Premium,Irrigation products,3,Beja,1,89.76,51
+2026,1,3,Tomato Seeds Premium,Irrigation products,4,Kairouan,2,179.52,51
+2026,1,3,Tomato Seeds Premium,Irrigation products,5,Gabes,2,179.52,51
+2026,1,30,Bio Stimulant Plus,Climate-adapted products,3,Beja,7,1413.09,70
+2026,1,30,Bio Stimulant Plus,Climate-adapted products,4,Kairouan,17,3431.79,70
+2026,1,4,Wheat Seeds Resistant,Seeds,1,Nabeul,4,890.56,13
+2026,1,4,Wheat Seeds Resistant,Seeds,2,Sfax,4,890.56,13
+2026,1,4,Wheat Seeds Resistant,Seeds,3,Beja,4,890.56,13
+2026,1,4,Wheat Seeds Resistant,Seeds,4,Kairouan,10,2226.4,13
+2026,1,5,Olive Tree Nutrient Pack,Irrigation products,1,Nabeul,16,6953.44,122
+2026,1,5,Olive Tree Nutrient Pack,Irrigation products,3,Beja,8,3476.72,122
+2026,1,5,Olive Tree Nutrient Pack,Irrigation products,4,Kairouan,8,3476.72,122
+2026,1,6,Anti-Fungal Treatment,Fertilizers,2,Sfax,10,2709.4,57
+2026,1,6,Anti-Fungal Treatment,Fertilizers,4,Kairouan,9,2438.46,57
+2026,1,6,Anti-Fungal Treatment,Fertilizers,5,Gabes,8,2167.52,57
+2026,1,7,Copper Fungicide,Soil treatment,3,Beja,8,874.32,158
+2026,1,7,Copper Fungicide,Soil treatment,4,Kairouan,7,765.03,158
+2026,1,8,Drip Irrigation Kit,Irrigation products,3,Beja,2,734.7,43
+2026,1,8,Drip Irrigation Kit,Irrigation products,4,Kairouan,5,1836.75,43
+2026,1,8,Drip Irrigation Kit,Irrigation products,5,Gabes,8,2938.8,43
+2026,1,9,Water Retention Granules,Pesticides,1,Nabeul,6,325.86,188
+2026,1,9,Water Retention Granules,Pesticides,5,Gabes,10,543.1,188
+2026,2,1,NPK Fertilizer 20-20-20,Fertilizers,1,Nabeul,12,5399.52,16
+2026,2,1,NPK Fertilizer 20-20-20,Fertilizers,3,Beja,5,2249.8,16
+2026,2,1,NPK Fertilizer 20-20-20,Fertilizers,4,Kairouan,9,4049.64,16
+2026,2,1,NPK Fertilizer 20-20-20,Fertilizers,5,Gabes,11,4949.56,16
+2026,2,10,Soil PH Corrector,Fertilizers,1,Nabeul,18,3766.5,198
+2026,2,10,Soil PH Corrector,Fertilizers,2,Sfax,10,2092.5,198
+2026,2,10,Soil PH Corrector,Fertilizers,4,Kairouan,9,1883.25,198
+2026,2,11,Drought Shield Bio,Fungicides,2,Sfax,12,1198.32,218
+2026,2,11,Drought Shield Bio,Fungicides,3,Beja,5,499.3,218
+2026,2,11,Drought Shield Bio,Fungicides,5,Gabes,9,898.74,218
+2026,2,12,Humidity Control Spray,Fungicides,1,Nabeul,11,2311.32,143
+2026,2,12,Humidity Control Spray,Fungicides,3,Beja,15,3151.8,143
+2026,2,12,Humidity Control Spray,Fungicides,5,Gabes,11,2311.32,143
+2026,2,13,Potassium Booster,Fertilizers,2,Sfax,9,1291.86,36
+2026,2,13,Potassium Booster,Fertilizers,3,Beja,8,1148.32,36
+2026,2,13,Potassium Booster,Fertilizers,4,Kairouan,11,1578.94,36
+2026,2,13,Potassium Booster,Fertilizers,5,Gabes,3,430.62,36
+2026,2,14,Nitrogen Booster,Soil treatment,2,Sfax,11,2046.77,5
+2026,2,14,Nitrogen Booster,Soil treatment,3,Beja,14,2604.98,5
+2026,2,15,Citrus Growth Formula,Seeds,4,Kairouan,10,1758.0,152
+2026,2,15,Citrus Growth Formula,Seeds,5,Gabes,4,703.2,152
+2026,2,16,Vegetable Root Stimulator,Soil treatment,1,Nabeul,7,2793.35,5
+2026,2,16,Vegetable Root Stimulator,Soil treatment,2,Sfax,17,6783.85,5
+2026,2,16,Vegetable Root Stimulator,Soil treatment,4,Kairouan,23,9178.15,5
+2026,2,16,Vegetable Root Stimulator,Soil treatment,5,Gabes,6,2394.3,5
+2026,2,17,Cereal Yield Enhancer,Soil treatment,1,Nabeul,12,2372.76,65
+2026,2,17,Cereal Yield Enhancer,Soil treatment,3,Beja,12,2372.76,65
+2026,2,17,Cereal Yield Enhancer,Soil treatment,4,Kairouan,1,197.73,65
+2026,2,17,Cereal Yield Enhancer,Soil treatment,5,Gabes,6,1186.38,65
+2026,2,18,Palm Tree Fertilizer,Fungicides,1,Nabeul,1,215.47,26
+2026,2,18,Palm Tree Fertilizer,Fungicides,2,Sfax,6,1292.82,26
+2026,2,19,Salinity Control Product,Soil treatment,2,Sfax,1,128.4,51
+2026,2,19,Salinity Control Product,Soil treatment,3,Beja,5,642.0,51
+2026,2,19,Salinity Control Product,Soil treatment,4,Kairouan,6,770.4,51
+2026,2,19,Salinity Control Product,Soil treatment,5,Gabes,18,2311.2,51
+2026,2,2,Organic Compost Mix,Soil treatment,1,Nabeul,15,631.65,132
+2026,2,2,Organic Compost Mix,Soil treatment,3,Beja,5,210.55,132
+2026,2,20,Greenhouse Pest Control,Fungicides,1,Nabeul,27,12111.39,43
+2026,2,20,Greenhouse Pest Control,Fungicides,2,Sfax,12,5382.84,43
+2026,2,20,Greenhouse Pest Control,Fungicides,3,Beja,11,4934.27,43
+2026,2,20,Greenhouse Pest Control,Fungicides,4,Kairouan,14,6279.98,43
+2026,2,20,Greenhouse Pest Control,Fungicides,5,Gabes,7,3139.99,43
+2026,2,21,Aphid Control Solution,Pesticides,1,Nabeul,9,1106.82,111
+2026,2,21,Aphid Control Solution,Pesticides,2,Sfax,3,368.94,111
+2026,2,21,Aphid Control Solution,Pesticides,4,Kairouan,12,1475.76,111
+2026,2,21,Aphid Control Solution,Pesticides,5,Gabes,5,614.9,111
+2026,2,22,Mildew Protection Spray,Climate-adapted products,1,Nabeul,14,4456.48,34
+2026,2,22,Mildew Protection Spray,Climate-adapted products,3,Beja,19,6048.08,34
+2026,2,23,Seed Germination Booster,Irrigation products,2,Sfax,9,3960.54,27
+2026,2,23,Seed Germination Booster,Irrigation products,3,Beja,14,6160.84,27
+2026,2,23,Seed Germination Booster,Irrigation products,4,Kairouan,6,2640.36,27
+2026,2,24,Foliar Nutrition Mix,Pesticides,4,Kairouan,7,708.82,5
+2026,2,24,Foliar Nutrition Mix,Pesticides,5,Gabes,3,303.78,5
+2026,2,25,Micro Elements Pack,Fertilizers,1,Nabeul,12,5268.96,65
+2026,2,25,Micro Elements Pack,Fertilizers,3,Beja,9,3951.72,65
+2026,2,25,Micro Elements Pack,Fertilizers,5,Gabes,10,4390.8,65
+2026,2,26,Crop Stress Reducer,Climate-adapted products,2,Sfax,5,1168.1,57
+2026,2,26,Crop Stress Reducer,Climate-adapted products,4,Kairouan,7,1635.34,57
+2026,2,27,Irrigation Filter Pack,Fungicides,1,Nabeul,22,3735.6,6
+2026,2,27,Irrigation Filter Pack,Fungicides,3,Beja,18,3056.4,6
+2026,2,27,Irrigation Filter Pack,Fungicides,5,Gabes,10,1698.0,6
+2026,2,28,Soil Moisture Sensor,Fertilizers,3,Beja,11,2148.3,57
+2026,2,28,Soil Moisture Sensor,Fertilizers,5,Gabes,25,4882.5,57
+2026,2,29,Climate Smart Pack,Seeds,1,Nabeul,21,1856.61,14
+2026,2,29,Climate Smart Pack,Seeds,3,Beja,6,530.46,14
+2026,2,29,Climate Smart Pack,Seeds,4,Kairouan,2,176.82,14
+2026,2,29,Climate Smart Pack,Seeds,5,Gabes,3,265.23,14
+2026,2,3,Tomato Seeds Premium,Irrigation products,1,Nabeul,21,1884.96,51
+2026,2,3,Tomato Seeds Premium,Irrigation products,2,Sfax,17,1525.92,51
+2026,2,3,Tomato Seeds Premium,Irrigation products,3,Beja,23,2064.48,51
+2026,2,3,Tomato Seeds Premium,Irrigation products,5,Gabes,2,179.52,51
+2026,2,30,Bio Stimulant Plus,Climate-adapted products,5,Gabes,13,2624.31,70
+2026,2,4,Wheat Seeds Resistant,Seeds,1,Nabeul,4,890.56,13
+2026,2,4,Wheat Seeds Resistant,Seeds,3,Beja,14,3116.96,13
+2026,2,5,Olive Tree Nutrient Pack,Irrigation products,1,Nabeul,15,6518.85,122
+2026,2,5,Olive Tree Nutrient Pack,Irrigation products,2,Sfax,6,2607.54,122
+2026,2,5,Olive Tree Nutrient Pack,Irrigation products,3,Beja,13,5649.67,122
+2026,2,5,Olive Tree Nutrient Pack,Irrigation products,4,Kairouan,1,434.59,122
+2026,2,6,Anti-Fungal Treatment,Fertilizers,1,Nabeul,11,2980.34,57
+2026,2,6,Anti-Fungal Treatment,Fertilizers,3,Beja,29,7857.26,57
+2026,2,6,Anti-Fungal Treatment,Fertilizers,4,Kairouan,3,812.82,57
+2026,2,7,Copper Fungicide,Soil treatment,1,Nabeul,4,437.16,158
+2026,2,7,Copper Fungicide,Soil treatment,2,Sfax,6,655.74,158
+2026,2,7,Copper Fungicide,Soil treatment,4,Kairouan,3,327.87,158
+2026,2,8,Drip Irrigation Kit,Irrigation products,1,Nabeul,11,4040.85,43
+2026,2,8,Drip Irrigation Kit,Irrigation products,2,Sfax,10,3673.5,43
+2026,2,8,Drip Irrigation Kit,Irrigation products,3,Beja,11,4040.85,43
+2026,2,8,Drip Irrigation Kit,Irrigation products,5,Gabes,18,6612.3,43
+2026,2,9,Water Retention Granules,Pesticides,1,Nabeul,10,543.1,188
+2026,2,9,Water Retention Granules,Pesticides,3,Beja,16,868.96,188
+2026,3,1,NPK Fertilizer 20-20-20,Fertilizers,2,Sfax,8,3599.68,16
+2026,3,1,NPK Fertilizer 20-20-20,Fertilizers,5,Gabes,2,899.92,16
+2026,3,10,Soil PH Corrector,Fertilizers,5,Gabes,24,5022.0,198
+2026,3,11,Drought Shield Bio,Fungicides,1,Nabeul,12,1198.32,218
+2026,3,11,Drought Shield Bio,Fungicides,3,Beja,1,99.86,218
+2026,3,11,Drought Shield Bio,Fungicides,4,Kairouan,4,399.44,218
+2026,3,12,Humidity Control Spray,Fungicides,1,Nabeul,14,2941.68,143
+2026,3,12,Humidity Control Spray,Fungicides,2,Sfax,4,840.48,143
+2026,3,12,Humidity Control Spray,Fungicides,4,Kairouan,1,210.12,143
+2026,3,12,Humidity Control Spray,Fungicides,5,Gabes,4,840.48,143
+2026,3,13,Potassium Booster,Fertilizers,3,Beja,16,2296.64,36
+2026,3,13,Potassium Booster,Fertilizers,4,Kairouan,4,574.16,36
+2026,3,13,Potassium Booster,Fertilizers,5,Gabes,10,1435.4,36
+2026,3,14,Nitrogen Booster,Soil treatment,1,Nabeul,20,3721.4,5
+2026,3,14,Nitrogen Booster,Soil treatment,3,Beja,8,1488.56,5
+2026,3,14,Nitrogen Booster,Soil treatment,4,Kairouan,13,2418.91,5
+2026,3,14,Nitrogen Booster,Soil treatment,5,Gabes,10,1860.7,5
+2026,3,15,Citrus Growth Formula,Seeds,3,Beja,6,1054.8,152
+2026,3,15,Citrus Growth Formula,Seeds,4,Kairouan,8,1406.4,152
+2026,3,16,Vegetable Root Stimulator,Soil treatment,1,Nabeul,17,6783.85,5
+2026,3,16,Vegetable Root Stimulator,Soil treatment,2,Sfax,6,2394.3,5
+2026,3,16,Vegetable Root Stimulator,Soil treatment,3,Beja,3,1197.15,5
+2026,3,17,Cereal Yield Enhancer,Soil treatment,1,Nabeul,11,2175.03,65
+2026,3,17,Cereal Yield Enhancer,Soil treatment,5,Gabes,12,2372.76,65
+2026,3,18,Palm Tree Fertilizer,Fungicides,1,Nabeul,7,1508.29,26
+2026,3,18,Palm Tree Fertilizer,Fungicides,2,Sfax,11,2370.17,26
+2026,3,18,Palm Tree Fertilizer,Fungicides,4,Kairouan,1,215.47,26
+2026,3,19,Salinity Control Product,Soil treatment,1,Nabeul,20,2568.0,51
+2026,3,19,Salinity Control Product,Soil treatment,2,Sfax,9,1155.6,51
+2026,3,19,Salinity Control Product,Soil treatment,4,Kairouan,4,513.6,51
+2026,3,2,Organic Compost Mix,Soil treatment,1,Nabeul,11,463.21,132
+2026,3,20,Greenhouse Pest Control,Fungicides,1,Nabeul,4,1794.28,43
+2026,3,20,Greenhouse Pest Control,Fungicides,2,Sfax,10,4485.7,43
+2026,3,20,Greenhouse Pest Control,Fungicides,3,Beja,2,897.14,43
+2026,3,20,Greenhouse Pest Control,Fungicides,4,Kairouan,13,5831.41,43
+2026,3,20,Greenhouse Pest Control,Fungicides,5,Gabes,20,8971.4,43
+2026,3,21,Aphid Control Solution,Pesticides,1,Nabeul,15,1844.7,111
+2026,3,21,Aphid Control Solution,Pesticides,3,Beja,11,1352.78,111
+2026,3,21,Aphid Control Solution,Pesticides,5,Gabes,7,860.86,111
+2026,3,22,Mildew Protection Spray,Climate-adapted products,1,Nabeul,18,5729.76,34
+2026,3,22,Mildew Protection Spray,Climate-adapted products,3,Beja,25,7958.0,34
+2026,3,22,Mildew Protection Spray,Climate-adapted products,4,Kairouan,15,4774.8,34
+2026,3,22,Mildew Protection Spray,Climate-adapted products,5,Gabes,5,1591.6,34
+2026,3,23,Seed Germination Booster,Irrigation products,1,Nabeul,17,7481.02,27
+2026,3,23,Seed Germination Booster,Irrigation products,3,Beja,2,880.12,27
+2026,3,23,Seed Germination Booster,Irrigation products,4,Kairouan,12,5280.72,27
+2026,3,23,Seed Germination Booster,Irrigation products,5,Gabes,10,4400.6,27
+2026,3,24,Foliar Nutrition Mix,Pesticides,1,Nabeul,8,810.08,5
+2026,3,24,Foliar Nutrition Mix,Pesticides,2,Sfax,5,506.3,5
+2026,3,24,Foliar Nutrition Mix,Pesticides,4,Kairouan,3,303.78,5
+2026,3,25,Micro Elements Pack,Fertilizers,1,Nabeul,13,5708.04,65
+2026,3,25,Micro Elements Pack,Fertilizers,2,Sfax,15,6586.2,65
+2026,3,25,Micro Elements Pack,Fertilizers,5,Gabes,3,1317.24,65
+2026,3,26,Crop Stress Reducer,Climate-adapted products,2,Sfax,11,2569.82,57
+2026,3,26,Crop Stress Reducer,Climate-adapted products,3,Beja,4,934.48,57
+2026,3,26,Crop Stress Reducer,Climate-adapted products,4,Kairouan,16,3737.92,57
+2026,3,27,Irrigation Filter Pack,Fungicides,4,Kairouan,1,169.8,6
+2026,3,28,Soil Moisture Sensor,Fertilizers,1,Nabeul,30,5859.0,57
+2026,3,28,Soil Moisture Sensor,Fertilizers,3,Beja,11,2148.3,57
+2026,3,28,Soil Moisture Sensor,Fertilizers,4,Kairouan,4,781.2,57
+2026,3,29,Climate Smart Pack,Seeds,3,Beja,4,353.64,14
+2026,3,3,Tomato Seeds Premium,Irrigation products,4,Kairouan,11,987.36,51
+2026,3,30,Bio Stimulant Plus,Climate-adapted products,2,Sfax,4,807.48,70
+2026,3,30,Bio Stimulant Plus,Climate-adapted products,4,Kairouan,1,201.87,70
+2026,3,30,Bio Stimulant Plus,Climate-adapted products,5,Gabes,12,2422.44,70
+2026,3,4,Wheat Seeds Resistant,Seeds,2,Sfax,12,2671.68,13
+2026,3,4,Wheat Seeds Resistant,Seeds,4,Kairouan,30,6679.2,13
+2026,3,5,Olive Tree Nutrient Pack,Irrigation products,1,Nabeul,16,6953.44,122
+2026,3,5,Olive Tree Nutrient Pack,Irrigation products,4,Kairouan,11,4780.49,122
+2026,3,6,Anti-Fungal Treatment,Fertilizers,1,Nabeul,12,3251.28,57
+2026,3,6,Anti-Fungal Treatment,Fertilizers,2,Sfax,6,1625.64,57
+2026,3,6,Anti-Fungal Treatment,Fertilizers,4,Kairouan,4,1083.76,57
+2026,3,6,Anti-Fungal Treatment,Fertilizers,5,Gabes,12,3251.28,57
+2026,3,7,Copper Fungicide,Soil treatment,1,Nabeul,20,2185.8,158
+2026,3,7,Copper Fungicide,Soil treatment,2,Sfax,5,546.45,158
+2026,3,7,Copper Fungicide,Soil treatment,4,Kairouan,3,327.87,158
+2026,3,8,Drip Irrigation Kit,Irrigation products,2,Sfax,10,3673.5,43
+2026,3,8,Drip Irrigation Kit,Irrigation products,3,Beja,7,2571.45,43
+2026,3,8,Drip Irrigation Kit,Irrigation products,4,Kairouan,21,7714.35,43
+2026,3,9,Water Retention Granules,Pesticides,2,Sfax,6,325.86,188
+2026,4,1,NPK Fertilizer 20-20-20,Fertilizers,1,Nabeul,8,3599.68,16
+2026,4,1,NPK Fertilizer 20-20-20,Fertilizers,2,Sfax,9,4049.64,16
+2026,4,10,Soil PH Corrector,Fertilizers,1,Nabeul,13,2720.25,198
+2026,4,10,Soil PH Corrector,Fertilizers,5,Gabes,2,418.5,198
+2026,4,12,Humidity Control Spray,Fungicides,1,Nabeul,4,840.48,143
+2026,4,12,Humidity Control Spray,Fungicides,3,Beja,10,2101.2,143
+2026,4,12,Humidity Control Spray,Fungicides,4,Kairouan,8,1680.96,143
+2026,4,12,Humidity Control Spray,Fungicides,5,Gabes,12,2521.44,143
+2026,4,13,Potassium Booster,Fertilizers,1,Nabeul,18,2583.72,36
+2026,4,13,Potassium Booster,Fertilizers,4,Kairouan,5,717.7,36
+2026,4,13,Potassium Booster,Fertilizers,5,Gabes,10,1435.4,36
+2026,4,14,Nitrogen Booster,Soil treatment,4,Kairouan,8,1488.56,5
+2026,4,15,Citrus Growth Formula,Seeds,1,Nabeul,14,2461.2,152
+2026,4,15,Citrus Growth Formula,Seeds,3,Beja,5,879.0,152
+2026,4,16,Vegetable Root Stimulator,Soil treatment,2,Sfax,9,3591.45,5
+2026,4,16,Vegetable Root Stimulator,Soil treatment,3,Beja,7,2793.35,5
+2026,4,16,Vegetable Root Stimulator,Soil treatment,4,Kairouan,9,3591.45,5
+2026,4,17,Cereal Yield Enhancer,Soil treatment,1,Nabeul,7,1384.11,65
+2026,4,17,Cereal Yield Enhancer,Soil treatment,4,Kairouan,9,1779.57,65
+2026,4,18,Palm Tree Fertilizer,Fungicides,1,Nabeul,12,2585.64,26
+2026,4,18,Palm Tree Fertilizer,Fungicides,2,Sfax,3,646.41,26
+2026,4,18,Palm Tree Fertilizer,Fungicides,3,Beja,11,2370.17,26
+2026,4,18,Palm Tree Fertilizer,Fungicides,4,Kairouan,8,1723.76,26
+2026,4,19,Salinity Control Product,Soil treatment,2,Sfax,6,770.4,51
+2026,4,19,Salinity Control Product,Soil treatment,3,Beja,14,1797.6,51
+2026,4,2,Organic Compost Mix,Soil treatment,1,Nabeul,7,294.77,132
+2026,4,2,Organic Compost Mix,Soil treatment,4,Kairouan,4,168.44,132
+2026,4,2,Organic Compost Mix,Soil treatment,5,Gabes,18,757.98,132
+2026,4,20,Greenhouse Pest Control,Fungicides,1,Nabeul,10,4485.7,43
+2026,4,20,Greenhouse Pest Control,Fungicides,3,Beja,16,7177.12,43
+2026,4,20,Greenhouse Pest Control,Fungicides,4,Kairouan,8,3588.56,43
+2026,4,21,Aphid Control Solution,Pesticides,1,Nabeul,18,2213.64,111
+2026,4,21,Aphid Control Solution,Pesticides,2,Sfax,11,1352.78,111
+2026,4,21,Aphid Control Solution,Pesticides,3,Beja,2,245.96,111
+2026,4,21,Aphid Control Solution,Pesticides,4,Kairouan,13,1598.74,111
+2026,4,22,Mildew Protection Spray,Climate-adapted products,1,Nabeul,1,318.32,34
+2026,4,22,Mildew Protection Spray,Climate-adapted products,2,Sfax,11,3501.52,34
+2026,4,22,Mildew Protection Spray,Climate-adapted products,3,Beja,7,2228.24,34
+2026,4,22,Mildew Protection Spray,Climate-adapted products,4,Kairouan,2,636.64,34
+2026,4,23,Seed Germination Booster,Irrigation products,3,Beja,30,13201.8,27
+2026,4,23,Seed Germination Booster,Irrigation products,4,Kairouan,15,6600.9,27
+2026,4,24,Foliar Nutrition Mix,Pesticides,1,Nabeul,8,810.08,5
+2026,4,25,Micro Elements Pack,Fertilizers,1,Nabeul,30,13172.4,65
+2026,4,25,Micro Elements Pack,Fertilizers,2,Sfax,7,3073.56,65
+2026,4,26,Crop Stress Reducer,Climate-adapted products,1,Nabeul,2,467.24,57
+2026,4,26,Crop Stress Reducer,Climate-adapted products,4,Kairouan,7,1635.34,57
+2026,4,27,Irrigation Filter Pack,Fungicides,1,Nabeul,9,1528.2,6
+2026,4,27,Irrigation Filter Pack,Fungicides,2,Sfax,9,1528.2,6
+2026,4,27,Irrigation Filter Pack,Fungicides,5,Gabes,2,339.6,6
+2026,4,28,Soil Moisture Sensor,Fertilizers,1,Nabeul,1,195.3,57
+2026,4,28,Soil Moisture Sensor,Fertilizers,2,Sfax,2,390.6,57
+2026,4,28,Soil Moisture Sensor,Fertilizers,3,Beja,20,3906.0,57
+2026,4,29,Climate Smart Pack,Seeds,1,Nabeul,12,1060.92,14
+2026,4,29,Climate Smart Pack,Seeds,2,Sfax,11,972.51,14
+2026,4,29,Climate Smart Pack,Seeds,3,Beja,11,972.51,14
+2026,4,29,Climate Smart Pack,Seeds,4,Kairouan,1,88.41,14
+2026,4,3,Tomato Seeds Premium,Irrigation products,1,Nabeul,6,538.56,51
+2026,4,3,Tomato Seeds Premium,Irrigation products,2,Sfax,8,718.08,51
+2026,4,3,Tomato Seeds Premium,Irrigation products,3,Beja,6,538.56,51
+2026,4,3,Tomato Seeds Premium,Irrigation products,4,Kairouan,4,359.04,51
+2026,4,30,Bio Stimulant Plus,Climate-adapted products,1,Nabeul,9,1816.83,70
+2026,4,30,Bio Stimulant Plus,Climate-adapted products,2,Sfax,11,2220.57,70
+2026,4,30,Bio Stimulant Plus,Climate-adapted products,3,Beja,10,2018.7,70
+2026,4,4,Wheat Seeds Resistant,Seeds,1,Nabeul,5,1113.2,13
+2026,4,4,Wheat Seeds Resistant,Seeds,2,Sfax,21,4675.44,13
+2026,4,4,Wheat Seeds Resistant,Seeds,3,Beja,12,2671.68,13
+2026,4,5,Olive Tree Nutrient Pack,Irrigation products,3,Beja,12,5215.08,122
+2026,4,6,Anti-Fungal Treatment,Fertilizers,2,Sfax,5,1354.7,57
+2026,4,6,Anti-Fungal Treatment,Fertilizers,3,Beja,12,3251.28,57
+2026,4,6,Anti-Fungal Treatment,Fertilizers,4,Kairouan,5,1354.7,57
+2026,4,7,Copper Fungicide,Soil treatment,1,Nabeul,7,765.03,158
+2026,4,8,Drip Irrigation Kit,Irrigation products,1,Nabeul,10,3673.5,43
+2026,4,8,Drip Irrigation Kit,Irrigation products,2,Sfax,4,1469.4,43
+2026,4,8,Drip Irrigation Kit,Irrigation products,3,Beja,8,2938.8,43
+2026,4,8,Drip Irrigation Kit,Irrigation products,5,Gabes,2,734.7,43
+2026,4,9,Water Retention Granules,Pesticides,1,Nabeul,6,325.86,188
+2026,4,9,Water Retention Granules,Pesticides,4,Kairouan,18,977.58,188
+2026,4,9,Water Retention Granules,Pesticides,5,Gabes,3,162.93,188
+2026,5,1,NPK Fertilizer 20-20-20,Fertilizers,1,Nabeul,4,1799.84,16
+2026,5,1,NPK Fertilizer 20-20-20,Fertilizers,3,Beja,12,5399.52,16
+2026,5,10,Soil PH Corrector,Fertilizers,1,Nabeul,20,4185.0,198
+2026,5,10,Soil PH Corrector,Fertilizers,3,Beja,4,837.0,198
+2026,5,10,Soil PH Corrector,Fertilizers,4,Kairouan,19,3975.75,198
+2026,5,11,Drought Shield Bio,Fungicides,1,Nabeul,12,1198.32,218
+2026,5,11,Drought Shield Bio,Fungicides,2,Sfax,8,798.88,218
+2026,5,11,Drought Shield Bio,Fungicides,3,Beja,3,299.58,218
+2026,5,12,Humidity Control Spray,Fungicides,1,Nabeul,32,6723.84,143
+2026,5,12,Humidity Control Spray,Fungicides,4,Kairouan,11,2311.32,143
+2026,5,13,Potassium Booster,Fertilizers,1,Nabeul,26,3732.04,36
+2026,5,13,Potassium Booster,Fertilizers,4,Kairouan,6,861.24,36
+2026,5,13,Potassium Booster,Fertilizers,5,Gabes,6,861.24,36
+2026,5,14,Nitrogen Booster,Soil treatment,1,Nabeul,8,1488.56,5
+2026,5,14,Nitrogen Booster,Soil treatment,2,Sfax,2,372.14,5
+2026,5,14,Nitrogen Booster,Soil treatment,4,Kairouan,2,372.14,5
+2026,5,15,Citrus Growth Formula,Seeds,1,Nabeul,21,3691.8,152
+2026,5,15,Citrus Growth Formula,Seeds,2,Sfax,2,351.6,152
+2026,5,15,Citrus Growth Formula,Seeds,3,Beja,12,2109.6,152
+2026,5,15,Citrus Growth Formula,Seeds,5,Gabes,4,703.2,152
+2026,5,16,Vegetable Root Stimulator,Soil treatment,1,Nabeul,11,4389.55,5
+2026,5,16,Vegetable Root Stimulator,Soil treatment,3,Beja,9,3591.45,5
+2026,5,16,Vegetable Root Stimulator,Soil treatment,4,Kairouan,3,1197.15,5
+2026,5,16,Vegetable Root Stimulator,Soil treatment,5,Gabes,15,5985.75,5
+2026,5,17,Cereal Yield Enhancer,Soil treatment,1,Nabeul,12,2372.76,65
+2026,5,17,Cereal Yield Enhancer,Soil treatment,3,Beja,12,2372.76,65
+2026,5,17,Cereal Yield Enhancer,Soil treatment,4,Kairouan,5,988.65,65
+2026,5,17,Cereal Yield Enhancer,Soil treatment,5,Gabes,9,1779.57,65
+2026,5,18,Palm Tree Fertilizer,Fungicides,1,Nabeul,10,2154.7,26
+2026,5,18,Palm Tree Fertilizer,Fungicides,2,Sfax,11,2370.17,26
+2026,5,18,Palm Tree Fertilizer,Fungicides,3,Beja,11,2370.17,26
+2026,5,18,Palm Tree Fertilizer,Fungicides,4,Kairouan,12,2585.64,26
+2026,5,18,Palm Tree Fertilizer,Fungicides,5,Gabes,29,6248.63,26
+2026,5,19,Salinity Control Product,Soil treatment,1,Nabeul,19,2439.6,51
+2026,5,19,Salinity Control Product,Soil treatment,5,Gabes,12,1540.8,51
+2026,5,2,Organic Compost Mix,Soil treatment,4,Kairouan,21,884.31,132
+2026,5,20,Greenhouse Pest Control,Fungicides,1,Nabeul,19,8522.83,43
+2026,5,20,Greenhouse Pest Control,Fungicides,2,Sfax,11,4934.27,43
+2026,5,20,Greenhouse Pest Control,Fungicides,3,Beja,13,5831.41,43
+2026,5,21,Aphid Control Solution,Pesticides,1,Nabeul,8,983.84,111
+2026,5,21,Aphid Control Solution,Pesticides,2,Sfax,4,491.92,111
+2026,5,21,Aphid Control Solution,Pesticides,3,Beja,2,245.96,111
+2026,5,21,Aphid Control Solution,Pesticides,4,Kairouan,11,1352.78,111
+2026,5,22,Mildew Protection Spray,Climate-adapted products,1,Nabeul,3,954.96,34
+2026,5,22,Mildew Protection Spray,Climate-adapted products,4,Kairouan,16,5093.12,34
+2026,5,23,Seed Germination Booster,Irrigation products,1,Nabeul,15,6600.9,27
+2026,5,23,Seed Germination Booster,Irrigation products,4,Kairouan,11,4840.66,27
+2026,5,23,Seed Germination Booster,Irrigation products,5,Gabes,12,5280.72,27
+2026,5,24,Foliar Nutrition Mix,Pesticides,2,Sfax,1,101.26,5
+2026,5,24,Foliar Nutrition Mix,Pesticides,3,Beja,4,405.04,5
+2026,5,24,Foliar Nutrition Mix,Pesticides,4,Kairouan,10,1012.6,5
+2026,5,25,Micro Elements Pack,Fertilizers,1,Nabeul,11,4829.88,65
+2026,5,25,Micro Elements Pack,Fertilizers,2,Sfax,3,1317.24,65
+2026,5,25,Micro Elements Pack,Fertilizers,3,Beja,9,3951.72,65
+2026,5,25,Micro Elements Pack,Fertilizers,4,Kairouan,8,3512.64,65
+2026,5,25,Micro Elements Pack,Fertilizers,5,Gabes,21,9220.68,65
+2026,5,26,Crop Stress Reducer,Climate-adapted products,1,Nabeul,5,1168.1,57
+2026,5,26,Crop Stress Reducer,Climate-adapted products,2,Sfax,8,1868.96,57
+2026,5,26,Crop Stress Reducer,Climate-adapted products,3,Beja,15,3504.3,57
+2026,5,27,Irrigation Filter Pack,Fungicides,4,Kairouan,16,2716.8,6
+2026,5,27,Irrigation Filter Pack,Fungicides,5,Gabes,13,2207.4,6
+2026,5,28,Soil Moisture Sensor,Fertilizers,2,Sfax,16,3124.8,57
+2026,5,28,Soil Moisture Sensor,Fertilizers,3,Beja,2,390.6,57
+2026,5,29,Climate Smart Pack,Seeds,1,Nabeul,8,707.28,14
+2026,5,29,Climate Smart Pack,Seeds,2,Sfax,1,88.41,14
+2026,5,29,Climate Smart Pack,Seeds,3,Beja,7,618.87,14
+2026,5,29,Climate Smart Pack,Seeds,4,Kairouan,6,530.46,14
+2026,5,29,Climate Smart Pack,Seeds,5,Gabes,2,176.82,14
+2026,5,3,Tomato Seeds Premium,Irrigation products,1,Nabeul,4,359.04,51
+2026,5,3,Tomato Seeds Premium,Irrigation products,2,Sfax,8,718.08,51
+2026,5,3,Tomato Seeds Premium,Irrigation products,3,Beja,3,269.28,51
+2026,5,3,Tomato Seeds Premium,Irrigation products,4,Kairouan,30,2692.8,51
+2026,5,30,Bio Stimulant Plus,Climate-adapted products,1,Nabeul,14,2826.18,70
+2026,5,30,Bio Stimulant Plus,Climate-adapted products,4,Kairouan,9,1816.83,70
+2026,5,4,Wheat Seeds Resistant,Seeds,3,Beja,5,1113.2,13
+2026,5,5,Olive Tree Nutrient Pack,Irrigation products,2,Sfax,1,434.59,122
+2026,5,5,Olive Tree Nutrient Pack,Irrigation products,4,Kairouan,15,6518.85,122
+2026,5,5,Olive Tree Nutrient Pack,Irrigation products,5,Gabes,8,3476.72,122
+2026,5,6,Anti-Fungal Treatment,Fertilizers,2,Sfax,12,3251.28,57
+2026,5,6,Anti-Fungal Treatment,Fertilizers,3,Beja,12,3251.28,57
+2026,5,6,Anti-Fungal Treatment,Fertilizers,4,Kairouan,2,541.88,57
+2026,5,6,Anti-Fungal Treatment,Fertilizers,5,Gabes,3,812.82,57
+2026,5,7,Copper Fungicide,Soil treatment,4,Kairouan,9,983.61,158
+2026,5,7,Copper Fungicide,Soil treatment,5,Gabes,8,874.32,158
+2026,5,8,Drip Irrigation Kit,Irrigation products,1,Nabeul,13,4775.55,43
+2026,5,8,Drip Irrigation Kit,Irrigation products,2,Sfax,8,2938.8,43
+2026,5,8,Drip Irrigation Kit,Irrigation products,5,Gabes,23,8449.05,43
+2026,5,9,Water Retention Granules,Pesticides,1,Nabeul,5,271.55,188
+2026,5,9,Water Retention Granules,Pesticides,4,Kairouan,11,597.41,188

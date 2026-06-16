@@ -8,6 +8,8 @@ import 'visits/visits_screen.dart';
 import '../sync/sync_engine.dart';
 import 'sync/sync_status_screen.dart';
 import 'dashboard/dashboard_screen.dart';
+import '../services/api_service.dart';
+import 'login_screen.dart';
 
 class MainNavigationScreen extends StatefulWidget {
   const MainNavigationScreen({super.key});
@@ -30,17 +32,40 @@ class _MainNavigationScreenState extends State<MainNavigationScreen> {
     SyncStatusScreen(),
   ];
   final SyncEngine syncEngine = SyncEngine();
+  final ApiService apiService = ApiService();
+
+  Future<void> logout() async {
+    final navigator = Navigator.of(context);
+
+    await apiService.logout();
+
+    navigator.pushReplacement(
+      MaterialPageRoute(
+        builder: (_) => const LoginScreen(),
+      ),
+    );
+  }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: const Text('AgriSync AI'),
+        actions: [
+          IconButton(
+            icon: const Icon(Icons.logout),
+            tooltip: 'Logout',
+            onPressed: logout,
+          ),
+        ],
+      ),
       body: pages[currentIndex],
       floatingActionButtonLocation: FloatingActionButtonLocation.startFloat,
       floatingActionButton: FloatingActionButton(
         onPressed: () async {
           await syncEngine.syncAll();
 
-          if (!mounted) return;
+          if (!context.mounted) return;
           ScaffoldMessenger.of(context).showSnackBar(
             const SnackBar(content: Text('Sync completed')),
           );

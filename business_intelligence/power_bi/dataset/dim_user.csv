@@ -1,0 +1,8 @@
+user_key,user_id,user_name,role,zone_id
+1,1,admin,Administrator,1
+2,2,commercial_nabeul,Commercial,1
+3,3,commercial_sfax,Commercial,2
+4,4,commercial_beja,Commercial,3
+5,5,commercial_kairouan,Commercial,4
+6,6,commercial_gabes,Commercial,5
+7,7,manager,Manager,1

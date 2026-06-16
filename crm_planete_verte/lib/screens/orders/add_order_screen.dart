@@ -5,7 +5,6 @@ import '../../models/order_line.dart';
 import '../../models/product.dart';
 import '../../services/database_service.dart';
 import '../../models/invoice.dart';
-import '../../models/invoice.dart';
 
 class AddOrderScreen extends StatefulWidget {
   const AddOrderScreen({super.key});
@@ -73,9 +72,12 @@ class _AddOrderScreenState extends State<AddOrderScreen> {
     });
   }
 
-  Future<void> saveOrder() async {  
+  Future<void> saveOrder() async {
+    final navigator = Navigator.of(context);
+    final messenger = ScaffoldMessenger.of(context);
+
     if (selectedClient == null) {
-      ScaffoldMessenger.of(context).showSnackBar(
+      messenger.showSnackBar(
         const SnackBar(content: Text('Please select a client')),
       );
       return;
@@ -94,7 +96,7 @@ class _AddOrderScreenState extends State<AddOrderScreen> {
       final product = products.firstWhere((p) => p.id == productId);
 
       if (!mounted) return;
-      ScaffoldMessenger.of(context).showSnackBar(
+      messenger.showSnackBar(
         SnackBar(
           content: Text(
             'Not enough stock for ${product.name}',
@@ -106,7 +108,7 @@ class _AddOrderScreenState extends State<AddOrderScreen> {
     }
   }
     if (selectedItems.isEmpty) {
-      ScaffoldMessenger.of(context).showSnackBar(
+      messenger.showSnackBar(
         const SnackBar(content: Text('Select at least one product')),
       );
       return;
@@ -152,13 +154,14 @@ class _AddOrderScreenState extends State<AddOrderScreen> {
         updatedAt: DateTime.now().toIso8601String(),
       );
 
+
       await DatabaseService.instance.insertInvoice(invoice);
 
       if (!mounted) return;
-      Navigator.pop(context, true);
+      navigator.pop(true);
     } catch (e) {
       if (!mounted) return;
-      ScaffoldMessenger.of(context).showSnackBar(
+      messenger.showSnackBar(
         SnackBar(content: Text('Failed to save order: $e')),
       );
     }

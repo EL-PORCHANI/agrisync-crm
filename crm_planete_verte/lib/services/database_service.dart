@@ -24,9 +24,6 @@ class DatabaseService {
     final dbPath = await getDatabasesPath();
     final path = join(dbPath, 'crm_planete_verte.db');
 
-    print('==============================');
-    print('FLUTTER DB PATH: $path');
-    print('==============================');
 
     return await openDatabase(
       path,
@@ -784,8 +781,11 @@ Future<int> getTotalOrders() async {
 
 Future<double> getTotalRevenue() async {
   final dbClient = await database;
-  final result = await dbClient.rawQuery('SELECT SUM(total_amount) as total FROM orders');
-  return result.first['total'] as double? ?? 0.0;
+  final result = await dbClient.rawQuery(
+    'SELECT SUM(total_amount) as total FROM orders',
+  );
+
+  return (result.first['total'] as num?)?.toDouble() ?? 0.0;
 }
 
 

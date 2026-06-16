@@ -54,8 +54,11 @@ class _AddVisitScreenState extends State<AddVisitScreen> {
   }
 
   Future<void> saveVisit() async {
+    final navigator = Navigator.of(context);
+    final messenger = ScaffoldMessenger.of(context);
+
     if (selectedClient == null) {
-      ScaffoldMessenger.of(context).showSnackBar(
+      messenger.showSnackBar(
         const SnackBar(content: Text('Please select a client')),
       );
       return;
@@ -64,7 +67,7 @@ class _AddVisitScreenState extends State<AddVisitScreen> {
     final position = await getCurrentLocation();
 
     if (position == null) {
-      ScaffoldMessenger.of(context).showSnackBar(
+      messenger.showSnackBar(
         const SnackBar(content: Text('Unable to get location')),
       );
       return;
@@ -104,7 +107,7 @@ class _AddVisitScreenState extends State<AddVisitScreen> {
     await DatabaseService.instance.insertVisit(visit);
 
     if (!mounted) return;
-    Navigator.pop(context, true);
+    navigator.pop(true);
   }
 
   @override

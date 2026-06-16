@@ -1,0 +1,31 @@
+product_key,product_id,product_name,category,reference,current_price,stock_quantity
+1,1,NPK Fertilizer 20-20-20,Fertilizers,AGR-0001,449.96,16
+2,2,Organic Compost Mix,Soil treatment,AGR-0002,42.11,132
+3,3,Tomato Seeds Premium,Irrigation products,AGR-0003,89.76,51
+4,4,Wheat Seeds Resistant,Seeds,AGR-0004,222.64,13
+5,5,Olive Tree Nutrient Pack,Irrigation products,AGR-0005,434.59,122
+6,6,Anti-Fungal Treatment,Fertilizers,AGR-0006,270.94,57
+7,7,Copper Fungicide,Soil treatment,AGR-0007,109.29,158
+8,8,Drip Irrigation Kit,Irrigation products,AGR-0008,367.35,43
+9,9,Water Retention Granules,Pesticides,AGR-0009,54.31,188
+10,10,Soil PH Corrector,Fertilizers,AGR-0010,209.25,198
+11,11,Drought Shield Bio,Fungicides,AGR-0011,99.86,218
+12,12,Humidity Control Spray,Fungicides,AGR-0012,210.12,143
+13,13,Potassium Booster,Fertilizers,AGR-0013,143.54,36
+14,14,Nitrogen Booster,Soil treatment,AGR-0014,186.07,5
+15,15,Citrus Growth Formula,Seeds,AGR-0015,175.8,152
+16,16,Vegetable Root Stimulator,Soil treatment,AGR-0016,399.05,5
+17,17,Cereal Yield Enhancer,Soil treatment,AGR-0017,197.73,65
+18,18,Palm Tree Fertilizer,Fungicides,AGR-0018,215.47,26
+19,19,Salinity Control Product,Soil treatment,AGR-0019,128.4,51
+20,20,Greenhouse Pest Control,Fungicides,AGR-0020,448.57,43
+21,21,Aphid Control Solution,Pesticides,AGR-0021,122.98,111
+22,22,Mildew Protection Spray,Climate-adapted products,AGR-0022,318.32,34
+23,23,Seed Germination Booster,Irrigation products,AGR-0023,440.06,27
+24,24,Foliar Nutrition Mix,Pesticides,AGR-0024,101.26,5
+25,25,Micro Elements Pack,Fertilizers,AGR-0025,439.08,65
+26,26,Crop Stress Reducer,Climate-adapted products,AGR-0026,233.62,57
+27,27,Irrigation Filter Pack,Fungicides,AGR-0027,169.8,6
+28,28,Soil Moisture Sensor,Fertilizers,AGR-0028,195.3,57
+29,29,Climate Smart Pack,Seeds,AGR-0029,88.41,14
+30,30,Bio Stimulant Plus,Climate-adapted products,AGR-0030,201.87,70

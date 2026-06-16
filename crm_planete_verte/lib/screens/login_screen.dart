@@ -16,9 +16,12 @@ class _LoginScreenState extends State<LoginScreen> {
   final TextEditingController passwordController =
       TextEditingController();
 
-  void login() async {
+  Future<void> login() async {
     final username = usernameController.text.trim();
     final password = passwordController.text.trim();
+
+    final navigator = Navigator.of(context);
+    final messenger = ScaffoldMessenger.of(context);
 
     final apiService = ApiService();
 
@@ -28,14 +31,13 @@ class _LoginScreenState extends State<LoginScreen> {
     );
 
     if (success) {
-      Navigator.pushReplacement(
-        context,
+      navigator.pushReplacement(
         MaterialPageRoute(
           builder: (_) => const MainNavigationScreen(),
         ),
       );
     } else {
-      ScaffoldMessenger.of(context).showSnackBar(
+      messenger.showSnackBar(
         const SnackBar(
           content: Text('Invalid credentials'),
         ),
@@ -46,18 +48,21 @@ class _LoginScreenState extends State<LoginScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
-        child: SizedBox(
-          width: 350,
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
+      body: SafeArea(
+        child: Center(
+          child: SingleChildScrollView(
+            padding: const EdgeInsets.all(24),
+            child: SizedBox(
+              width: 350,
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
               Image.asset(
                 'assets/images/logo_app.png',
-                width: 400,
-                height: 400,
+                width: 220,
+                height: 220,
               ),
-              const SizedBox(height: 0),
+              const SizedBox(height: 24),
 
 
 
@@ -89,6 +94,8 @@ class _LoginScreenState extends State<LoginScreen> {
             ],
           ),
         ),
+      ),
+      ),
       ),
     );
   }

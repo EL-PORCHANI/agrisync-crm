@@ -1,3 +1,5 @@
+import 'package:flutter/foundation.dart';
+
 import '../models/client.dart';
 import '../services/api_service.dart';
 import '../services/database_service.dart';
@@ -18,16 +20,16 @@ class SyncEngine {
   Future<void> syncClients() async {
     final unsynced = await db.getUnsyncedClients();
 
-    print('CLIENTS TO SYNC: ${unsynced.length}');
+    debugPrint('CLIENTS TO SYNC: ${unsynced.length}');
 
     for (final item in unsynced) {
       try {
         final client = Client.fromMap(item);
         
-        print('SYNCING CLIENT: ${client.phone}');
+        debugPrint('SYNCING CLIENT: ${client.phone}');
 
         if (client.phone == null || client.phone!.isEmpty) {
-          print('Client skipped: missing phone');
+          debugPrint('Client skipped: missing phone');
           continue;
         }
 
@@ -40,7 +42,7 @@ class SyncEngine {
               item['id'] as int,
               createdClient['id'] as int,
             );
-            print('CLIENT SYNCED: ${client.phone}');
+            debugPrint('CLIENT SYNCED: ${client.phone}');
           }
         } else {
           final serverId = existingClient['id'];
@@ -51,11 +53,11 @@ class SyncEngine {
               item['id'] as int,
               serverId as int,
             );
-            print('CLIENT UPDATED + SYNCED: ${client.phone}');
+            debugPrint('CLIENT UPDATED + SYNCED: ${client.phone}');
           }
         }
       } catch (e) {
-        print('Client sync failed: $e');
+        debugPrint('Client sync failed: $e');
       }
     }
   }
@@ -66,12 +68,12 @@ class SyncEngine {
     for (final item in unsynced) {
       final serverClientId = await db.getClientServerId(item['client_id'] as int);
 
-      print("SYNCING ORDER: ${item['id']}");
-      print("LOCAL CLIENT: ${item['client_id']}");
-      print("SERVER CLIENT: $serverClientId");
+      debugPrint("SYNCING ORDER: ${item['id']}");
+      debugPrint("LOCAL CLIENT: ${item['client_id']}");
+      debugPrint("SERVER CLIENT: $serverClientId");
 
       if (serverClientId == null) {
-        print("ORDER SYNC SKIPPED: client has no server_id");
+        debugPrint("ORDER SYNC SKIPPED: client has no server_id");
         continue;
       }
 
@@ -101,7 +103,7 @@ class SyncEngine {
 
       final response = await api.createOrder(orderData);
 
-      print("ORDER SYNC STATUS: ${response.statusCode}");
+      debugPrint("ORDER SYNC STATUS: ${response.statusCode}");
 
       if (response.statusCode == 201) {
         final responseData = jsonDecode(response.body);
@@ -111,25 +113,25 @@ class SyncEngine {
           responseData['id'] as int,
         );
 
-        print("ORDER SERVER ID STORED: ${responseData['id']}");
+        debugPrint("ORDER SERVER ID STORED: ${responseData['id']}");
       }
     }
   }
 
   Future<void> syncInvoices() async {
     final unsynced = await db.getUnsyncedInvoices();
-    print("INVOICES TO SYNC: ${unsynced.length}");
+    debugPrint("INVOICES TO SYNC: ${unsynced.length}");
 
     for (final item in unsynced) {
       final serverClientId = await db.getClientServerId(item['client_id']);
       final serverOrderId = await db.getOrderServerId(item['order_id']);
 
-      print("SYNCING INVOICE: ${item['id']}");
-      print("CLIENT SERVER ID: $serverClientId");
-      print("ORDER SERVER ID: $serverOrderId");
+      debugPrint("SYNCING INVOICE: ${item['id']}");
+      debugPrint("CLIENT SERVER ID: $serverClientId");
+      debugPrint("ORDER SERVER ID: $serverOrderId");
 
       if (serverClientId == null || serverOrderId == null) {
-        print("INVOICE SKIPPED: missing mapping");
+        debugPrint("INVOICE SKIPPED: missing mapping");
         continue;
       }
 
@@ -149,11 +151,11 @@ class SyncEngine {
 
       final response = await api.createInvoice(invoiceData);
 
-      print("INVOICE STATUS: ${response.statusCode}");
+      debugPrint("INVOICE STATUS: ${response.statusCode}");
 
       if (response.statusCode == 201) {
         await db.markAsSynced('invoices', item['id']);
-        print("INVOICE SYNCED: ${item['id']}");
+        debugPrint("INVOICE SYNCED: ${item['id']}");
       }
     }
   }
@@ -161,13 +163,13 @@ class SyncEngine {
   Future<void> syncVisits() async {
     final unsynced = await db.getUnsyncedVisits();
 
-    print("VISITS TO SYNC: ${unsynced.length}");
+    debugPrint("VISITS TO SYNC: ${unsynced.length}");
 
     for (final item in unsynced) {
       final serverClientId = await db.getClientServerId(item['client_id']);
 
       if (serverClientId == null) {
-        print("VISIT SKIPPED: client not synced");
+        debugPrint("VISIT SKIPPED: client not synced");
         continue;
       }
 
@@ -187,17 +189,17 @@ class SyncEngine {
         "user": 1,
       };
       
-      print("VISIT DATA: $visitData");
+      debugPrint("VISIT DATA: $visitData");
       
 
       final response = await api.createVisit(visitData);
 
-      print("VISIT STATUS: ${response.statusCode}");
-      print("VISIT BODY: ${response.body}");
+      debugPrint("VISIT STATUS: ${response.statusCode}");
+      debugPrint("VISIT BODY: ${response.body}");
 
       if (response.statusCode == 201) {
         await db.markAsSynced('visits', item['id']);
-        print("VISIT SYNCED: ${item['id']}");
+        debugPrint("VISIT SYNCED: ${item['id']}");
       }
       
     }

@@ -1,17 +1,28 @@
 import 'dart:convert';
 import 'package:http/http.dart' as http;
-import '../models/client.dart';
-import 'dart:convert';
-import 'package:http/http.dart' as http;
 import 'package:shared_preferences/shared_preferences.dart';
 
+import '../models/client.dart';
 
 class ApiService {
   static const String baseUrl = 'http://127.0.0.1:8000/api';
 
-  Future<List<Client>> fetchClients() async {
-    final response = await http.get(Uri.parse('$baseUrl/clients/'));
+  Future<Map<String, String>> _authHeaders() async {
+  final prefs = await SharedPreferences.getInstance();
+  final token = prefs.getString('access_token');
 
+  return {
+    'Content-Type': 'application/json',
+    if (token != null && token.isNotEmpty)
+      'Authorization': 'Bearer $token',
+  };
+}
+
+  Future<List<Client>> fetchClients() async {
+    final response = await http.get(
+      Uri.parse('$baseUrl/clients/'),
+      headers: await _authHeaders(),
+    );
     if (response.statusCode == 200) {
       final List<dynamic> data = jsonDecode(response.body);
       return data.map((json) => Client.fromMap(json)).toList();
@@ -23,12 +34,10 @@ class ApiService {
   Future<Map<String, dynamic>?> sendClient(Client client) async {
     final response = await http.post(
       Uri.parse('$baseUrl/clients/'),
-      headers: {'Content-Type': 'application/json'},
+      headers: await _authHeaders(),
       body: jsonEncode(client.toMap()),
     );
 
-    print('CLIENT SYNC STATUS: ${response.statusCode}');
-    print('CLIENT SYNC BODY: ${response.body}');
 
     if (response.statusCode == 201) {
       return jsonDecode(response.body);
@@ -40,11 +49,10 @@ class ApiService {
   Future<Map<String, dynamic>?> fetchClientByPhone(String phone) async {
     final response = await http.get(
       Uri.parse('$baseUrl/clients/?phone=$phone'),
-      headers: {'Content-Type': 'application/json'},
+      headers: await _authHeaders(),
     );
 
-    print('FETCH CLIENT STATUS: ${response.statusCode}');
-    print('FETCH CLIENT BODY: ${response.body}');
+
 
     if (response.statusCode == 200) {
       final data = jsonDecode(response.body);
@@ -61,7 +69,7 @@ class ApiService {
   Future<bool> updateClient(int serverId, Client client) async {
   final response = await http.put(
     Uri.parse('$baseUrl/clients/$serverId/'),
-    headers: {'Content-Type': 'application/json'},
+    headers: await _authHeaders(),
     body: jsonEncode({
       'name': client.name,
       'phone': client.phone,
@@ -74,8 +82,7 @@ class ApiService {
     }),
   );
 
-  print('UPDATE CLIENT STATUS: ${response.statusCode}');
-  print('UPDATE CLIENT BODY: ${response.body}');
+
 
   return response.statusCode == 200;
 }
@@ -84,7 +91,7 @@ Future<http.Response> createOrder(Map<String, dynamic> orderData) async {
 
   return await http.post(
     url,
-    headers: {'Content-Type': 'application/json'},
+    headers: await _authHeaders(),
     body: jsonEncode(orderData),
   );
 }
@@ -94,7 +101,7 @@ Future<http.Response> createInvoice(Map<String, dynamic> data) async {
 
   return await http.post(
     url,
-    headers: {'Content-Type': 'application/json'},
+    headers: await _authHeaders(),
     body: jsonEncode(data),
   );
 }
@@ -102,7 +109,7 @@ Future<http.Response> createInvoice(Map<String, dynamic> data) async {
 Future<http.Response> createVisit(Map<String, dynamic> visitData) async {
   final response = await http.post(
     Uri.parse('$baseUrl/visits/'),
-    headers: {'Content-Type': 'application/json'},
+    headers: await _authHeaders(),
     body: jsonEncode(visitData),
   );
 
@@ -129,15 +136,20 @@ Future<bool> login(String username, String password) async {
     await prefs.setString('access_token', data['access']);
     await prefs.setString('refresh_token', data['refresh']);
 
-    print('JWT ACCESS TOKEN: ${data['access']}');
-    print('JWT REFRESH TOKEN: ${data['refresh']}');
-
     return true;
     
   }
 
   return false;
 }
+
+Future<void> logout() async {
+  final prefs = await SharedPreferences.getInstance();
+
+  await prefs.remove('access_token');
+  await prefs.remove('refresh_token');
+}
+
 }
 
 

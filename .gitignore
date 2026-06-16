@@ -13,3 +13,21 @@ crm_backend/db.sqlite3
 # System
 .DS_Store
 *.log
+
+# Personal / report / design folders
+rapport_pfe_latex/
+Design_app/
+project_management/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Draw.io temporary files
+*.bkp
+*.dtmp
+.~*
+
+# Local temporary files
+token_body.json

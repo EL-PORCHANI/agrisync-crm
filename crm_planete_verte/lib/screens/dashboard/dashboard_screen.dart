@@ -30,24 +30,41 @@ class _DashboardScreenState extends State<DashboardScreen> {
   }
 
   Future<void> loadDashboardData() async {
-    totalClients = await db.getTotalClients();
-    totalOrders = await db.getTotalOrders();
-    totalRevenue = await db.getTotalRevenue();
-    
+    await db.refreshInvoiceStatuses();
+
+    final loadedTotalClients = await db.getTotalClients();
+    final loadedTotalOrders = await db.getTotalOrders();
+    final loadedTotalRevenue = await db.getTotalRevenue();
+
     final unpaidList = await db.getUnpaidInvoices();
-    unpaidInvoices = unpaidList.length;
-    
-    todayVisits = await db.getTodayVisits();
-    revenueData = await db.getRevenueByMonth();
+    final loadedUnpaidInvoices = unpaidList.length;
+
+    final loadedTodayVisits = await db.getTodayVisits();
+    final loadedRevenueData = await db.getRevenueByMonth();
     final topClient = await db.getTopClient();
+    final loadedLowStockCount = await db.getLowStockCount();
+
+    String loadedTopClientName = "";
+    double loadedTopClientRevenue = 0;
+
     if (topClient != null) {
-      topClientName = topClient['name'] ?? "";
-      topClientRevenue = (topClient['total'] as num).toDouble();
+      loadedTopClientName = topClient['name'] ?? "";
+      loadedTopClientRevenue = (topClient['total'] as num?)?.toDouble() ?? 0;
     }
 
-    lowStockCount = await db.getLowStockCount();
+    if (!mounted) return;
 
-    setState(() {});
+    setState(() {
+      totalClients = loadedTotalClients;
+      totalOrders = loadedTotalOrders;
+      totalRevenue = loadedTotalRevenue;
+      unpaidInvoices = loadedUnpaidInvoices;
+      todayVisits = loadedTodayVisits;
+      revenueData = loadedRevenueData;
+      topClientName = loadedTopClientName;
+      topClientRevenue = loadedTopClientRevenue;
+      lowStockCount = loadedLowStockCount;
+    });
   }
 
   @override
@@ -121,7 +138,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                 borderRadius: BorderRadius.circular(18),
                 boxShadow: [
                   BoxShadow(
-                    color: Colors.black.withOpacity(0.06),
+                    color: Colors.black.withValues(alpha: 0.06),
                     blurRadius: 12,
                     offset: const Offset(0, 4),
                   ),
@@ -142,10 +159,42 @@ class _DashboardScreenState extends State<DashboardScreen> {
                   Expanded(
                     child: revenueData.isEmpty
                         ? const Center(child: Text("No revenue data yet"))
-                        : LineChart(
-                            LineChartData(
+                        : revenueData.length == 1
+                            ? Center(
+                                child: Column(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: [
+                                    Text(
+                                      "${(revenueData.first['total'] as num).toDouble().toStringAsFixed(2)} TND",
+                                      style: const TextStyle(
+                                        fontSize: 28,
+                                        fontWeight: FontWeight.bold,
+                                        color: Colors.green,
+                                      ),
+                                    ),
+                                    const SizedBox(height: 8),
+                                    Text(
+                                      "Revenue for ${revenueData.first['month']}",
+                                      style: const TextStyle(
+                                        color: Colors.grey,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              )
+                            : LineChart(
+                                LineChartData(
+                              minX: 0,
+                              maxX: revenueData.length > 1
+                                  ? (revenueData.length - 1).toDouble()
+                                  : 1,
+                              minY: 0,
+                              maxY: revenueData
+                                      .map((item) => (item['total'] as num).toDouble())
+                                      .fold<double>(0, (max, value) => value > max ? value : max) *
+                                  1.2,
                               borderData: FlBorderData(show: false),
-                              gridData: FlGridData(show: false),
+                              gridData: FlGridData(show: true),
                               titlesData: FlTitlesData(show: false),
                               lineBarsData: [
                                 LineChartBarData(
@@ -157,10 +206,10 @@ class _DashboardScreenState extends State<DashboardScreen> {
                                   isCurved: true,
                                   color: Colors.green,
                                   barWidth: 3,
-                                  dotData: FlDotData(show: false),
+                                  dotData: FlDotData(show: true),
                                   belowBarData: BarAreaData(
                                     show: true,
-                                    color: Colors.green.withOpacity(0.12),
+                                    color: Colors.green.withValues(alpha: 0.12),
                                   ),
                                 ),
                               ],
@@ -180,7 +229,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
     return Container(
       padding: const EdgeInsets.all(20),
       decoration: BoxDecoration(
-        color: color.withOpacity(0.1),
+        color: color.withValues(alpha: 0.1),
         borderRadius: BorderRadius.circular(18),
       ),
       child: Row(
