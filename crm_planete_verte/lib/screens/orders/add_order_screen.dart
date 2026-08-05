@@ -84,29 +84,7 @@ class _AddOrderScreenState extends State<AddOrderScreen> {
     }
 
     final selectedItems = quantities.entries.where((e) => e.value > 0).toList();
-  // STOCK VALIDATION
-  for (final entry in selectedItems) {
-    final productId = entry.key;
-    final qty = entry.value;
 
-    final isAvailable = await DatabaseService.instance
-        .isStockAvailable(productId, 1, qty);
-
-    if (!isAvailable) {
-      final product = products.firstWhere((p) => p.id == productId);
-
-      if (!mounted) return;
-      messenger.showSnackBar(
-        SnackBar(
-          content: Text(
-            'Not enough stock for ${product.name}',
-          ),
-        ),
-      );
-
-      return;
-    }
-  }
     if (selectedItems.isEmpty) {
       messenger.showSnackBar(
         const SnackBar(content: Text('Select at least one product')),
@@ -114,48 +92,74 @@ class _AddOrderScreenState extends State<AddOrderScreen> {
       return;
     }
 
+    for (final entry in selectedItems) {
+      final productId = entry.key;
+      final qty = entry.value;
+
+      final isAvailable = await DatabaseService.instance
+          .isStockAvailable(productId, 1, qty);
+
+      if (!isAvailable) {
+        final product = products.firstWhere((p) => p.id == productId);
+
+        if (!mounted) return;
+        messenger.showSnackBar(
+          SnackBar(
+            content: Text(
+              'Not enough stock for ${product.name}',
+            ),
+          ),
+        );
+
+        return;
+      }
+    }
+
     try {
+      final now = DateTime.now();
+
       final order = Order(
-        orderDate: DateTime.now().toIso8601String(),
+        orderDate: now.toIso8601String(),
         status: 'draft',
         totalAmount: total,
         isValidated: 0,
         clientId: selectedClient!.id!,
         userId: 1,
-        updatedAt: DateTime.now().toIso8601String(),
+        updatedAt: now.toIso8601String(),
       );
 
-      final orderId = await DatabaseService.instance.insertOrder(order);
-
+      final orderLines = <OrderLine>[];
       for (final entry in selectedItems) {
         final productId = entry.key;
         final qty = entry.value;
 
         final product = products.firstWhere((p) => p.id == productId);
 
-        final line = OrderLine(
-          quantity: qty,
-          unitPrice: product.currentPrice,
-          orderId: orderId,
-          productId: productId,
+        orderLines.add(
+          OrderLine(
+            quantity: qty,
+            unitPrice: product.currentPrice,
+            orderId: 0,
+            productId: productId,
+          ),
         );
-
-        await DatabaseService.instance.insertOrderLine(line);
-        await DatabaseService.instance.decreaseStock(productId, 1, qty);
       }
 
       final invoice = Invoice(
         amountDue: total,
-        dueDate: DateTime.now().add(const Duration(days: 3)).toIso8601String(),
+        dueDate: now.add(const Duration(days: 3)).toIso8601String(),
         status: 'up_to_date',
         delayDays: 0,
         clientId: selectedClient!.id!,
-        orderId: orderId,
-        updatedAt: DateTime.now().toIso8601String(),
+        orderId: 0,
+        updatedAt: now.toIso8601String(),
       );
 
-
-      await DatabaseService.instance.insertInvoice(invoice);
+      await DatabaseService.instance.insertOrderWithLinesAndInvoice(
+        order: order,
+        lines: orderLines,
+        invoice: invoice,
+      );
 
       if (!mounted) return;
       navigator.pop(true);

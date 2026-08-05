@@ -511,9 +511,114 @@ Future<void> decreaseStock(int productId, int zoneId, int quantity) async {
   );
 }
 
+Future<int> insertOrderWithLinesAndInvoice({
+  required Order order,
+  required List<OrderLine> lines,
+  required Invoice invoice,
+  int stockZoneId = 1,
+}) async {
+  final db = await database;
+
+  return await db.transaction((txn) async {
+    final orderMap = Map<String, dynamic>.from(order.toMap());
+    if (orderMap['id'] == null) {
+      orderMap.remove('id');
+    }
+
+    final orderId = await txn.insert('orders', orderMap);
+
+    for (final line in lines) {
+      final stockRows = await txn.query(
+        'stocks',
+        where: 'product_id = ? AND zone_id = ?',
+        whereArgs: [line.productId, stockZoneId],
+        limit: 1,
+      );
+
+      if (stockRows.isEmpty) {
+        throw Exception('Stock not found for product ${line.productId}');
+      }
+
+      final stock = stockRows.first;
+      final availableQuantity = stock['available_quantity'] as int;
+      final newQuantity = availableQuantity - line.quantity;
+
+      if (newQuantity < 0) {
+        throw Exception('Not enough stock for product ${line.productId}');
+      }
+
+      final lineMap = Map<String, dynamic>.from(line.toMap());
+      lineMap['order_id'] = orderId;
+      if (lineMap['id'] == null) {
+        lineMap.remove('id');
+      }
+
+      await txn.insert('order_lines', lineMap);
+
+      await txn.update(
+        'stocks',
+        {
+          'available_quantity': newQuantity,
+          'updated_at': DateTime.now().toIso8601String(),
+          'is_synced': 0,
+        },
+        where: 'id = ?',
+        whereArgs: [stock['id']],
+      );
+    }
+
+    final invoiceMap = Map<String, dynamic>.from(invoice.toMap());
+    invoiceMap['order_id'] = orderId;
+    if (invoiceMap['id'] == null) {
+      invoiceMap.remove('id');
+    }
+
+    await txn.insert('invoices', invoiceMap);
+
+    return orderId;
+  });
+}
+
 Future<int> insertInvoice(Invoice invoice) async {
   final db = await database;
   return await db.insert('invoices', invoice.toMap());
+}
+
+Future<int> createMissingInvoicesForOrders() async {
+  final db = await database;
+
+  return await db.transaction((txn) async {
+    final orphanOrders = await txn.rawQuery('''
+      SELECT o.id, o.total_amount, o.client_id, o.order_date
+      FROM orders o
+      LEFT JOIN invoices i ON i.order_id = o.id
+      WHERE i.id IS NULL
+    ''');
+
+    var createdCount = 0;
+    final now = DateTime.now().toIso8601String();
+
+    for (final order in orphanOrders) {
+      final orderDate =
+          DateTime.tryParse(order['order_date'] as String? ?? '') ??
+              DateTime.now();
+
+      await txn.insert('invoices', {
+        'amount_due': (order['total_amount'] as num).toDouble(),
+        'due_date': orderDate.add(const Duration(days: 3)).toIso8601String(),
+        'status': 'up_to_date',
+        'delay_days': 0,
+        'client_id': order['client_id'],
+        'order_id': order['id'],
+        'updated_at': now,
+        'is_synced': 0,
+      });
+
+      createdCount++;
+    }
+
+    return createdCount;
+  });
 }
 
 Future<List<Invoice>> getInvoices() async {
@@ -727,6 +832,21 @@ Future<void> updateOrderServerId(int localOrderId, int serverOrderId) async {
   );
 }
 
+Future<void> updateInvoiceServerId(int localInvoiceId, int serverInvoiceId) async {
+  final dbClient = await database;
+
+  await dbClient.update(
+    'invoices',
+    {
+      'is_synced': 1,
+      'server_id': serverInvoiceId,
+      'updated_at': DateTime.now().toIso8601String(),
+    },
+    where: 'id = ?',
+    whereArgs: [localInvoiceId],
+  );
+}
+
 Future<void> updateClientServerId(int localClientId, int serverClientId) async {
   final dbClient = await database;
 
@@ -759,6 +879,22 @@ Future<String?> getProductName(int productId) async {
     columns: ['name'],
     where: 'id = ?',
     whereArgs: [productId],
+  );
+
+  if (result.isNotEmpty) {
+    return result.first['name'] as String?;
+  }
+  return null;
+}
+
+Future<String?> getClientName(int clientId) async {
+  final dbClient = await database;
+
+  final result = await dbClient.query(
+    'clients',
+    columns: ['name'],
+    where: 'id = ?',
+    whereArgs: [clientId],
   );
 
   if (result.isNotEmpty) {

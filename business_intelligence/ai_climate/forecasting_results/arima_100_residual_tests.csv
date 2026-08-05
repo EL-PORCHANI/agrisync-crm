@@ -1,0 +1,5 @@
+test,lag,statistic,p_value,interpretation
+Ljung-Box,2.0,0.1152,0.7343,No significant residual autocorrelation
+Ljung-Box,3.0,0.5242,0.7694,No significant residual autocorrelation
+Ljung-Box,4.0,3.9332,0.2688,No significant residual autocorrelation
+Shapiro-Wilk,,0.9574,0.7458,Residual normality is not rejected

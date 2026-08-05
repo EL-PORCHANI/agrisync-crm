@@ -1,10 +1,7 @@
-import warnings
 from pathlib import Path
 
 import pandas as pd
-from statsmodels.tsa.arima.model import ARIMA
 
-warnings.filterwarnings("ignore")
 
 ROOT_DIR = Path(__file__).resolve().parents[2]
 INPUT_PATH = ROOT_DIR / "business_intelligence" / "ai_climate" / "monthly_demand_dataset.csv"
@@ -19,17 +16,11 @@ def build_time_index(data):
     return data.sort_values("date")
 
 
-def forecast_with_arima(series):
-    if len(series) < 4:
-        return max(float(series.mean()), 0)
+def forecast_with_historical_mean(series):
+    if series.empty:
+        return 0.0
 
-    try:
-        model = ARIMA(series, order=(1, 1, 1))
-        fitted_model = model.fit()
-        forecast = fitted_model.forecast(steps=1)
-        return max(float(forecast.iloc[0]), 0)
-    except Exception:
-        return max(float(series.tail(3).mean()), 0)
+    return max(float(series.mean()), 0.0)
 
 
 def build_recommendation_note(predicted_quantity, stock_quantity):
@@ -81,7 +72,9 @@ def main():
         if monthly_series.empty:
             continue
 
-        predicted_quantity = forecast_with_arima(monthly_series)
+        predicted_quantity = forecast_with_historical_mean(
+            monthly_series
+        )
         latest_quantity = float(monthly_series.iloc[-1])
         stock_quantity = int(group_data["stock_quantity"].iloc[-1])
 
@@ -99,7 +92,7 @@ def main():
             "historical_quantity": round(latest_quantity, 2),
             "predicted_quantity": round(predicted_quantity, 2),
             "stock_quantity": stock_quantity,
-            "forecast_method": "ARIMA(1,1,1)",
+            "forecast_method": "Historical monthly mean",
             "recommendation_note": build_recommendation_note(
                 predicted_quantity,
                 stock_quantity,

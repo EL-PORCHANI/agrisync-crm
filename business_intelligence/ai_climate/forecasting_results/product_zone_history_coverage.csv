@@ -1,0 +1,151 @@
+product_id,product_name,category,zone_id,zone_name,calendar_months,active_months,zero_months,coverage_percentage,total_quantity,average_monthly_quantity,series_variance,recommended_approach
+17,Cereal Yield Enhancer,Soil treatment,2,Sfax,12,2,10,16.67,10,0.83,6.7,Sparse series - baseline only
+11,Drought Shield Bio,Fungicides,5,Gabes,12,3,9,25.0,29,2.42,19.9,Sparse series - baseline only
+11,Drought Shield Bio,Fungicides,2,Sfax,12,3,9,25.0,26,2.17,17.06,Sparse series - baseline only
+24,Foliar Nutrition Mix,Pesticides,3,Beja,12,4,8,33.33,40,3.33,35.15,Sparse series - baseline only
+2,Organic Compost Mix,Soil treatment,2,Sfax,12,4,8,33.33,38,3.17,31.06,Sparse series - baseline only
+7,Copper Fungicide,Soil treatment,2,Sfax,12,4,8,33.33,37,3.08,32.45,Sparse series - baseline only
+22,Mildew Protection Spray,Climate-adapted products,5,Gabes,12,4,8,33.33,32,2.67,17.88,Sparse series - baseline only
+9,Water Retention Granules,Pesticides,5,Gabes,12,4,8,33.33,27,2.25,14.93,Sparse series - baseline only
+1,NPK Fertilizer 20-20-20,Fertilizers,5,Gabes,12,4,8,33.33,26,2.17,13.97,Sparse series - baseline only
+27,Irrigation Filter Pack,Fungicides,2,Sfax,12,4,8,33.33,21,1.75,11.84,Sparse series - baseline only
+4,Wheat Seeds Resistant,Seeds,4,Kairouan,12,5,7,41.67,80,6.67,94.61,Sparse series - baseline only
+13,Potassium Booster,Fertilizers,3,Beja,12,5,7,41.67,65,5.42,58.63,Sparse series - baseline only
+23,Seed Germination Booster,Irrigation products,1,Nabeul,12,5,7,41.67,62,5.17,50.52,Sparse series - baseline only
+26,Crop Stress Reducer,Climate-adapted products,3,Beja,12,5,7,41.67,59,4.92,67.54,Sparse series - baseline only
+19,Salinity Control Product,Soil treatment,5,Gabes,12,5,7,41.67,58,4.83,43.42,Sparse series - baseline only
+9,Water Retention Granules,Pesticides,2,Sfax,12,5,7,41.67,55,4.58,50.81,Sparse series - baseline only
+20,Greenhouse Pest Control,Fungicides,4,Kairouan,12,5,7,41.67,53,4.42,34.08,Sparse series - baseline only
+4,Wheat Seeds Resistant,Seeds,5,Gabes,12,5,7,41.67,52,4.33,49.88,Sparse series - baseline only
+22,Mildew Protection Spray,Climate-adapted products,4,Kairouan,12,5,7,41.67,51,4.25,39.84,Sparse series - baseline only
+2,Organic Compost Mix,Soil treatment,5,Gabes,12,5,7,41.67,49,4.08,38.81,Sparse series - baseline only
+20,Greenhouse Pest Control,Fungicides,2,Sfax,12,5,7,41.67,43,3.58,23.72,Sparse series - baseline only
+6,Anti-Fungal Treatment,Fertilizers,2,Sfax,12,5,7,41.67,42,3.5,21.73,Sparse series - baseline only
+26,Crop Stress Reducer,Climate-adapted products,5,Gabes,12,5,7,41.67,42,3.5,35.91,Sparse series - baseline only
+30,Bio Stimulant Plus,Climate-adapted products,3,Beja,12,5,7,41.67,42,3.5,20.09,Sparse series - baseline only
+8,Drip Irrigation Kit,Irrigation products,2,Sfax,12,5,7,41.67,41,3.42,20.08,Sparse series - baseline only
+14,Nitrogen Booster,Soil treatment,2,Sfax,12,5,7,41.67,40,3.33,22.06,Sparse series - baseline only
+30,Bio Stimulant Plus,Climate-adapted products,2,Sfax,12,5,7,41.67,40,3.33,21.88,Sparse series - baseline only
+7,Copper Fungicide,Soil treatment,5,Gabes,12,5,7,41.67,37,3.08,22.45,Sparse series - baseline only
+28,Soil Moisture Sensor,Fertilizers,2,Sfax,12,5,7,41.67,33,2.75,24.57,Sparse series - baseline only
+14,Nitrogen Booster,Soil treatment,5,Gabes,12,5,7,41.67,31,2.58,17.9,Sparse series - baseline only
+5,Olive Tree Nutrient Pack,Irrigation products,2,Sfax,12,5,7,41.67,25,2.08,8.99,Sparse series - baseline only
+2,Organic Compost Mix,Soil treatment,3,Beja,12,6,6,50.0,103,8.58,157.72,Baseline model preferred
+27,Irrigation Filter Pack,Fungicides,3,Beja,12,6,6,50.0,93,7.75,118.75,Baseline model preferred
+9,Water Retention Granules,Pesticides,3,Beja,12,6,6,50.0,72,6.0,83.45,Baseline model preferred
+23,Seed Germination Booster,Irrigation products,2,Sfax,12,6,6,50.0,71,5.92,60.81,Baseline model preferred
+28,Soil Moisture Sensor,Fertilizers,1,Nabeul,12,6,6,50.0,70,5.83,80.7,Baseline model preferred
+9,Water Retention Granules,Pesticides,4,Kairouan,12,6,6,50.0,67,5.58,41.54,Baseline model preferred
+13,Potassium Booster,Fertilizers,2,Sfax,12,6,6,50.0,66,5.5,49.73,Baseline model preferred
+2,Organic Compost Mix,Soil treatment,4,Kairouan,12,6,6,50.0,64,5.33,53.88,Baseline model preferred
+6,Anti-Fungal Treatment,Fertilizers,5,Gabes,12,6,6,50.0,64,5.33,57.88,Baseline model preferred
+28,Soil Moisture Sensor,Fertilizers,4,Kairouan,12,6,6,50.0,62,5.17,57.61,Baseline model preferred
+10,Soil PH Corrector,Fertilizers,4,Kairouan,12,6,6,50.0,61,5.08,40.27,Baseline model preferred
+1,NPK Fertilizer 20-20-20,Fertilizers,4,Kairouan,12,6,6,50.0,60,5.0,45.27,Baseline model preferred
+8,Drip Irrigation Kit,Irrigation products,4,Kairouan,12,6,6,50.0,60,5.0,43.09,Baseline model preferred
+11,Drought Shield Bio,Fungicides,4,Kairouan,12,6,6,50.0,60,5.0,56.55,Baseline model preferred
+24,Foliar Nutrition Mix,Pesticides,5,Gabes,12,6,6,50.0,60,5.0,49.64,Baseline model preferred
+3,Tomato Seeds Premium,Irrigation products,2,Sfax,12,6,6,50.0,59,4.92,40.08,Baseline model preferred
+25,Micro Elements Pack,Fertilizers,2,Sfax,12,6,6,50.0,59,4.92,36.08,Baseline model preferred
+5,Olive Tree Nutrient Pack,Irrigation products,3,Beja,12,6,6,50.0,57,4.75,32.2,Baseline model preferred
+15,Citrus Growth Formula,Seeds,4,Kairouan,12,6,6,50.0,56,4.67,29.33,Baseline model preferred
+5,Olive Tree Nutrient Pack,Irrigation products,4,Kairouan,12,6,6,50.0,51,4.25,30.93,Baseline model preferred
+22,Mildew Protection Spray,Climate-adapted products,2,Sfax,12,6,6,50.0,49,4.08,33.17,Baseline model preferred
+24,Foliar Nutrition Mix,Pesticides,2,Sfax,12,6,6,50.0,48,4.0,70.91,Baseline model preferred
+3,Tomato Seeds Premium,Irrigation products,3,Beja,12,6,6,50.0,46,3.83,49.42,Baseline model preferred
+3,Tomato Seeds Premium,Irrigation products,5,Gabes,12,6,6,50.0,46,3.83,30.88,Baseline model preferred
+30,Bio Stimulant Plus,Climate-adapted products,5,Gabes,12,6,6,50.0,46,3.83,23.24,Baseline model preferred
+15,Citrus Growth Formula,Seeds,2,Sfax,12,6,6,50.0,42,3.5,19.18,Baseline model preferred
+8,Drip Irrigation Kit,Irrigation products,3,Beja,12,6,6,50.0,41,3.42,18.81,Baseline model preferred
+10,Soil PH Corrector,Fertilizers,2,Sfax,12,6,6,50.0,41,3.42,14.99,Baseline model preferred
+7,Copper Fungicide,Soil treatment,3,Beja,12,6,6,50.0,39,3.25,20.2,Baseline model preferred
+12,Humidity Control Spray,Fungicides,2,Sfax,12,6,6,50.0,39,3.25,14.39,Baseline model preferred
+29,Climate Smart Pack,Seeds,2,Sfax,12,6,6,50.0,37,3.08,15.17,Baseline model preferred
+29,Climate Smart Pack,Seeds,4,Kairouan,12,6,6,50.0,36,3.0,17.27,Baseline model preferred
+19,Salinity Control Product,Soil treatment,4,Kairouan,12,6,6,50.0,35,2.92,14.81,Baseline model preferred
+19,Salinity Control Product,Soil treatment,1,Nabeul,12,7,5,58.33,119,9.92,130.63,Baseline model preferred
+13,Potassium Booster,Fertilizers,1,Nabeul,12,7,5,58.33,103,8.58,108.27,Baseline model preferred
+6,Anti-Fungal Treatment,Fertilizers,1,Nabeul,12,7,5,58.33,98,8.17,89.06,Baseline model preferred
+12,Humidity Control Spray,Fungicides,3,Beja,12,7,5,58.33,96,8.0,74.18,Baseline model preferred
+24,Foliar Nutrition Mix,Pesticides,1,Nabeul,12,7,5,58.33,91,7.58,67.17,Baseline model preferred
+23,Seed Germination Booster,Irrigation products,5,Gabes,12,7,5,58.33,86,7.17,87.24,Baseline model preferred
+1,NPK Fertilizer 20-20-20,Fertilizers,3,Beja,12,7,5,58.33,82,6.83,59.42,Baseline model preferred
+14,Nitrogen Booster,Soil treatment,3,Beja,12,7,5,58.33,82,6.83,64.15,Baseline model preferred
+18,Palm Tree Fertilizer,Fungicides,3,Beja,12,7,5,58.33,78,6.5,47.36,Baseline model preferred
+8,Drip Irrigation Kit,Irrigation products,5,Gabes,12,7,5,58.33,76,6.33,59.7,Baseline model preferred
+14,Nitrogen Booster,Soil treatment,1,Nabeul,12,7,5,58.33,72,6.0,46.55,Baseline model preferred
+17,Cereal Yield Enhancer,Soil treatment,5,Gabes,12,7,5,58.33,70,5.83,49.97,Baseline model preferred
+4,Wheat Seeds Resistant,Seeds,2,Sfax,12,7,5,58.33,69,5.75,46.39,Baseline model preferred
+3,Tomato Seeds Premium,Irrigation products,4,Kairouan,12,7,5,58.33,68,5.67,76.42,Baseline model preferred
+28,Soil Moisture Sensor,Fertilizers,5,Gabes,12,7,5,58.33,68,5.67,57.33,Baseline model preferred
+21,Aphid Control Solution,Pesticides,4,Kairouan,12,7,5,58.33,67,5.58,28.99,Baseline model preferred
+16,Vegetable Root Stimulator,Soil treatment,5,Gabes,12,7,5,58.33,65,5.42,31.17,Baseline model preferred
+18,Palm Tree Fertilizer,Fungicides,4,Kairouan,12,7,5,58.33,64,5.33,35.88,Baseline model preferred
+10,Soil PH Corrector,Fertilizers,3,Beja,12,7,5,58.33,63,5.25,47.3,Baseline model preferred
+21,Aphid Control Solution,Pesticides,3,Beja,12,7,5,58.33,62,5.17,46.33,Baseline model preferred
+1,NPK Fertilizer 20-20-20,Fertilizers,1,Nabeul,12,7,5,58.33,59,4.92,22.27,Baseline model preferred
+18,Palm Tree Fertilizer,Fungicides,2,Sfax,12,7,5,58.33,57,4.75,22.2,Baseline model preferred
+16,Vegetable Root Stimulator,Soil treatment,1,Nabeul,12,7,5,58.33,56,4.67,30.24,Baseline model preferred
+6,Anti-Fungal Treatment,Fertilizers,4,Kairouan,12,7,5,58.33,54,4.5,36.09,Baseline model preferred
+27,Irrigation Filter Pack,Fungicides,5,Gabes,12,7,5,58.33,54,4.5,25.36,Baseline model preferred
+4,Wheat Seeds Resistant,Seeds,3,Beja,12,7,5,58.33,53,4.42,23.9,Baseline model preferred
+4,Wheat Seeds Resistant,Seeds,1,Nabeul,12,7,5,58.33,51,4.25,41.66,Baseline model preferred
+16,Vegetable Root Stimulator,Soil treatment,2,Sfax,12,7,5,58.33,51,4.25,30.39,Baseline model preferred
+1,NPK Fertilizer 20-20-20,Fertilizers,2,Sfax,12,7,5,58.33,49,4.08,19.9,Baseline model preferred
+24,Foliar Nutrition Mix,Pesticides,4,Kairouan,12,7,5,58.33,49,4.08,22.99,Baseline model preferred
+5,Olive Tree Nutrient Pack,Irrigation products,5,Gabes,12,7,5,58.33,48,4.0,15.27,Baseline model preferred
+27,Irrigation Filter Pack,Fungicides,4,Kairouan,12,7,5,58.33,46,3.83,27.61,Baseline model preferred
+30,Bio Stimulant Plus,Climate-adapted products,4,Kairouan,12,7,5,58.33,46,3.83,27.61,Baseline model preferred
+17,Cereal Yield Enhancer,Soil treatment,4,Kairouan,12,7,5,58.33,43,3.58,19.36,Baseline model preferred
+15,Citrus Growth Formula,Seeds,3,Beja,12,7,5,58.33,42,3.5,15.73,Baseline model preferred
+14,Nitrogen Booster,Soil treatment,4,Kairouan,12,7,5,58.33,35,2.92,16.81,Baseline model preferred
+5,Olive Tree Nutrient Pack,Irrigation products,1,Nabeul,12,8,4,66.67,135,11.25,166.75,Baseline model preferred
+25,Micro Elements Pack,Fertilizers,5,Gabes,12,8,4,66.67,101,8.42,55.54,Baseline model preferred
+20,Greenhouse Pest Control,Fungicides,1,Nabeul,12,8,4,66.67,98,8.17,73.79,Baseline model preferred
+6,Anti-Fungal Treatment,Fertilizers,3,Beja,12,8,4,66.67,97,8.08,71.17,Baseline model preferred
+22,Mildew Protection Spray,Climate-adapted products,3,Beja,12,8,4,66.67,87,7.25,68.2,Baseline model preferred
+12,Humidity Control Spray,Fungicides,5,Gabes,12,8,4,66.67,86,7.17,62.7,Baseline model preferred
+8,Drip Irrigation Kit,Irrigation products,1,Nabeul,12,8,4,66.67,84,7.0,45.45,Baseline model preferred
+25,Micro Elements Pack,Fertilizers,4,Kairouan,12,8,4,66.67,84,7.0,50.73,Baseline model preferred
+19,Salinity Control Product,Soil treatment,3,Beja,12,8,4,66.67,82,6.83,34.88,Baseline model preferred
+13,Potassium Booster,Fertilizers,5,Gabes,12,8,4,66.67,80,6.67,48.79,Baseline model preferred
+17,Cereal Yield Enhancer,Soil treatment,3,Beja,12,8,4,66.67,80,6.67,36.97,Baseline model preferred
+2,Organic Compost Mix,Soil treatment,1,Nabeul,12,8,4,66.67,79,6.58,39.36,Baseline model preferred
+25,Micro Elements Pack,Fertilizers,3,Beja,12,8,4,66.67,70,5.83,35.79,Baseline model preferred
+7,Copper Fungicide,Soil treatment,4,Kairouan,12,8,4,66.67,66,5.5,46.64,Baseline model preferred
+16,Vegetable Root Stimulator,Soil treatment,3,Beja,12,8,4,66.67,66,5.5,29.0,Baseline model preferred
+29,Climate Smart Pack,Seeds,1,Nabeul,12,8,4,66.67,66,5.5,41.73,Baseline model preferred
+26,Crop Stress Reducer,Climate-adapted products,4,Kairouan,12,8,4,66.67,65,5.42,29.54,Baseline model preferred
+26,Crop Stress Reducer,Climate-adapted products,2,Sfax,12,8,4,66.67,62,5.17,20.88,Baseline model preferred
+7,Copper Fungicide,Soil treatment,1,Nabeul,12,8,4,66.67,61,5.08,38.99,Baseline model preferred
+21,Aphid Control Solution,Pesticides,5,Gabes,12,8,4,66.67,60,5.0,28.18,Baseline model preferred
+19,Salinity Control Product,Soil treatment,2,Sfax,12,8,4,66.67,58,4.83,31.97,Baseline model preferred
+29,Climate Smart Pack,Seeds,5,Gabes,12,8,4,66.67,58,4.83,21.42,Baseline model preferred
+12,Humidity Control Spray,Fungicides,4,Kairouan,12,8,4,66.67,48,4.0,19.64,Baseline model preferred
+21,Aphid Control Solution,Pesticides,2,Sfax,12,8,4,66.67,46,3.83,16.52,Baseline model preferred
+27,Irrigation Filter Pack,Fungicides,1,Nabeul,12,9,3,75.0,167,13.92,117.54,Limited ARIMA candidate
+18,Palm Tree Fertilizer,Fungicides,5,Gabes,12,9,3,75.0,112,9.33,78.42,Limited ARIMA candidate
+16,Vegetable Root Stimulator,Soil treatment,4,Kairouan,12,9,3,75.0,105,8.75,81.66,Limited ARIMA candidate
+22,Mildew Protection Spray,Climate-adapted products,1,Nabeul,12,9,3,75.0,104,8.67,71.7,Limited ARIMA candidate
+11,Drought Shield Bio,Fungicides,1,Nabeul,12,9,3,75.0,103,8.58,29.54,Limited ARIMA candidate
+21,Aphid Control Solution,Pesticides,1,Nabeul,12,9,3,75.0,100,8.33,52.79,Limited ARIMA candidate
+3,Tomato Seeds Premium,Irrigation products,1,Nabeul,12,9,3,75.0,94,7.83,48.7,Limited ARIMA candidate
+10,Soil PH Corrector,Fertilizers,5,Gabes,12,9,3,75.0,90,7.5,80.09,Limited ARIMA candidate
+23,Seed Germination Booster,Irrigation products,4,Kairouan,12,9,3,75.0,90,7.5,39.18,Limited ARIMA candidate
+28,Soil Moisture Sensor,Fertilizers,3,Beja,12,9,3,75.0,90,7.5,62.64,Limited ARIMA candidate
+20,Greenhouse Pest Control,Fungicides,5,Gabes,12,9,3,75.0,89,7.42,40.63,Limited ARIMA candidate
+9,Water Retention Granules,Pesticides,1,Nabeul,12,9,3,75.0,85,7.08,36.08,Limited ARIMA candidate
+11,Drought Shield Bio,Fungicides,3,Beja,12,9,3,75.0,80,6.67,41.52,Limited ARIMA candidate
+26,Crop Stress Reducer,Climate-adapted products,1,Nabeul,12,9,3,75.0,79,6.58,60.81,Limited ARIMA candidate
+30,Bio Stimulant Plus,Climate-adapted products,1,Nabeul,12,9,3,75.0,79,6.58,25.54,Limited ARIMA candidate
+29,Climate Smart Pack,Seeds,3,Beja,12,9,3,75.0,68,5.67,20.97,Limited ARIMA candidate
+15,Citrus Growth Formula,Seeds,5,Gabes,12,9,3,75.0,67,5.58,32.08,Limited ARIMA candidate
+13,Potassium Booster,Fertilizers,4,Kairouan,12,9,3,75.0,60,5.0,14.55,Limited ARIMA candidate
+10,Soil PH Corrector,Fertilizers,1,Nabeul,12,10,2,83.33,128,10.67,43.52,Limited ARIMA candidate
+25,Micro Elements Pack,Fertilizers,1,Nabeul,12,10,2,83.33,122,10.17,64.7,Limited ARIMA candidate
+15,Citrus Growth Formula,Seeds,1,Nabeul,12,10,2,83.33,104,8.67,47.88,Limited ARIMA candidate
+20,Greenhouse Pest Control,Fungicides,3,Beja,12,10,2,83.33,98,8.17,37.42,Limited ARIMA candidate
+23,Seed Germination Booster,Irrigation products,3,Beja,12,11,1,91.67,148,12.33,105.33,Limited ARIMA candidate
+12,Humidity Control Spray,Fungicides,1,Nabeul,12,11,1,91.67,130,10.83,68.7,Limited ARIMA candidate
+17,Cereal Yield Enhancer,Soil treatment,1,Nabeul,12,11,1,91.67,93,7.75,20.02,Limited ARIMA candidate
+18,Palm Tree Fertilizer,Fungicides,1,Nabeul,12,12,0,100.0,136,11.33,40.06,Limited ARIMA candidate

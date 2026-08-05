@@ -1,6 +1,12 @@
 import 'package:flutter/material.dart';
 import '../../models/visit.dart';
 import '../../services/database_service.dart';
+import '../../theme/app_colors.dart';
+import '../../theme/app_motion.dart';
+import '../../theme/app_spacing.dart';
+import '../../widgets/app_empty_state.dart';
+import '../../widgets/app_screen_scaffold.dart';
+import '../../widgets/app_status_badge.dart';
 import 'add_visit_screen.dart';
 
 class VisitsScreen extends StatefulWidget {
@@ -28,72 +34,82 @@ class _VisitsScreenState extends State<VisitsScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('Visits'),
+    return AppScreenScaffold(
+      title: 'Visits',
+      subtitle: 'Register GPS-based commercial visits and validation status.',
+      icon: Icons.location_on_outlined,
+      floatingActionButton: FloatingActionButton(
+        onPressed: () async {
+          final result = await Navigator.push(
+            context,
+            MaterialPageRoute(builder: (_) => const AddVisitScreen()),
+          );
+
+          if (result == true) {
+            await loadVisits();
+          }
+        },
+        child: const Icon(Icons.add),
       ),
-      body: visits.isEmpty
-          ? const Center(child: Text('No visits found'))
-          : ListView.builder(
+      child: visits.isEmpty
+          ? const AppEmptyState(
+              icon: Icons.location_on_outlined,
+              title: 'No visits found',
+              message: 'Add a visit to record GPS validation for a client.',
+            )
+          : ListView.separated(
+              padding: AppSpacing.screenPadding,
               itemCount: visits.length,
+              separatorBuilder: (context, index) =>
+                  const SizedBox(height: AppSpacing.md),
               itemBuilder: (context, index) {
                 final visit = visits[index];
 
-                return Card(
-                  margin: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
-                  child: Padding(
-                    padding: const EdgeInsets.all(12),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text(
-                          'Visit #${visit.id}',
-                          style: const TextStyle(
-                            fontWeight: FontWeight.bold,
-                            fontSize: 16,
+                return AppMotion.fadeSlide(
+                  delay: index * 20,
+                  child: Card(
+                    child: Padding(
+                      padding: AppSpacing.cardPadding,
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Row(
+                            children: [
+                              Expanded(
+                                child: Text(
+                                  'Visit #${visit.id}',
+                                  style: Theme.of(context).textTheme.titleSmall,
+                                ),
+                              ),
+                              AppStatusBadge(
+                                label: visit.validationStatus,
+                                color: getStatusColor(visit.validationStatus),
+                              ),
+                            ],
                           ),
-                        ),
-                        const SizedBox(height: 6),
-                        Text('Date: ${visit.visitDate.split('T').first}'),
-                        Text('Time: ${visit.visitTime}'),
-                        Text(
-                          'Status: ${visit.validationStatus}',
-                          style: TextStyle(
-                            color: getStatusColor(visit.validationStatus),
-                            fontWeight: FontWeight.bold,
+                          const SizedBox(height: AppSpacing.md),
+                          Text(
+                            'Date: ${visit.visitDate.split('T').first} | Time: ${visit.visitTime}',
+                            style: Theme.of(context).textTheme.bodyMedium,
                           ),
-                        ),
-                      ],
+                        ],
+                      ),
                     ),
                   ),
                 );
               },
             ),
-            floatingActionButton: FloatingActionButton(
-              onPressed: () async {
-                final result = await Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (_) => const AddVisitScreen(),
-                  ),
-                );
-
-                if (result == true) {
-                  await loadVisits();
-                }
-              },
-              child: const Icon(Icons.add),
-            ),
     );
   }
+
   Color getStatusColor(String status) {
     switch (status) {
       case 'valid':
-        return Colors.green;
+        return AppColors.olive;
       case 'invalid':
-        return Colors.red;
+        return AppColors.red;
       default:
-        return Colors.orange;
+        return AppColors.amber;
     }
   }
 }

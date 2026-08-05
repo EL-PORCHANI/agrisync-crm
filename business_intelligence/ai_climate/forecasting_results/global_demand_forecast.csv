@@ -1,0 +1,2 @@
+forecast_month,model,predicted_quantity,lower_95,upper_95,aic,bic
+2026-06,"ARIMA(1,0,0)",809.51,559.58,1059.44,156.4833,157.938

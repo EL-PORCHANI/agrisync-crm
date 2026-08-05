@@ -1,0 +1,4 @@
+parameter,estimate,p_value
+const,830.035504,0.0
+ar.L1,-0.259955,0.348396
+sigma2,16260.811735,0.024855

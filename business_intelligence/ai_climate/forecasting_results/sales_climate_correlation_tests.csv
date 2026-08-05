@@ -1,0 +1,13 @@
+sales_variable,climate_variable,pearson_correlation,pearson_p_value,spearman_correlation,spearman_p_value,pearson_significant_5_percent,spearman_significant_5_percent,pearson_fdr_p_value,pearson_significant_after_fdr,spearman_fdr_p_value,spearman_significant_after_fdr
+quantity,temperature_mean,-0.0783,0.6547,-0.2096,0.227,False,False,0.7947,False,0.2843,False
+quantity,humidity_mean,0.3341,0.0498,0.3677,0.0298,True,True,0.5288,False,0.1459,False
+quantity,rainfall,0.1031,0.5558,0.2052,0.2369,False,False,0.7947,False,0.2843,False
+quantity,high_drought_days,-0.2595,0.1322,-0.3404,0.0454,False,True,0.5288,False,0.1459,False
+revenue,temperature_mean,-0.0637,0.7163,-0.2261,0.1916,False,False,0.7947,False,0.2843,False
+revenue,humidity_mean,0.2744,0.1107,0.3417,0.0445,False,True,0.5288,False,0.1459,False
+revenue,rainfall,0.0889,0.6114,0.2517,0.1446,False,False,0.7947,False,0.2843,False
+revenue,high_drought_days,-0.2089,0.2284,-0.3316,0.0516,False,False,0.5482,False,0.1459,False
+order_count,temperature_mean,0.0608,0.7285,-0.0675,0.7001,False,False,0.7947,False,0.7001,False
+order_count,humidity_mean,0.2255,0.1928,0.3201,0.0608,False,False,0.5482,False,0.1459,False
+order_count,rainfall,-0.0136,0.9383,0.0903,0.6059,False,False,0.9383,False,0.661,False
+order_count,high_drought_days,-0.1716,0.3242,-0.2223,0.1994,False,False,0.6484,False,0.2843,False

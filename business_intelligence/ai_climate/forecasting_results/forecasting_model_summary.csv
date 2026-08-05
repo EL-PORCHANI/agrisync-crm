@@ -1,0 +1,7 @@
+model,holdout_mae,holdout_rmse,holdout_mape,evaluation_points,rolling_mae,rolling_rmse,rolling_mape,nonconverged_fits,rolling_warning_count,aic,aicc,bic,aicc_rank,holdout_rmse_rank,rolling_rmse_rank,selected_model
+"ARIMA(1,0,0)",73.6714,88.5298,9.5561,6,95.6287,124.3667,13.5181,0,0,156.4833,159.4833,157.938,3.0,4.0,1.0,True
+"ARIMA(0,0,0)",79.6296,87.5661,10.278,6,104.0026,128.1596,14.3269,0,0,155.3349,156.6683,156.3048,1.0,2.0,2.0,False
+HistoricalMean,79.6296,87.5661,10.278,6,104.0026,128.1596,14.3269,0,0,,,,4.0,2.0,2.0,False
+"ARIMA(1,1,1)",74.7315,86.2711,9.6546,6,114.903,133.8687,15.6107,1,2,,,,4.0,1.0,4.0,False
+"ARIMA(0,0,1)",103.2214,108.6289,13.3635,6,124.5067,154.8667,17.5998,0,0,156.2995,159.2995,157.7543,2.0,5.0,5.0,False
+LastValue,136.3333,158.7965,18.1172,6,177.5,199.3142,22.3443,0,0,,,,4.0,6.0,6.0,False

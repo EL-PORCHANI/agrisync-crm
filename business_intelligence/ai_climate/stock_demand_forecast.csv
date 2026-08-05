@@ -1,151 +1,151 @@
 forecast_id,product_id,product_name,category,zone_id,zone_name,forecast_month,historical_quantity,predicted_quantity,stock_quantity,forecast_method,recommendation_note
-1,1,NPK Fertilizer 20-20-20,Fertilizers,1,Nabeul,2026-06,4.0,5.78,16,"ARIMA(1,1,1)",Stock level appears sufficient
-2,1,NPK Fertilizer 20-20-20,Fertilizers,2,Sfax,2026-06,0.0,5.65,16,"ARIMA(1,1,1)",Stock level appears sufficient
-3,1,NPK Fertilizer 20-20-20,Fertilizers,3,Beja,2026-06,12.0,6.65,16,"ARIMA(1,1,1)",Stock level appears sufficient
-4,1,NPK Fertilizer 20-20-20,Fertilizers,4,Kairouan,2026-06,0.0,0.0,16,"ARIMA(1,1,1)",Stock level appears sufficient
-5,1,NPK Fertilizer 20-20-20,Fertilizers,5,Gabes,2026-06,0.0,2.63,16,"ARIMA(1,1,1)",Stock level appears sufficient
-6,2,Organic Compost Mix,Soil treatment,1,Nabeul,2026-06,0.0,6.41,132,"ARIMA(1,1,1)",Stock level appears sufficient
-7,2,Organic Compost Mix,Soil treatment,2,Sfax,2026-06,0.0,1.23,132,"ARIMA(1,1,1)",Stock level appears sufficient
-8,2,Organic Compost Mix,Soil treatment,3,Beja,2026-06,0.0,5.3,132,"ARIMA(1,1,1)",Stock level appears sufficient
-9,2,Organic Compost Mix,Soil treatment,4,Kairouan,2026-06,21.0,10.81,132,"ARIMA(1,1,1)",Stock level appears sufficient
-10,2,Organic Compost Mix,Soil treatment,5,Gabes,2026-06,0.0,5.96,132,"ARIMA(1,1,1)",Stock level appears sufficient
-11,3,Tomato Seeds Premium,Irrigation products,1,Nabeul,2026-06,4.0,9.11,51,"ARIMA(1,1,1)",Stock level appears sufficient
-12,3,Tomato Seeds Premium,Irrigation products,2,Sfax,2026-06,8.0,4.82,51,"ARIMA(1,1,1)",Stock level appears sufficient
-13,3,Tomato Seeds Premium,Irrigation products,3,Beja,2026-06,3.0,4.69,51,"ARIMA(1,1,1)",Stock level appears sufficient
-14,3,Tomato Seeds Premium,Irrigation products,4,Kairouan,2026-06,30.0,11.44,51,"ARIMA(1,1,1)",Stock level appears sufficient
-15,3,Tomato Seeds Premium,Irrigation products,5,Gabes,2026-06,0.0,0.43,51,"ARIMA(1,1,1)",Stock level appears sufficient
-16,4,Wheat Seeds Resistant,Seeds,1,Nabeul,2026-06,0.0,4.94,13,"ARIMA(1,1,1)",Stock level appears sufficient
-17,4,Wheat Seeds Resistant,Seeds,2,Sfax,2026-06,0.0,0.0,13,"ARIMA(1,1,1)",Stock level appears sufficient
-18,4,Wheat Seeds Resistant,Seeds,3,Beja,2026-06,5.0,10.31,13,"ARIMA(1,1,1)",Stock pressure expected
-19,4,Wheat Seeds Resistant,Seeds,4,Kairouan,2026-06,0.0,7.83,13,"ARIMA(1,1,1)",Stock level appears sufficient
-20,4,Wheat Seeds Resistant,Seeds,5,Gabes,2026-06,0.0,0.56,13,"ARIMA(1,1,1)",Stock level appears sufficient
-21,5,Olive Tree Nutrient Pack,Irrigation products,1,Nabeul,2026-06,0.0,9.95,122,"ARIMA(1,1,1)",Stock level appears sufficient
-22,5,Olive Tree Nutrient Pack,Irrigation products,2,Sfax,2026-06,1.0,0.65,122,"ARIMA(1,1,1)",Stock level appears sufficient
-23,5,Olive Tree Nutrient Pack,Irrigation products,3,Beja,2026-06,0.0,10.0,122,"ARIMA(1,1,1)",Stock level appears sufficient
-24,5,Olive Tree Nutrient Pack,Irrigation products,4,Kairouan,2026-06,15.0,1.96,122,"ARIMA(1,1,1)",Stock level appears sufficient
-25,5,Olive Tree Nutrient Pack,Irrigation products,5,Gabes,2026-06,8.0,1.95,122,"ARIMA(1,1,1)",Stock level appears sufficient
-26,6,Anti-Fungal Treatment,Fertilizers,1,Nabeul,2026-06,0.0,4.43,57,"ARIMA(1,1,1)",Stock level appears sufficient
-27,6,Anti-Fungal Treatment,Fertilizers,2,Sfax,2026-06,12.0,6.6,57,"ARIMA(1,1,1)",Stock level appears sufficient
-28,6,Anti-Fungal Treatment,Fertilizers,3,Beja,2026-06,12.0,9.53,57,"ARIMA(1,1,1)",Stock level appears sufficient
-29,6,Anti-Fungal Treatment,Fertilizers,4,Kairouan,2026-06,2.0,4.04,57,"ARIMA(1,1,1)",Stock level appears sufficient
-30,6,Anti-Fungal Treatment,Fertilizers,5,Gabes,2026-06,3.0,5.69,57,"ARIMA(1,1,1)",Stock level appears sufficient
-31,7,Copper Fungicide,Soil treatment,1,Nabeul,2026-06,0.0,4.38,158,"ARIMA(1,1,1)",Stock level appears sufficient
-32,7,Copper Fungicide,Soil treatment,2,Sfax,2026-06,0.0,3.21,158,"ARIMA(1,1,1)",Stock level appears sufficient
-33,7,Copper Fungicide,Soil treatment,3,Beja,2026-06,0.0,0.88,158,"ARIMA(1,1,1)",Stock level appears sufficient
-34,7,Copper Fungicide,Soil treatment,4,Kairouan,2026-06,9.0,4.97,158,"ARIMA(1,1,1)",Stock level appears sufficient
-35,7,Copper Fungicide,Soil treatment,5,Gabes,2026-06,8.0,3.88,158,"ARIMA(1,1,1)",Stock level appears sufficient
-36,8,Drip Irrigation Kit,Irrigation products,1,Nabeul,2026-06,13.0,6.13,43,"ARIMA(1,1,1)",Stock level appears sufficient
-37,8,Drip Irrigation Kit,Irrigation products,2,Sfax,2026-06,8.0,6.56,43,"ARIMA(1,1,1)",Stock level appears sufficient
-38,8,Drip Irrigation Kit,Irrigation products,3,Beja,2026-06,0.0,2.26,43,"ARIMA(1,1,1)",Stock level appears sufficient
-39,8,Drip Irrigation Kit,Irrigation products,4,Kairouan,2026-06,0.0,6.65,43,"ARIMA(1,1,1)",Stock level appears sufficient
-40,8,Drip Irrigation Kit,Irrigation products,5,Gabes,2026-06,23.0,8.57,43,"ARIMA(1,1,1)",Stock level appears sufficient
-41,9,Water Retention Granules,Pesticides,1,Nabeul,2026-06,5.0,5.75,188,"ARIMA(1,1,1)",Stock level appears sufficient
-42,9,Water Retention Granules,Pesticides,2,Sfax,2026-06,0.0,0.67,188,"ARIMA(1,1,1)",Stock level appears sufficient
-43,9,Water Retention Granules,Pesticides,3,Beja,2026-06,0.0,6.44,188,"ARIMA(1,1,1)",Stock level appears sufficient
-44,9,Water Retention Granules,Pesticides,4,Kairouan,2026-06,11.0,7.42,188,"ARIMA(1,1,1)",Stock level appears sufficient
-45,9,Water Retention Granules,Pesticides,5,Gabes,2026-06,0.0,2.46,188,"ARIMA(1,1,1)",Stock level appears sufficient
-46,10,Soil PH Corrector,Fertilizers,1,Nabeul,2026-06,20.0,8.43,198,"ARIMA(1,1,1)",Stock level appears sufficient
-47,10,Soil PH Corrector,Fertilizers,2,Sfax,2026-06,0.0,3.65,198,"ARIMA(1,1,1)",Stock level appears sufficient
-48,10,Soil PH Corrector,Fertilizers,3,Beja,2026-06,4.0,1.11,198,"ARIMA(1,1,1)",Stock level appears sufficient
-49,10,Soil PH Corrector,Fertilizers,4,Kairouan,2026-06,19.0,2.82,198,"ARIMA(1,1,1)",Stock level appears sufficient
-50,10,Soil PH Corrector,Fertilizers,5,Gabes,2026-06,0.0,9.78,198,"ARIMA(1,1,1)",Stock level appears sufficient
-51,11,Drought Shield Bio,Fungicides,1,Nabeul,2026-06,12.0,6.68,218,"ARIMA(1,1,1)",Stock level appears sufficient
-52,11,Drought Shield Bio,Fungicides,2,Sfax,2026-06,8.0,1.41,218,"ARIMA(1,1,1)",Stock level appears sufficient
-53,11,Drought Shield Bio,Fungicides,3,Beja,2026-06,3.0,2.69,218,"ARIMA(1,1,1)",Stock level appears sufficient
-54,11,Drought Shield Bio,Fungicides,4,Kairouan,2026-06,0.0,0.0,218,"ARIMA(1,1,1)",Stock level appears sufficient
-55,11,Drought Shield Bio,Fungicides,5,Gabes,2026-06,0.0,1.89,218,"ARIMA(1,1,1)",Stock level appears sufficient
-56,12,Humidity Control Spray,Fungicides,1,Nabeul,2026-06,32.0,9.98,143,"ARIMA(1,1,1)",Stock level appears sufficient
-57,12,Humidity Control Spray,Fungicides,2,Sfax,2026-06,0.0,2.47,143,"ARIMA(1,1,1)",Stock level appears sufficient
-58,12,Humidity Control Spray,Fungicides,3,Beja,2026-06,0.0,9.16,143,"ARIMA(1,1,1)",Stock level appears sufficient
-59,12,Humidity Control Spray,Fungicides,4,Kairouan,2026-06,11.0,3.9,143,"ARIMA(1,1,1)",Stock level appears sufficient
-60,12,Humidity Control Spray,Fungicides,5,Gabes,2026-06,0.0,7.99,143,"ARIMA(1,1,1)",Stock level appears sufficient
-61,13,Potassium Booster,Fertilizers,1,Nabeul,2026-06,26.0,11.85,36,"ARIMA(1,1,1)",Stock level appears sufficient
-62,13,Potassium Booster,Fertilizers,2,Sfax,2026-06,0.0,0.6,36,"ARIMA(1,1,1)",Stock level appears sufficient
-63,13,Potassium Booster,Fertilizers,3,Beja,2026-06,0.0,6.69,36,"ARIMA(1,1,1)",Stock level appears sufficient
-64,13,Potassium Booster,Fertilizers,4,Kairouan,2026-06,6.0,5.16,36,"ARIMA(1,1,1)",Stock level appears sufficient
-65,13,Potassium Booster,Fertilizers,5,Gabes,2026-06,6.0,6.67,36,"ARIMA(1,1,1)",Stock level appears sufficient
-66,14,Nitrogen Booster,Soil treatment,1,Nabeul,2026-06,8.0,5.97,5,"ARIMA(1,1,1)",Predicted demand exceeds available stock
-67,14,Nitrogen Booster,Soil treatment,2,Sfax,2026-06,2.0,2.67,5,"ARIMA(1,1,1)",Stock level appears sufficient
-68,14,Nitrogen Booster,Soil treatment,3,Beja,2026-06,0.0,4.33,5,"ARIMA(1,1,1)",Stock pressure expected
-69,14,Nitrogen Booster,Soil treatment,4,Kairouan,2026-06,2.0,3.12,5,"ARIMA(1,1,1)",Stock level appears sufficient
-70,14,Nitrogen Booster,Soil treatment,5,Gabes,2026-06,0.0,3.6,5,"ARIMA(1,1,1)",Stock level appears sufficient
-71,15,Citrus Growth Formula,Seeds,1,Nabeul,2026-06,21.0,11.05,152,"ARIMA(1,1,1)",Stock level appears sufficient
-72,15,Citrus Growth Formula,Seeds,2,Sfax,2026-06,2.0,2.56,152,"ARIMA(1,1,1)",Stock level appears sufficient
-73,15,Citrus Growth Formula,Seeds,3,Beja,2026-06,12.0,9.13,152,"ARIMA(1,1,1)",Stock level appears sufficient
-74,15,Citrus Growth Formula,Seeds,4,Kairouan,2026-06,0.0,6.77,152,"ARIMA(1,1,1)",Stock level appears sufficient
-75,15,Citrus Growth Formula,Seeds,5,Gabes,2026-06,4.0,2.52,152,"ARIMA(1,1,1)",Stock level appears sufficient
-76,16,Vegetable Root Stimulator,Soil treatment,1,Nabeul,2026-06,11.0,1.35,5,"ARIMA(1,1,1)",Stock level appears sufficient
-77,16,Vegetable Root Stimulator,Soil treatment,2,Sfax,2026-06,0.0,6.25,5,"ARIMA(1,1,1)",Predicted demand exceeds available stock
-78,16,Vegetable Root Stimulator,Soil treatment,3,Beja,2026-06,9.0,4.48,5,"ARIMA(1,1,1)",Stock pressure expected
-79,16,Vegetable Root Stimulator,Soil treatment,4,Kairouan,2026-06,3.0,6.68,5,"ARIMA(1,1,1)",Predicted demand exceeds available stock
-80,16,Vegetable Root Stimulator,Soil treatment,5,Gabes,2026-06,15.0,7.7,5,"ARIMA(1,1,1)",Predicted demand exceeds available stock
-81,17,Cereal Yield Enhancer,Soil treatment,1,Nabeul,2026-06,12.0,8.11,65,"ARIMA(1,1,1)",Stock level appears sufficient
-82,17,Cereal Yield Enhancer,Soil treatment,2,Sfax,2026-06,0.0,0.75,65,"ARIMA(1,1,1)",Stock level appears sufficient
-83,17,Cereal Yield Enhancer,Soil treatment,3,Beja,2026-06,12.0,5.78,65,"ARIMA(1,1,1)",Stock level appears sufficient
-84,17,Cereal Yield Enhancer,Soil treatment,4,Kairouan,2026-06,5.0,7.28,65,"ARIMA(1,1,1)",Stock level appears sufficient
-85,17,Cereal Yield Enhancer,Soil treatment,5,Gabes,2026-06,9.0,4.98,65,"ARIMA(1,1,1)",Stock level appears sufficient
-86,18,Palm Tree Fertilizer,Fungicides,1,Nabeul,2026-06,10.0,9.22,26,"ARIMA(1,1,1)",Stock level appears sufficient
-87,18,Palm Tree Fertilizer,Fungicides,2,Sfax,2026-06,11.0,4.75,26,"ARIMA(1,1,1)",Stock level appears sufficient
-88,18,Palm Tree Fertilizer,Fungicides,3,Beja,2026-06,11.0,5.02,26,"ARIMA(1,1,1)",Stock level appears sufficient
-89,18,Palm Tree Fertilizer,Fungicides,4,Kairouan,2026-06,12.0,6.77,26,"ARIMA(1,1,1)",Stock level appears sufficient
-90,18,Palm Tree Fertilizer,Fungicides,5,Gabes,2026-06,29.0,10.08,26,"ARIMA(1,1,1)",Stock level appears sufficient
-91,19,Salinity Control Product,Soil treatment,1,Nabeul,2026-06,19.0,7.17,51,"ARIMA(1,1,1)",Stock level appears sufficient
-92,19,Salinity Control Product,Soil treatment,2,Sfax,2026-06,0.0,7.19,51,"ARIMA(1,1,1)",Stock level appears sufficient
-93,19,Salinity Control Product,Soil treatment,3,Beja,2026-06,0.0,10.68,51,"ARIMA(1,1,1)",Stock level appears sufficient
-94,19,Salinity Control Product,Soil treatment,4,Kairouan,2026-06,0.0,1.97,51,"ARIMA(1,1,1)",Stock level appears sufficient
-95,19,Salinity Control Product,Soil treatment,5,Gabes,2026-06,12.0,3.17,51,"ARIMA(1,1,1)",Stock level appears sufficient
-96,20,Greenhouse Pest Control,Fungicides,1,Nabeul,2026-06,19.0,14.48,43,"ARIMA(1,1,1)",Stock level appears sufficient
-97,20,Greenhouse Pest Control,Fungicides,2,Sfax,2026-06,11.0,7.32,43,"ARIMA(1,1,1)",Stock level appears sufficient
-98,20,Greenhouse Pest Control,Fungicides,3,Beja,2026-06,13.0,11.93,43,"ARIMA(1,1,1)",Stock level appears sufficient
-99,20,Greenhouse Pest Control,Fungicides,4,Kairouan,2026-06,0.0,2.34,43,"ARIMA(1,1,1)",Stock level appears sufficient
-100,20,Greenhouse Pest Control,Fungicides,5,Gabes,2026-06,0.0,8.59,43,"ARIMA(1,1,1)",Stock level appears sufficient
-101,21,Aphid Control Solution,Pesticides,1,Nabeul,2026-06,8.0,13.95,111,"ARIMA(1,1,1)",Stock level appears sufficient
-102,21,Aphid Control Solution,Pesticides,2,Sfax,2026-06,4.0,4.03,111,"ARIMA(1,1,1)",Stock level appears sufficient
-103,21,Aphid Control Solution,Pesticides,3,Beja,2026-06,2.0,4.4,111,"ARIMA(1,1,1)",Stock level appears sufficient
-104,21,Aphid Control Solution,Pesticides,4,Kairouan,2026-06,11.0,8.02,111,"ARIMA(1,1,1)",Stock level appears sufficient
-105,21,Aphid Control Solution,Pesticides,5,Gabes,2026-06,0.0,1.83,111,"ARIMA(1,1,1)",Stock level appears sufficient
-106,22,Mildew Protection Spray,Climate-adapted products,1,Nabeul,2026-06,3.0,10.23,34,"ARIMA(1,1,1)",Stock level appears sufficient
-107,22,Mildew Protection Spray,Climate-adapted products,2,Sfax,2026-06,0.0,5.39,34,"ARIMA(1,1,1)",Stock level appears sufficient
-108,22,Mildew Protection Spray,Climate-adapted products,3,Beja,2026-06,0.0,4.11,34,"ARIMA(1,1,1)",Stock level appears sufficient
-109,22,Mildew Protection Spray,Climate-adapted products,4,Kairouan,2026-06,16.0,3.33,34,"ARIMA(1,1,1)",Stock level appears sufficient
-110,22,Mildew Protection Spray,Climate-adapted products,5,Gabes,2026-06,0.0,0.62,34,"ARIMA(1,1,1)",Stock level appears sufficient
-111,23,Seed Germination Booster,Irrigation products,1,Nabeul,2026-06,15.0,2.73,27,"ARIMA(1,1,1)",Stock level appears sufficient
-112,23,Seed Germination Booster,Irrigation products,2,Sfax,2026-06,0.0,2.82,27,"ARIMA(1,1,1)",Stock level appears sufficient
-113,23,Seed Germination Booster,Irrigation products,3,Beja,2026-06,0.0,24.08,27,"ARIMA(1,1,1)",Stock pressure expected
-114,23,Seed Germination Booster,Irrigation products,4,Kairouan,2026-06,11.0,8.23,27,"ARIMA(1,1,1)",Stock level appears sufficient
-115,23,Seed Germination Booster,Irrigation products,5,Gabes,2026-06,12.0,6.85,27,"ARIMA(1,1,1)",Stock level appears sufficient
-116,24,Foliar Nutrition Mix,Pesticides,1,Nabeul,2026-06,0.0,9.1,5,"ARIMA(1,1,1)",Predicted demand exceeds available stock
-117,24,Foliar Nutrition Mix,Pesticides,2,Sfax,2026-06,1.0,3.3,5,"ARIMA(1,1,1)",Stock level appears sufficient
-118,24,Foliar Nutrition Mix,Pesticides,3,Beja,2026-06,4.0,1.2,5,"ARIMA(1,1,1)",Stock level appears sufficient
-119,24,Foliar Nutrition Mix,Pesticides,4,Kairouan,2026-06,10.0,4.71,5,"ARIMA(1,1,1)",Stock pressure expected
-120,24,Foliar Nutrition Mix,Pesticides,5,Gabes,2026-06,0.0,0.0,5,"ARIMA(1,1,1)",Stock level appears sufficient
-121,25,Micro Elements Pack,Fertilizers,1,Nabeul,2026-06,11.0,26.1,65,"ARIMA(1,1,1)",Stock level appears sufficient
-122,25,Micro Elements Pack,Fertilizers,2,Sfax,2026-06,3.0,5.11,65,"ARIMA(1,1,1)",Stock level appears sufficient
-123,25,Micro Elements Pack,Fertilizers,3,Beja,2026-06,9.0,4.24,65,"ARIMA(1,1,1)",Stock level appears sufficient
-124,25,Micro Elements Pack,Fertilizers,4,Kairouan,2026-06,8.0,6.73,65,"ARIMA(1,1,1)",Stock level appears sufficient
-125,25,Micro Elements Pack,Fertilizers,5,Gabes,2026-06,21.0,6.31,65,"ARIMA(1,1,1)",Stock level appears sufficient
-126,26,Crop Stress Reducer,Climate-adapted products,1,Nabeul,2026-06,5.0,5.7,57,"ARIMA(1,1,1)",Stock level appears sufficient
-127,26,Crop Stress Reducer,Climate-adapted products,2,Sfax,2026-06,8.0,3.43,57,"ARIMA(1,1,1)",Stock level appears sufficient
-128,26,Crop Stress Reducer,Climate-adapted products,3,Beja,2026-06,15.0,2.33,57,"ARIMA(1,1,1)",Stock level appears sufficient
-129,26,Crop Stress Reducer,Climate-adapted products,4,Kairouan,2026-06,0.0,3.43,57,"ARIMA(1,1,1)",Stock level appears sufficient
-130,26,Crop Stress Reducer,Climate-adapted products,5,Gabes,2026-06,0.0,2.15,57,"ARIMA(1,1,1)",Stock level appears sufficient
-131,27,Irrigation Filter Pack,Fungicides,1,Nabeul,2026-06,0.0,6.3,6,"ARIMA(1,1,1)",Predicted demand exceeds available stock
-132,27,Irrigation Filter Pack,Fungicides,2,Sfax,2026-06,0.0,1.93,6,"ARIMA(1,1,1)",Stock level appears sufficient
-133,27,Irrigation Filter Pack,Fungicides,3,Beja,2026-06,0.0,5.77,6,"ARIMA(1,1,1)",Stock pressure expected
-134,27,Irrigation Filter Pack,Fungicides,4,Kairouan,2026-06,16.0,9.29,6,"ARIMA(1,1,1)",Predicted demand exceeds available stock
-135,27,Irrigation Filter Pack,Fungicides,5,Gabes,2026-06,13.0,3.48,6,"ARIMA(1,1,1)",Stock level appears sufficient
-136,28,Soil Moisture Sensor,Fertilizers,1,Nabeul,2026-06,0.0,6.59,57,"ARIMA(1,1,1)",Stock level appears sufficient
-137,28,Soil Moisture Sensor,Fertilizers,2,Sfax,2026-06,16.0,2.79,57,"ARIMA(1,1,1)",Stock level appears sufficient
-138,28,Soil Moisture Sensor,Fertilizers,3,Beja,2026-06,2.0,18.21,57,"ARIMA(1,1,1)",Stock level appears sufficient
-139,28,Soil Moisture Sensor,Fertilizers,4,Kairouan,2026-06,0.0,2.96,57,"ARIMA(1,1,1)",Stock level appears sufficient
-140,28,Soil Moisture Sensor,Fertilizers,5,Gabes,2026-06,0.0,4.88,57,"ARIMA(1,1,1)",Stock level appears sufficient
-141,29,Climate Smart Pack,Seeds,1,Nabeul,2026-06,8.0,8.56,14,"ARIMA(1,1,1)",Stock level appears sufficient
-142,29,Climate Smart Pack,Seeds,2,Sfax,2026-06,1.0,2.66,14,"ARIMA(1,1,1)",Stock level appears sufficient
-143,29,Climate Smart Pack,Seeds,3,Beja,2026-06,7.0,6.88,14,"ARIMA(1,1,1)",Stock level appears sufficient
-144,29,Climate Smart Pack,Seeds,4,Kairouan,2026-06,6.0,1.76,14,"ARIMA(1,1,1)",Stock level appears sufficient
-145,29,Climate Smart Pack,Seeds,5,Gabes,2026-06,2.0,2.2,14,"ARIMA(1,1,1)",Stock level appears sufficient
-146,30,Bio Stimulant Plus,Climate-adapted products,1,Nabeul,2026-06,14.0,16.86,70,"ARIMA(1,1,1)",Stock level appears sufficient
-147,30,Bio Stimulant Plus,Climate-adapted products,2,Sfax,2026-06,0.0,4.07,70,"ARIMA(1,1,1)",Stock level appears sufficient
-148,30,Bio Stimulant Plus,Climate-adapted products,3,Beja,2026-06,0.0,4.2,70,"ARIMA(1,1,1)",Stock level appears sufficient
-149,30,Bio Stimulant Plus,Climate-adapted products,4,Kairouan,2026-06,9.0,4.65,70,"ARIMA(1,1,1)",Stock level appears sufficient
-150,30,Bio Stimulant Plus,Climate-adapted products,5,Gabes,2026-06,0.0,3.09,70,"ARIMA(1,1,1)",Stock level appears sufficient
+1,1,NPK Fertilizer 20-20-20,Fertilizers,1,Nabeul,2026-06,4.0,4.92,16,Historical monthly mean,Stock level appears sufficient
+2,1,NPK Fertilizer 20-20-20,Fertilizers,2,Sfax,2026-06,0.0,4.08,16,Historical monthly mean,Stock level appears sufficient
+3,1,NPK Fertilizer 20-20-20,Fertilizers,3,Beja,2026-06,12.0,6.83,16,Historical monthly mean,Stock level appears sufficient
+4,1,NPK Fertilizer 20-20-20,Fertilizers,4,Kairouan,2026-06,0.0,5.0,16,Historical monthly mean,Stock level appears sufficient
+5,1,NPK Fertilizer 20-20-20,Fertilizers,5,Gabes,2026-06,0.0,2.17,16,Historical monthly mean,Stock level appears sufficient
+6,2,Organic Compost Mix,Soil treatment,1,Nabeul,2026-06,0.0,6.58,132,Historical monthly mean,Stock level appears sufficient
+7,2,Organic Compost Mix,Soil treatment,2,Sfax,2026-06,0.0,3.17,132,Historical monthly mean,Stock level appears sufficient
+8,2,Organic Compost Mix,Soil treatment,3,Beja,2026-06,0.0,8.58,132,Historical monthly mean,Stock level appears sufficient
+9,2,Organic Compost Mix,Soil treatment,4,Kairouan,2026-06,21.0,5.33,132,Historical monthly mean,Stock level appears sufficient
+10,2,Organic Compost Mix,Soil treatment,5,Gabes,2026-06,0.0,4.08,132,Historical monthly mean,Stock level appears sufficient
+11,3,Tomato Seeds Premium,Irrigation products,1,Nabeul,2026-06,4.0,7.83,51,Historical monthly mean,Stock level appears sufficient
+12,3,Tomato Seeds Premium,Irrigation products,2,Sfax,2026-06,8.0,4.92,51,Historical monthly mean,Stock level appears sufficient
+13,3,Tomato Seeds Premium,Irrigation products,3,Beja,2026-06,3.0,3.83,51,Historical monthly mean,Stock level appears sufficient
+14,3,Tomato Seeds Premium,Irrigation products,4,Kairouan,2026-06,30.0,5.67,51,Historical monthly mean,Stock level appears sufficient
+15,3,Tomato Seeds Premium,Irrigation products,5,Gabes,2026-06,0.0,3.83,51,Historical monthly mean,Stock level appears sufficient
+16,4,Wheat Seeds Resistant,Seeds,1,Nabeul,2026-06,0.0,4.25,13,Historical monthly mean,Stock level appears sufficient
+17,4,Wheat Seeds Resistant,Seeds,2,Sfax,2026-06,0.0,5.75,13,Historical monthly mean,Stock level appears sufficient
+18,4,Wheat Seeds Resistant,Seeds,3,Beja,2026-06,5.0,4.42,13,Historical monthly mean,Stock level appears sufficient
+19,4,Wheat Seeds Resistant,Seeds,4,Kairouan,2026-06,0.0,6.67,13,Historical monthly mean,Stock level appears sufficient
+20,4,Wheat Seeds Resistant,Seeds,5,Gabes,2026-06,0.0,4.33,13,Historical monthly mean,Stock level appears sufficient
+21,5,Olive Tree Nutrient Pack,Irrigation products,1,Nabeul,2026-06,0.0,11.25,122,Historical monthly mean,Stock level appears sufficient
+22,5,Olive Tree Nutrient Pack,Irrigation products,2,Sfax,2026-06,1.0,2.08,122,Historical monthly mean,Stock level appears sufficient
+23,5,Olive Tree Nutrient Pack,Irrigation products,3,Beja,2026-06,0.0,4.75,122,Historical monthly mean,Stock level appears sufficient
+24,5,Olive Tree Nutrient Pack,Irrigation products,4,Kairouan,2026-06,15.0,4.25,122,Historical monthly mean,Stock level appears sufficient
+25,5,Olive Tree Nutrient Pack,Irrigation products,5,Gabes,2026-06,8.0,4.0,122,Historical monthly mean,Stock level appears sufficient
+26,6,Anti-Fungal Treatment,Fertilizers,1,Nabeul,2026-06,0.0,8.17,57,Historical monthly mean,Stock level appears sufficient
+27,6,Anti-Fungal Treatment,Fertilizers,2,Sfax,2026-06,12.0,3.5,57,Historical monthly mean,Stock level appears sufficient
+28,6,Anti-Fungal Treatment,Fertilizers,3,Beja,2026-06,12.0,8.08,57,Historical monthly mean,Stock level appears sufficient
+29,6,Anti-Fungal Treatment,Fertilizers,4,Kairouan,2026-06,2.0,4.5,57,Historical monthly mean,Stock level appears sufficient
+30,6,Anti-Fungal Treatment,Fertilizers,5,Gabes,2026-06,3.0,5.33,57,Historical monthly mean,Stock level appears sufficient
+31,7,Copper Fungicide,Soil treatment,1,Nabeul,2026-06,0.0,5.08,158,Historical monthly mean,Stock level appears sufficient
+32,7,Copper Fungicide,Soil treatment,2,Sfax,2026-06,0.0,3.08,158,Historical monthly mean,Stock level appears sufficient
+33,7,Copper Fungicide,Soil treatment,3,Beja,2026-06,0.0,3.25,158,Historical monthly mean,Stock level appears sufficient
+34,7,Copper Fungicide,Soil treatment,4,Kairouan,2026-06,9.0,5.5,158,Historical monthly mean,Stock level appears sufficient
+35,7,Copper Fungicide,Soil treatment,5,Gabes,2026-06,8.0,3.08,158,Historical monthly mean,Stock level appears sufficient
+36,8,Drip Irrigation Kit,Irrigation products,1,Nabeul,2026-06,13.0,7.0,43,Historical monthly mean,Stock level appears sufficient
+37,8,Drip Irrigation Kit,Irrigation products,2,Sfax,2026-06,8.0,3.42,43,Historical monthly mean,Stock level appears sufficient
+38,8,Drip Irrigation Kit,Irrigation products,3,Beja,2026-06,0.0,3.42,43,Historical monthly mean,Stock level appears sufficient
+39,8,Drip Irrigation Kit,Irrigation products,4,Kairouan,2026-06,0.0,5.0,43,Historical monthly mean,Stock level appears sufficient
+40,8,Drip Irrigation Kit,Irrigation products,5,Gabes,2026-06,23.0,6.33,43,Historical monthly mean,Stock level appears sufficient
+41,9,Water Retention Granules,Pesticides,1,Nabeul,2026-06,5.0,7.08,188,Historical monthly mean,Stock level appears sufficient
+42,9,Water Retention Granules,Pesticides,2,Sfax,2026-06,0.0,4.58,188,Historical monthly mean,Stock level appears sufficient
+43,9,Water Retention Granules,Pesticides,3,Beja,2026-06,0.0,6.0,188,Historical monthly mean,Stock level appears sufficient
+44,9,Water Retention Granules,Pesticides,4,Kairouan,2026-06,11.0,5.58,188,Historical monthly mean,Stock level appears sufficient
+45,9,Water Retention Granules,Pesticides,5,Gabes,2026-06,0.0,2.25,188,Historical monthly mean,Stock level appears sufficient
+46,10,Soil PH Corrector,Fertilizers,1,Nabeul,2026-06,20.0,10.67,198,Historical monthly mean,Stock level appears sufficient
+47,10,Soil PH Corrector,Fertilizers,2,Sfax,2026-06,0.0,3.42,198,Historical monthly mean,Stock level appears sufficient
+48,10,Soil PH Corrector,Fertilizers,3,Beja,2026-06,4.0,5.25,198,Historical monthly mean,Stock level appears sufficient
+49,10,Soil PH Corrector,Fertilizers,4,Kairouan,2026-06,19.0,5.08,198,Historical monthly mean,Stock level appears sufficient
+50,10,Soil PH Corrector,Fertilizers,5,Gabes,2026-06,0.0,7.5,198,Historical monthly mean,Stock level appears sufficient
+51,11,Drought Shield Bio,Fungicides,1,Nabeul,2026-06,12.0,8.58,218,Historical monthly mean,Stock level appears sufficient
+52,11,Drought Shield Bio,Fungicides,2,Sfax,2026-06,8.0,2.17,218,Historical monthly mean,Stock level appears sufficient
+53,11,Drought Shield Bio,Fungicides,3,Beja,2026-06,3.0,6.67,218,Historical monthly mean,Stock level appears sufficient
+54,11,Drought Shield Bio,Fungicides,4,Kairouan,2026-06,0.0,5.0,218,Historical monthly mean,Stock level appears sufficient
+55,11,Drought Shield Bio,Fungicides,5,Gabes,2026-06,0.0,2.42,218,Historical monthly mean,Stock level appears sufficient
+56,12,Humidity Control Spray,Fungicides,1,Nabeul,2026-06,32.0,10.83,143,Historical monthly mean,Stock level appears sufficient
+57,12,Humidity Control Spray,Fungicides,2,Sfax,2026-06,0.0,3.25,143,Historical monthly mean,Stock level appears sufficient
+58,12,Humidity Control Spray,Fungicides,3,Beja,2026-06,0.0,8.0,143,Historical monthly mean,Stock level appears sufficient
+59,12,Humidity Control Spray,Fungicides,4,Kairouan,2026-06,11.0,4.0,143,Historical monthly mean,Stock level appears sufficient
+60,12,Humidity Control Spray,Fungicides,5,Gabes,2026-06,0.0,7.17,143,Historical monthly mean,Stock level appears sufficient
+61,13,Potassium Booster,Fertilizers,1,Nabeul,2026-06,26.0,8.58,36,Historical monthly mean,Stock level appears sufficient
+62,13,Potassium Booster,Fertilizers,2,Sfax,2026-06,0.0,5.5,36,Historical monthly mean,Stock level appears sufficient
+63,13,Potassium Booster,Fertilizers,3,Beja,2026-06,0.0,5.42,36,Historical monthly mean,Stock level appears sufficient
+64,13,Potassium Booster,Fertilizers,4,Kairouan,2026-06,6.0,5.0,36,Historical monthly mean,Stock level appears sufficient
+65,13,Potassium Booster,Fertilizers,5,Gabes,2026-06,6.0,6.67,36,Historical monthly mean,Stock level appears sufficient
+66,14,Nitrogen Booster,Soil treatment,1,Nabeul,2026-06,8.0,6.0,5,Historical monthly mean,Predicted demand exceeds available stock
+67,14,Nitrogen Booster,Soil treatment,2,Sfax,2026-06,2.0,3.33,5,Historical monthly mean,Stock level appears sufficient
+68,14,Nitrogen Booster,Soil treatment,3,Beja,2026-06,0.0,6.83,5,Historical monthly mean,Predicted demand exceeds available stock
+69,14,Nitrogen Booster,Soil treatment,4,Kairouan,2026-06,2.0,2.92,5,Historical monthly mean,Stock level appears sufficient
+70,14,Nitrogen Booster,Soil treatment,5,Gabes,2026-06,0.0,2.58,5,Historical monthly mean,Stock level appears sufficient
+71,15,Citrus Growth Formula,Seeds,1,Nabeul,2026-06,21.0,8.67,152,Historical monthly mean,Stock level appears sufficient
+72,15,Citrus Growth Formula,Seeds,2,Sfax,2026-06,2.0,3.5,152,Historical monthly mean,Stock level appears sufficient
+73,15,Citrus Growth Formula,Seeds,3,Beja,2026-06,12.0,3.5,152,Historical monthly mean,Stock level appears sufficient
+74,15,Citrus Growth Formula,Seeds,4,Kairouan,2026-06,0.0,4.67,152,Historical monthly mean,Stock level appears sufficient
+75,15,Citrus Growth Formula,Seeds,5,Gabes,2026-06,4.0,5.58,152,Historical monthly mean,Stock level appears sufficient
+76,16,Vegetable Root Stimulator,Soil treatment,1,Nabeul,2026-06,11.0,4.67,5,Historical monthly mean,Stock pressure expected
+77,16,Vegetable Root Stimulator,Soil treatment,2,Sfax,2026-06,0.0,4.25,5,Historical monthly mean,Stock pressure expected
+78,16,Vegetable Root Stimulator,Soil treatment,3,Beja,2026-06,9.0,5.5,5,Historical monthly mean,Predicted demand exceeds available stock
+79,16,Vegetable Root Stimulator,Soil treatment,4,Kairouan,2026-06,3.0,8.75,5,Historical monthly mean,Predicted demand exceeds available stock
+80,16,Vegetable Root Stimulator,Soil treatment,5,Gabes,2026-06,15.0,5.42,5,Historical monthly mean,Predicted demand exceeds available stock
+81,17,Cereal Yield Enhancer,Soil treatment,1,Nabeul,2026-06,12.0,7.75,65,Historical monthly mean,Stock level appears sufficient
+82,17,Cereal Yield Enhancer,Soil treatment,2,Sfax,2026-06,0.0,0.83,65,Historical monthly mean,Stock level appears sufficient
+83,17,Cereal Yield Enhancer,Soil treatment,3,Beja,2026-06,12.0,6.67,65,Historical monthly mean,Stock level appears sufficient
+84,17,Cereal Yield Enhancer,Soil treatment,4,Kairouan,2026-06,5.0,3.58,65,Historical monthly mean,Stock level appears sufficient
+85,17,Cereal Yield Enhancer,Soil treatment,5,Gabes,2026-06,9.0,5.83,65,Historical monthly mean,Stock level appears sufficient
+86,18,Palm Tree Fertilizer,Fungicides,1,Nabeul,2026-06,10.0,11.33,26,Historical monthly mean,Stock level appears sufficient
+87,18,Palm Tree Fertilizer,Fungicides,2,Sfax,2026-06,11.0,4.75,26,Historical monthly mean,Stock level appears sufficient
+88,18,Palm Tree Fertilizer,Fungicides,3,Beja,2026-06,11.0,6.5,26,Historical monthly mean,Stock level appears sufficient
+89,18,Palm Tree Fertilizer,Fungicides,4,Kairouan,2026-06,12.0,5.33,26,Historical monthly mean,Stock level appears sufficient
+90,18,Palm Tree Fertilizer,Fungicides,5,Gabes,2026-06,29.0,9.33,26,Historical monthly mean,Stock level appears sufficient
+91,19,Salinity Control Product,Soil treatment,1,Nabeul,2026-06,19.0,9.92,51,Historical monthly mean,Stock level appears sufficient
+92,19,Salinity Control Product,Soil treatment,2,Sfax,2026-06,0.0,4.83,51,Historical monthly mean,Stock level appears sufficient
+93,19,Salinity Control Product,Soil treatment,3,Beja,2026-06,0.0,6.83,51,Historical monthly mean,Stock level appears sufficient
+94,19,Salinity Control Product,Soil treatment,4,Kairouan,2026-06,0.0,2.92,51,Historical monthly mean,Stock level appears sufficient
+95,19,Salinity Control Product,Soil treatment,5,Gabes,2026-06,12.0,4.83,51,Historical monthly mean,Stock level appears sufficient
+96,20,Greenhouse Pest Control,Fungicides,1,Nabeul,2026-06,19.0,8.17,43,Historical monthly mean,Stock level appears sufficient
+97,20,Greenhouse Pest Control,Fungicides,2,Sfax,2026-06,11.0,3.58,43,Historical monthly mean,Stock level appears sufficient
+98,20,Greenhouse Pest Control,Fungicides,3,Beja,2026-06,13.0,8.17,43,Historical monthly mean,Stock level appears sufficient
+99,20,Greenhouse Pest Control,Fungicides,4,Kairouan,2026-06,0.0,4.42,43,Historical monthly mean,Stock level appears sufficient
+100,20,Greenhouse Pest Control,Fungicides,5,Gabes,2026-06,0.0,7.42,43,Historical monthly mean,Stock level appears sufficient
+101,21,Aphid Control Solution,Pesticides,1,Nabeul,2026-06,8.0,8.33,111,Historical monthly mean,Stock level appears sufficient
+102,21,Aphid Control Solution,Pesticides,2,Sfax,2026-06,4.0,3.83,111,Historical monthly mean,Stock level appears sufficient
+103,21,Aphid Control Solution,Pesticides,3,Beja,2026-06,2.0,5.17,111,Historical monthly mean,Stock level appears sufficient
+104,21,Aphid Control Solution,Pesticides,4,Kairouan,2026-06,11.0,5.58,111,Historical monthly mean,Stock level appears sufficient
+105,21,Aphid Control Solution,Pesticides,5,Gabes,2026-06,0.0,5.0,111,Historical monthly mean,Stock level appears sufficient
+106,22,Mildew Protection Spray,Climate-adapted products,1,Nabeul,2026-06,3.0,8.67,34,Historical monthly mean,Stock level appears sufficient
+107,22,Mildew Protection Spray,Climate-adapted products,2,Sfax,2026-06,0.0,4.08,34,Historical monthly mean,Stock level appears sufficient
+108,22,Mildew Protection Spray,Climate-adapted products,3,Beja,2026-06,0.0,7.25,34,Historical monthly mean,Stock level appears sufficient
+109,22,Mildew Protection Spray,Climate-adapted products,4,Kairouan,2026-06,16.0,4.25,34,Historical monthly mean,Stock level appears sufficient
+110,22,Mildew Protection Spray,Climate-adapted products,5,Gabes,2026-06,0.0,2.67,34,Historical monthly mean,Stock level appears sufficient
+111,23,Seed Germination Booster,Irrigation products,1,Nabeul,2026-06,15.0,5.17,27,Historical monthly mean,Stock level appears sufficient
+112,23,Seed Germination Booster,Irrigation products,2,Sfax,2026-06,0.0,5.92,27,Historical monthly mean,Stock level appears sufficient
+113,23,Seed Germination Booster,Irrigation products,3,Beja,2026-06,0.0,12.33,27,Historical monthly mean,Stock level appears sufficient
+114,23,Seed Germination Booster,Irrigation products,4,Kairouan,2026-06,11.0,7.5,27,Historical monthly mean,Stock level appears sufficient
+115,23,Seed Germination Booster,Irrigation products,5,Gabes,2026-06,12.0,7.17,27,Historical monthly mean,Stock level appears sufficient
+116,24,Foliar Nutrition Mix,Pesticides,1,Nabeul,2026-06,0.0,7.58,5,Historical monthly mean,Predicted demand exceeds available stock
+117,24,Foliar Nutrition Mix,Pesticides,2,Sfax,2026-06,1.0,4.0,5,Historical monthly mean,Stock pressure expected
+118,24,Foliar Nutrition Mix,Pesticides,3,Beja,2026-06,4.0,3.33,5,Historical monthly mean,Stock level appears sufficient
+119,24,Foliar Nutrition Mix,Pesticides,4,Kairouan,2026-06,10.0,4.08,5,Historical monthly mean,Stock pressure expected
+120,24,Foliar Nutrition Mix,Pesticides,5,Gabes,2026-06,0.0,5.0,5,Historical monthly mean,Stock pressure expected
+121,25,Micro Elements Pack,Fertilizers,1,Nabeul,2026-06,11.0,10.17,65,Historical monthly mean,Stock level appears sufficient
+122,25,Micro Elements Pack,Fertilizers,2,Sfax,2026-06,3.0,4.92,65,Historical monthly mean,Stock level appears sufficient
+123,25,Micro Elements Pack,Fertilizers,3,Beja,2026-06,9.0,5.83,65,Historical monthly mean,Stock level appears sufficient
+124,25,Micro Elements Pack,Fertilizers,4,Kairouan,2026-06,8.0,7.0,65,Historical monthly mean,Stock level appears sufficient
+125,25,Micro Elements Pack,Fertilizers,5,Gabes,2026-06,21.0,8.42,65,Historical monthly mean,Stock level appears sufficient
+126,26,Crop Stress Reducer,Climate-adapted products,1,Nabeul,2026-06,5.0,6.58,57,Historical monthly mean,Stock level appears sufficient
+127,26,Crop Stress Reducer,Climate-adapted products,2,Sfax,2026-06,8.0,5.17,57,Historical monthly mean,Stock level appears sufficient
+128,26,Crop Stress Reducer,Climate-adapted products,3,Beja,2026-06,15.0,4.92,57,Historical monthly mean,Stock level appears sufficient
+129,26,Crop Stress Reducer,Climate-adapted products,4,Kairouan,2026-06,0.0,5.42,57,Historical monthly mean,Stock level appears sufficient
+130,26,Crop Stress Reducer,Climate-adapted products,5,Gabes,2026-06,0.0,3.5,57,Historical monthly mean,Stock level appears sufficient
+131,27,Irrigation Filter Pack,Fungicides,1,Nabeul,2026-06,0.0,13.92,6,Historical monthly mean,Predicted demand exceeds available stock
+132,27,Irrigation Filter Pack,Fungicides,2,Sfax,2026-06,0.0,1.75,6,Historical monthly mean,Stock level appears sufficient
+133,27,Irrigation Filter Pack,Fungicides,3,Beja,2026-06,0.0,7.75,6,Historical monthly mean,Predicted demand exceeds available stock
+134,27,Irrigation Filter Pack,Fungicides,4,Kairouan,2026-06,16.0,3.83,6,Historical monthly mean,Stock level appears sufficient
+135,27,Irrigation Filter Pack,Fungicides,5,Gabes,2026-06,13.0,4.5,6,Historical monthly mean,Stock pressure expected
+136,28,Soil Moisture Sensor,Fertilizers,1,Nabeul,2026-06,0.0,5.83,57,Historical monthly mean,Stock level appears sufficient
+137,28,Soil Moisture Sensor,Fertilizers,2,Sfax,2026-06,16.0,2.75,57,Historical monthly mean,Stock level appears sufficient
+138,28,Soil Moisture Sensor,Fertilizers,3,Beja,2026-06,2.0,7.5,57,Historical monthly mean,Stock level appears sufficient
+139,28,Soil Moisture Sensor,Fertilizers,4,Kairouan,2026-06,0.0,5.17,57,Historical monthly mean,Stock level appears sufficient
+140,28,Soil Moisture Sensor,Fertilizers,5,Gabes,2026-06,0.0,5.67,57,Historical monthly mean,Stock level appears sufficient
+141,29,Climate Smart Pack,Seeds,1,Nabeul,2026-06,8.0,5.5,14,Historical monthly mean,Stock level appears sufficient
+142,29,Climate Smart Pack,Seeds,2,Sfax,2026-06,1.0,3.08,14,Historical monthly mean,Stock level appears sufficient
+143,29,Climate Smart Pack,Seeds,3,Beja,2026-06,7.0,5.67,14,Historical monthly mean,Stock level appears sufficient
+144,29,Climate Smart Pack,Seeds,4,Kairouan,2026-06,6.0,3.0,14,Historical monthly mean,Stock level appears sufficient
+145,29,Climate Smart Pack,Seeds,5,Gabes,2026-06,2.0,4.83,14,Historical monthly mean,Stock level appears sufficient
+146,30,Bio Stimulant Plus,Climate-adapted products,1,Nabeul,2026-06,14.0,6.58,70,Historical monthly mean,Stock level appears sufficient
+147,30,Bio Stimulant Plus,Climate-adapted products,2,Sfax,2026-06,0.0,3.33,70,Historical monthly mean,Stock level appears sufficient
+148,30,Bio Stimulant Plus,Climate-adapted products,3,Beja,2026-06,0.0,3.5,70,Historical monthly mean,Stock level appears sufficient
+149,30,Bio Stimulant Plus,Climate-adapted products,4,Kairouan,2026-06,9.0,3.83,70,Historical monthly mean,Stock level appears sufficient
+150,30,Bio Stimulant Plus,Climate-adapted products,5,Gabes,2026-06,0.0,3.83,70,Historical monthly mean,Stock level appears sufficient

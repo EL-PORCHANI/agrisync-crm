@@ -31,3 +31,23 @@ __pycache__/
 
 # Local temporary files
 token_body.json
+
+# Local secrets
+.env
+.env.*
+!.env.example
+
+# Generated analytical databases
+/business_intelligence/data_warehouse/*.db
+
+# Talend local workspace: caches and encrypted local credentials
+/business_intelligence/talend_workspace/
+
+# Presentation experiments and temporary output
+/presentation_pfe/
+/agrisync-presentation/
+/tmp/
+
+# Local report exports
+/26-06-26_BI_chortani_anas_rapport.pdf
+/26-06-30_BI_Chortani_anas_att.pdf

@@ -1,6 +1,12 @@
 import 'package:flutter/material.dart';
 import '../../models/invoice.dart';
 import '../../services/database_service.dart';
+import '../../theme/app_colors.dart';
+import '../../theme/app_motion.dart';
+import '../../theme/app_spacing.dart';
+import '../../widgets/app_empty_state.dart';
+import '../../widgets/app_screen_scaffold.dart';
+import '../../widgets/app_status_badge.dart';
 
 class InvoicesScreen extends StatefulWidget {
   const InvoicesScreen({super.key});
@@ -11,6 +17,7 @@ class InvoicesScreen extends StatefulWidget {
 
 class _InvoicesScreenState extends State<InvoicesScreen> {
   List<Invoice> invoices = [];
+  Map<int, String> clientNames = {};
   bool showUnpaidOnly = false;
 
   @override
@@ -20,27 +27,37 @@ class _InvoicesScreenState extends State<InvoicesScreen> {
   }
 
   Future<void> loadInvoices() async {
+    await DatabaseService.instance.createMissingInvoicesForOrders();
     await DatabaseService.instance.refreshInvoiceStatuses();
 
     final data = showUnpaidOnly
         ? await DatabaseService.instance.getUnpaidInvoices()
         : await DatabaseService.instance.getInvoices();
 
+    final names = <int, String>{};
+    for (final invoice in data) {
+      names[invoice.clientId] =
+          await DatabaseService.instance.getClientName(invoice.clientId) ??
+          'Client #${invoice.clientId}';
+    }
+
+    if (!mounted) return;
     setState(() {
       invoices = data;
+      clientNames = names;
     });
   }
 
   Color getStatusColor(String status) {
     switch (status) {
       case 'paid':
-        return Colors.green;
+        return AppColors.olive;
       case 'late':
-        return Colors.orange;
+        return AppColors.amber;
       case 'critical':
-        return Colors.red;
+        return AppColors.red;
       default:
-        return Colors.blue;
+        return AppColors.blue;
     }
   }
 
@@ -51,13 +68,26 @@ class _InvoicesScreenState extends State<InvoicesScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('Invoices'),
-        actions: [
-          Row(
+    return AppScreenScaffold(
+      title: 'Invoices',
+      subtitle: 'Monitor payment status and generated customer invoices.',
+      icon: Icons.receipt_long_outlined,
+      actions: [
+        Container(
+          padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+          decoration: BoxDecoration(
+            color: Colors.white.withValues(alpha: 0.12),
+            borderRadius: BorderRadius.circular(999),
+          ),
+          child: Row(
             children: [
-              const Text('Unpaid only'),
+              Text(
+                'Unpaid only',
+                style: Theme.of(context).textTheme.bodySmall?.copyWith(
+                  color: Colors.white,
+                  fontWeight: FontWeight.w700,
+                ),
+              ),
               Switch(
                 value: showUnpaidOnly,
                 onChanged: (value) async {
@@ -69,68 +99,80 @@ class _InvoicesScreenState extends State<InvoicesScreen> {
               ),
             ],
           ),
-        ],
-      ),
-      body: invoices.isEmpty
-          ? const Center(child: Text('No invoices found'))
-          : ListView.builder(
+        ),
+      ],
+      child: invoices.isEmpty
+          ? const AppEmptyState(
+              icon: Icons.receipt_long_outlined,
+              title: 'No invoices found',
+              message: 'Invoices appear after orders are created locally.',
+            )
+          : ListView.separated(
+              padding: AppSpacing.screenPadding,
               itemCount: invoices.length,
+              separatorBuilder: (context, index) =>
+                  const SizedBox(height: AppSpacing.md),
               itemBuilder: (context, index) {
                 final invoice = invoices[index];
+                final clientName =
+                    clientNames[invoice.clientId] ??
+                    'Client #${invoice.clientId}';
 
-                return Card(
-                  margin:
-                      const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
-                child: Padding(
-                  padding: const EdgeInsets.all(12),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text(
-                        'Invoice #${invoice.id}',
-                        style: const TextStyle(
-                          fontWeight: FontWeight.bold,
-                          fontSize: 16,
-                        ),
-                      ),
-                      const SizedBox(height: 6),
-
-                      Text(
-                        'Amount due: ${invoice.amountDue.toStringAsFixed(2)} TND',
-                      ),
-                      Text(
-                        'Due date: ${invoice.dueDate.split('T').first}',
-                      ),
-                      Text(
-                        'Delay days: ${invoice.delayDays}',
-                      ),
-
-                      const SizedBox(height: 8),
-
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                return AppMotion.fadeSlide(
+                  delay: index * 20,
+                  child: Card(
+                    child: Padding(
+                      padding: AppSpacing.cardPadding,
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text(
-                            invoice.status,
-                            style: TextStyle(
-                              color: getStatusColor(invoice.status),
-                              fontWeight: FontWeight.bold,
-                            ),
+                          Row(
+                            children: [
+                              Expanded(
+                                child: Text(
+                                  'Invoice #${invoice.id}',
+                                  style: Theme.of(context).textTheme.titleSmall,
+                                ),
+                              ),
+                              AppStatusBadge(
+                                label: invoice.status,
+                                color: getStatusColor(invoice.status),
+                              ),
+                            ],
                           ),
-
-                          if (invoice.status != 'paid')
-                            ElevatedButton(
-                              onPressed: () => markAsPaid(invoice.id!),
-                              child: const Text('Mark paid'),
-                            ),
+                          const SizedBox(height: AppSpacing.md),
+                          Text(
+                            '${invoice.amountDue.toStringAsFixed(2)} TND',
+                            style: Theme.of(context).textTheme.titleMedium,
+                          ),
+                          const SizedBox(height: AppSpacing.sm),
+                          Text(
+                            'Client: $clientName | Order #${invoice.orderId}',
+                            style: Theme.of(context).textTheme.bodyMedium,
+                          ),
+                          Text(
+                            'Due date: ${invoice.dueDate.split('T').first} | Delay days: ${invoice.delayDays}',
+                            style: Theme.of(context).textTheme.bodySmall,
+                          ),
+                          const SizedBox(height: AppSpacing.md),
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.end,
+                            children: [
+                              if (invoice.status != 'paid')
+                                OutlinedButton.icon(
+                                  onPressed: () => markAsPaid(invoice.id!),
+                                  icon: const Icon(Icons.check_circle_outline),
+                                  label: const Text('Mark paid'),
+                                ),
+                            ],
+                          ),
                         ],
                       ),
-                    ],
+                    ),
                   ),
-                ),
                 );
               },
             ),
     );
   }
-} 
+}

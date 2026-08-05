@@ -1,3 +1,4 @@
+from collections import Counter, defaultdict
 import csv
 from pathlib import Path
 
@@ -29,21 +30,56 @@ def read_csv(path):
         return list(csv.DictReader(file))
 
 
-def get_latest_weather_by_zone(weather_rows):
-    latest_by_zone = {}
+def get_monthly_weather_by_zone(weather_rows):
+    grouped_weather = defaultdict(list)
 
     for row in weather_rows:
-        zone_id = row["zone_id"]
-        current_date = row["date"]
+        key = (
+            row["zone_id"],
+            int(row["month"]),
+        )
+        grouped_weather[key].append(row)
 
-        if zone_id not in latest_by_zone:
-            latest_by_zone[zone_id] = row
-            continue
+    monthly_contexts = {}
+    risk_priority = {
+        "low": 1,
+        "medium": 2,
+        "high": 3,
+    }
 
-        if current_date > latest_by_zone[zone_id]["date"]:
-            latest_by_zone[zone_id] = row
+    for key, rows in grouped_weather.items():
+        risk_counts = Counter(
+            row["drought_risk"] for row in rows
+        )
 
-    return latest_by_zone
+        drought_risk = max(
+            risk_counts,
+            key=lambda risk: (
+                risk_counts[risk],
+                risk_priority.get(risk, 0),
+            ),
+        )
+
+        dates = sorted(row["date"] for row in rows)
+
+        monthly_contexts[key] = {
+            "drought_risk": drought_risk,
+            "humidity_mean": round(
+                sum(float(row["humidity_mean"]) for row in rows)
+                / len(rows),
+                2,
+            ),
+            "rainfall": round(
+                sum(float(row["rainfall"]) for row in rows)
+                / len(rows),
+                2,
+            ),
+            "reference_period": (
+                f"{dates[0]} to {dates[-1]}"
+            ),
+        }
+
+    return monthly_contexts
 
 
 def calculate_climate_score(category, weather):
@@ -90,7 +126,9 @@ def calculate_demand_score(recommendation_note, predicted_quantity):
     reasons = []
 
     if recommendation_note in HIGH_DEMAND_NOTES:
-        reasons.append("ARIMA forecast indicates future stock pressure")
+        reasons.append(
+            "validated demand forecast indicates future stock pressure"
+        )
         return 30, reasons
 
     if predicted_quantity >= 10:
@@ -119,13 +157,21 @@ def main():
 
     forecast_rows = read_csv(FORECAST_PATH)
     weather_rows = read_csv(WEATHER_PATH)
-    latest_weather = get_latest_weather_by_zone(weather_rows)
+    monthly_weather = get_monthly_weather_by_zone(
+        weather_rows
+    )
 
     recommendations = []
 
     for index, forecast in enumerate(forecast_rows, start=1):
         zone_id = forecast["zone_id"]
-        weather = latest_weather.get(zone_id)
+        forecast_month = int(
+            forecast["forecast_month"].split("-")[1]
+        )
+
+        weather = monthly_weather.get(
+            (zone_id, forecast_month)
+        )
 
         if not weather:
             continue
@@ -155,9 +201,11 @@ def main():
             "zone_id": zone_id,
             "zone_name": forecast["zone_name"],
             "forecast_month": forecast["forecast_month"],
+            "forecast_method": forecast["forecast_method"],
             "drought_risk": weather["drought_risk"],
             "humidity_mean": weather["humidity_mean"],
             "rainfall": weather["rainfall"],
+            "weather_reference_period": weather["reference_period"],
             "predicted_quantity": round(predicted_quantity, 2),
             "stock_quantity": stock_quantity,
             "climate_score": climate_score,
@@ -176,9 +224,11 @@ def main():
         "zone_id",
         "zone_name",
         "forecast_month",
+        "forecast_method",
         "drought_risk",
         "humidity_mean",
         "rainfall",
+        "weather_reference_period",
         "predicted_quantity",
         "stock_quantity",
         "climate_score",

@@ -1,6 +1,11 @@
 import 'package:flutter/material.dart';
 import '../../services/database_service.dart';
 import '../../sync/sync_engine.dart';
+import '../../theme/app_colors.dart';
+import '../../theme/app_spacing.dart';
+import '../../widgets/app_kpi_card.dart';
+import '../../widgets/app_list_tile_card.dart';
+import '../../widgets/app_screen_scaffold.dart';
 
 class SyncStatusScreen extends StatefulWidget {
   const SyncStatusScreen({super.key});
@@ -42,7 +47,6 @@ class _SyncStatusScreenState extends State<SyncStatusScreen> {
     });
   }
 
-
   Future<void> runSync() async {
     if (isSyncing) return;
 
@@ -55,14 +59,14 @@ class _SyncStatusScreenState extends State<SyncStatusScreen> {
       await loadCounts();
 
       if (!mounted) return;
-      ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text('Sync completed')),
-      );
+      ScaffoldMessenger.of(
+        context,
+      ).showSnackBar(const SnackBar(content: Text('Sync completed')));
     } catch (e) {
       if (!mounted) return;
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text('Sync failed: $e')),
-      );
+      ScaffoldMessenger.of(
+        context,
+      ).showSnackBar(SnackBar(content: Text('Sync failed: $e')));
     } finally {
       if (mounted) {
         setState(() {
@@ -73,12 +77,23 @@ class _SyncStatusScreenState extends State<SyncStatusScreen> {
   }
 
   Widget buildCountCard(String title, int count) {
-    return Card(
-      margin: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
-      child: ListTile(
-        title: Text(title),
-        trailing: CircleAvatar(
-          child: Text(count.toString()),
+    return AppListTileCard(
+      title: title,
+      subtitle: count == 0
+          ? 'No pending local records'
+          : '$count local record(s) waiting for synchronization',
+      icon: count == 0 ? Icons.check_circle_outline : Icons.sync_problem,
+      accentColor: count == 0 ? AppColors.olive : AppColors.amber,
+      trailing: CircleAvatar(
+        backgroundColor: count == 0
+            ? AppColors.olive.withValues(alpha: 0.14)
+            : AppColors.amber,
+        child: Text(
+          count.toString(),
+          style: const TextStyle(
+            color: AppColors.textPrimary,
+            fontWeight: FontWeight.w800,
+          ),
         ),
       ),
     );
@@ -86,33 +101,39 @@ class _SyncStatusScreenState extends State<SyncStatusScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final totalPending = unsyncedClients +
+    final totalPending =
+        unsyncedClients +
         unsyncedOrders +
         unsyncedInvoices +
         unsyncedVisits +
         unsyncedStocks;
 
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('Sync Status'),
-      ),
-      body: Column(
+    return AppScreenScaffold(
+      title: 'Synchronization',
+      subtitle: 'Control offline-to-online data synchronization status.',
+      icon: Icons.sync_outlined,
+      child: ListView(
+        padding: AppSpacing.screenPadding,
         children: [
-          const SizedBox(height: 12),
-          Text(
-            'Total pending sync: $totalPending',
-            style: const TextStyle(
-              fontSize: 18,
-              fontWeight: FontWeight.bold,
-            ),
+          AppKpiCard(
+            title: 'Total Pending Sync',
+            value: totalPending.toString(),
+            icon: totalPending == 0
+                ? Icons.cloud_done_outlined
+                : Icons.cloud_sync,
+            color: totalPending == 0 ? AppColors.olive : AppColors.amber,
           ),
-          const SizedBox(height: 12),
+          const SizedBox(height: AppSpacing.lg),
           buildCountCard('Clients', unsyncedClients),
+          const SizedBox(height: AppSpacing.md),
           buildCountCard('Orders', unsyncedOrders),
+          const SizedBox(height: AppSpacing.md),
           buildCountCard('Invoices', unsyncedInvoices),
+          const SizedBox(height: AppSpacing.md),
           buildCountCard('Visits', unsyncedVisits),
+          const SizedBox(height: AppSpacing.md),
           buildCountCard('Stocks', unsyncedStocks),
-          const SizedBox(height: 20),
+          const SizedBox(height: AppSpacing.xl),
           ElevatedButton.icon(
             onPressed: isSyncing ? null : runSync,
             icon: isSyncing

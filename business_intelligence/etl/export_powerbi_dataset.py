@@ -7,6 +7,7 @@ ROOT_DIR = Path(__file__).resolve().parents[2]
 
 DW_DB_PATH = ROOT_DIR / "business_intelligence" / "data_warehouse" / "agrisync_dw_test.db"
 SYNTHETIC_DATA_DIR = ROOT_DIR / "business_intelligence" / "synthetic_data"
+AI_DATA_DIR = (ROOT_DIR / "business_intelligence" / "ai_climate")
 POWERBI_DATASET_DIR = ROOT_DIR / "business_intelligence" / "power_bi" / "dataset"
 
 DW_TABLES = [
@@ -22,6 +23,12 @@ SUPPORTING_FILES = [
     "invoices.csv",
     "visits.csv",
     "weather_by_zone.csv",
+]
+
+AI_OUTPUT_FILES = [
+    "stock_demand_forecast.csv",
+    "product_recommendations.csv",
+    "climate_alerts.csv",
 ]
 
 
@@ -55,6 +62,21 @@ def copy_supporting_file(file_name):
 
     print(f"Copied {file_name}: {row_count} rows")
 
+def copy_ai_output_file(file_name):
+    source = AI_DATA_DIR / file_name
+    destination = POWERBI_DATASET_DIR / file_name
+
+    if not source.exists():
+        print(f"Missing AI output file: {source}")
+        return
+
+    shutil.copy2(source, destination)
+
+    with destination.open(encoding="utf-8") as file:
+        row_count = sum(1 for _ in file) - 1
+
+    print(f"Copied AI output {file_name}: {row_count} rows")
+
 
 def main():
     if not DW_DB_PATH.exists():
@@ -69,6 +91,10 @@ def main():
 
     for file_name in SUPPORTING_FILES:
         copy_supporting_file(file_name)
+
+    for file_name in AI_OUTPUT_FILES:
+        copy_ai_output_file(file_name)
+        
 
     print()
     print("Power BI dataset export completed.")

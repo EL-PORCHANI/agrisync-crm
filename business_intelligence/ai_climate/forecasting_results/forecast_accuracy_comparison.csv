@@ -1,0 +1,7 @@
+model,mae,rmse,mape,converged,warning_count
+"ARIMA(1,1,1)",74.7315,86.2711,9.6546,True,0
+Historical Mean,79.6296,87.5661,10.278,True,0
+"ARIMA(0,0,0)",79.6296,87.5661,10.278,True,0
+"ARIMA(1,0,0)",73.6714,88.5298,9.5561,True,0
+"ARIMA(0,0,1)",103.2214,108.6289,13.3635,True,0
+Last Value,136.3333,158.7965,18.1172,True,0

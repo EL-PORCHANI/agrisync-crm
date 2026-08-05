@@ -1,0 +1,63 @@
+{
+  "name": "AgriSync AI",
+  "dataColors": [
+    "#1B4B4B",
+    "#2F9E58",
+    "#D4A24C",
+    "#C1666B",
+    "#74A892",
+    "#4A6FA5",
+    "#8B5E3C",
+    "#A9A9A9"
+  ],
+  "background": "#FAF8F3",
+  "foreground": "#1B1B1B",
+  "tableAccent": "#1B4B4B",
+  "good": "#2F9E58",
+  "neutral": "#D4A24C",
+  "bad": "#C1666B",
+  "maximum": "#1B4B4B",
+  "minimum": "#EAF4F0",
+  "textClasses": {
+    "callout": {
+      "fontSize": 28,
+      "fontFace": "Segoe UI Semibold",
+      "color": "#16332B"
+    },
+    "title": {
+      "fontSize": 14,
+      "fontFace": "Segoe UI Semibold",
+      "color": "#16332B"
+    },
+    "header": {
+      "fontSize": 12,
+      "fontFace": "Segoe UI",
+      "color": "#1B1B1B"
+    },
+    "label": {
+      "fontSize": 10,
+      "fontFace": "Segoe UI",
+      "color": "#4A4A4A"
+    }
+  },
+  "visualStyles": {
+    "*": {
+      "*": {
+        "background": [
+          {
+            "show": true,
+            "color": { "solid": { "color": "#FFFFFF" } },
+            "transparency": 0
+          }
+        ],
+        "border": [
+          {
+            "show": true,
+            "color": { "solid": { "color": "#E5E2DA" } },
+            "radius": 10
+          }
+        ]
+      }
+    }
+  }
+}

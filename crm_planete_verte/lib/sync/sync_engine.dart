@@ -154,7 +154,14 @@ class SyncEngine {
       debugPrint("INVOICE STATUS: ${response.statusCode}");
 
       if (response.statusCode == 201) {
-        await db.markAsSynced('invoices', item['id']);
+        final responseData = jsonDecode(response.body);
+        final serverInvoiceId = responseData['id'] as int?;
+
+        if (serverInvoiceId != null) {
+          await db.updateInvoiceServerId(item['id'] as int, serverInvoiceId);
+        } else {
+          await db.markAsSynced('invoices', item['id'] as int);
+        }
         debugPrint("INVOICE SYNCED: ${item['id']}");
       }
     }

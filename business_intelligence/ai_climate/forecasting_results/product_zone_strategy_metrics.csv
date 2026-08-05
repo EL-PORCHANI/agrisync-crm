@@ -1,0 +1,6 @@
+strategy,evaluation_points,mae,rmse,wape
+historical_mean,900,5.6226,6.9701,105.0961
+proposed_hybrid,900,5.6806,7.0826,106.1785
+recent_3_month_mean,900,5.9622,7.61,111.4434
+current_arima_111,900,6.2248,8.1862,116.3513
+last_value,900,6.6611,9.1974,124.5067
